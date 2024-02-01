@@ -1,0 +1,16 @@
+@font-face {
+  font-family: IranSans;
+  src: url(../fonts/irsans.ttf);
+}
+
+@font-face {
+  font-family: IranSansB;
+  src: url(../fonts/irsansb.ttf);
+}
+
+body {
+  background-color: #1a1a1d;
+  direction: rtl;
+  color: #fff;
+  font-family: IranSansB;
+}

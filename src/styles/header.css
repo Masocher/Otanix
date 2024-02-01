@@ -1,0 +1,50 @@
+.header_container {
+  width: calc(100% - 100px);
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right_side {
+  display: flex;
+  align-items: center;
+}
+
+.logo_box {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.header_links {
+  margin-right: 30px;
+  display: flex;
+}
+
+.h_link {
+  margin: 0 10px;
+  font-size: 11px;
+  color: #fff !important;
+}
+.h_link.show {
+  color: #5cdb95 !important;
+}
+
+.left_side {
+  display: flex;
+}
+
+.sign_btn {
+    font-size: 10px;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    margin-right: 15px;
+    padding: 10px 20px;
+}
+
+.log_btn {
+    background-color: #5cdb95;
+}
