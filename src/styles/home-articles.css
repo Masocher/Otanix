@@ -60,9 +60,11 @@
     position: relative;
     bottom: 0;
     transition: .2s;
+    border-bottom: 1px solid #232328cb;
 }
 .article_box:hover {
     bottom: 10px;
+    border-color: #5cdb95;
 }
 
 .article_box img {
