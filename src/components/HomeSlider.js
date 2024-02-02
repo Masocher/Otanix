@@ -17,7 +17,7 @@ const HomeSlider = () => {
       id: 0,
       title: "One Piece",
       ptitle: "وان پیس",
-      rate: "7.18",
+      rate: "۷.۱۸",
       tags: [
         { id: 0, title: "اکشن" },
         { id: 0, title: "علمی تخیلی" },
@@ -30,7 +30,7 @@ const HomeSlider = () => {
       id: 0,
       title: "One Piece",
       ptitle: "وان پیس",
-      rate: "7.18",
+      rate: "۷.۱۸",
       tags: [
         { id: 0, title: "اکشن" },
         { id: 0, title: "علمی تخیلی" },
@@ -43,7 +43,7 @@ const HomeSlider = () => {
       id: 0,
       title: "One Piece",
       ptitle: "وان پیس",
-      rate: "7.18",
+      rate: "۷.۱۸",
       tags: [
         { id: 0, title: "اکشن" },
         { id: 0, title: "علمی تخیلی" },
@@ -56,7 +56,7 @@ const HomeSlider = () => {
       id: 0,
       title: "One Piece",
       ptitle: "وان پیس",
-      rate: "7.18",
+      rate: "۷.۱۸",
       tags: [
         { id: 0, title: "اکشن" },
         { id: 0, title: "علمی تخیلی" },
@@ -69,7 +69,7 @@ const HomeSlider = () => {
       id: 0,
       title: "One Piece",
       ptitle: "وان پیس",
-      rate: "7.18",
+      rate: "۷.۱۸",
       tags: [
         { id: 0, title: "اکشن" },
         { id: 0, title: "علمی تخیلی" },
@@ -82,7 +82,7 @@ const HomeSlider = () => {
       id: 0,
       title: "One Piece",
       ptitle: "وان پیس",
-      rate: "7.18",
+      rate: "۷.۱۸",
       tags: [
         { id: 0, title: "اکشن" },
         { id: 0, title: "علمی تخیلی" },
@@ -95,7 +95,7 @@ const HomeSlider = () => {
       id: 0,
       title: "One Piece",
       ptitle: "وان پیس",
-      rate: "7.18",
+      rate: "۷.۱۸",
       tags: [
         { id: 0, title: "اکشن" },
         { id: 0, title: "علمی تخیلی" },
@@ -108,7 +108,7 @@ const HomeSlider = () => {
       id: 0,
       title: "One Piece",
       ptitle: "وان پیس",
-      rate: "7.18",
+      rate: "۷.۱۸",
       tags: [
         { id: 0, title: "اکشن" },
         { id: 0, title: "علمی تخیلی" },
@@ -121,7 +121,7 @@ const HomeSlider = () => {
       id: 0,
       title: "One Piece",
       ptitle: "وان پیس",
-      rate: "7.18",
+      rate: "۷.۱۸",
       tags: [
         { id: 0, title: "اکشن" },
         { id: 0, title: "علمی تخیلی" },
@@ -134,7 +134,7 @@ const HomeSlider = () => {
       id: 0,
       title: "One Piece",
       ptitle: "وان پیس",
-      rate: "7.18",
+      rate: "۷.۱۸",
       tags: [
         { id: 0, title: "اکشن" },
         { id: 0, title: "علمی تخیلی" },
@@ -149,6 +149,7 @@ const HomeSlider = () => {
       <Swiper
         slidesPerView={1}
         loop={true}
+        spaceBetween={50}
         modules={[Autoplay]}
         autoplay={{ delay: 3500 }}
         className="back_slider"

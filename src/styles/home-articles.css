@@ -1,0 +1,122 @@
+.articles_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.articles_wrapper .title_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.articles_wrapper .title_box span {
+    margin: 0 0 30px 0;
+    font-size: 18px;
+    border-bottom: 2px solid #5cdb95;
+    width: fit-content;
+    padding: 0 0 15px 100px;
+}
+
+.show_btn {
+    color: #000;
+    font-size: 11px;
+    background-color: #5cdb95;
+    padding: 10px 25px;
+    height: fit-content;
+    transition: .2s;
+    cursor: pointer;
+    border: 1px solid #5cdb95;
+    margin-bottom: 30px;
+    display: flex;
+}
+.show_btn:hover {
+    color: #5cdb95;
+    background: none;
+}
+
+.show_btn div {
+    margin-right: 5px;
+}
+
+.articles_wrapper .bottom_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home_articles_slider {
+    width: 100%;
+    height: fit-content;
+    padding-top: 10px;
+}
+
+.article_box {
+    width: 248px;
+    padding: 16px;
+    background-color: #232328cb;
+    position: relative;
+    bottom: 0;
+    transition: .2s;
+}
+.article_box:hover {
+    bottom: 10px;
+}
+
+.article_box img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.article_box .main_title {
+    font-size: 14px;
+    font-family: IranSansB;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+.article_box .main_title:hover {
+    color: #5cdb95;
+}
+
+.article_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-family: IranSans;
+}
+
+.study_time {
+    font-size: 10px;
+}
+
+.article_icons {
+    display: flex;
+}
+
+.article_icons div {
+    font-size: 14px;
+    padding: 2px 5px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.comments_num {
+    color: #5FBDFF;
+}
+
+.likes_num {
+    color: #F31559
+}
+
+.article_icons div div {
+    border: none;
+    font-size: 10px;
+    font-family: IranSansB;
+    color: #fff;
+}
