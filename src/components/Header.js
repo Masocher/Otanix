@@ -4,10 +4,6 @@ import "../styles/header.css";
 // react-router
 import { Link } from "react-router-dom";
 
-// icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faHeart } from "@fortawesome/free-solid-svg-icons";
-
 // tools
 import { useLocation } from "react-router-dom";
 import { useState } from "react";

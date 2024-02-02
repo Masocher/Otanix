@@ -36,15 +36,15 @@
 }
 
 .sign_btn {
-    font-size: 10px;
-    text-align: center;
-    color: #000;
-    background-color: #fff;
-    cursor: pointer;
-    margin-right: 15px;
-    padding: 10px 20px;
+  font-size: 10px;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+  margin-right: 15px;
+  padding: 10px 20px;
 }
 
 .log_btn {
-    background-color: #5cdb95;
+  background-color: #5cdb95;
 }

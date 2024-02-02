@@ -1,0 +1,100 @@
+.slider_container {
+    width: 100%;
+    position: relative;
+    height: 620px;
+    user-select: none;
+}
+
+.back_slider {
+    width: 100%;
+    height: 620px;
+}
+
+.back_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.2);
+}
+
+.front_slider {
+    width: 60%;
+    position: absolute;
+    bottom: 530px;
+}
+
+.anime_image {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: brightness(.7);
+}
+
+.anime_slide {
+    display: flex !important;
+}
+
+.anime_info {
+    margin-right: 30px;
+}
+
+.main_title {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.p_title {
+    margin-top: 10px;
+}
+
+.score_box {
+    margin: 40px 0 20px 0;
+    font-size: 20px;
+    background-color: #1a1a1d;
+    width: fit-content;
+    padding: 10px 20px;
+    color: #5cdb95;
+    display: flex;
+}
+
+.score_box div {
+    margin: 1.5px 0 0 10px;
+    font-size: 16px;
+}
+
+.anime_tags {
+    display: flex;
+    font-size: 11px;
+}
+
+.tag_box  {
+    color: #5cdb95;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    border: 1px solid #5cdb95;
+}
+
+.anime_description {
+    margin-top: 40px;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+.play_btn {
+    width: fit-content;
+    font-size: 11px;
+    background-color: #5cdb95;
+    padding: 10px 20px;
+    color: #000;
+    margin-top: 30px;
+    pointer-events:painted;
+    cursor: pointer;
+    transition: .2s;
+    border: 1px solid #5cdb95;
+}
+.play_btn:hover {
+    background: none;
+    color: #5cdb95;
+}
