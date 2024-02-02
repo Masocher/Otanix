@@ -108,7 +108,6 @@ const HomeArticles = () => {
           modules={[Autoplay]}
           autoplay={{ delay: 1500 }}
           className="home_articles_slider"
-          allowTouchMove={false}
         >
           {state.map((article) => (
             <SwiperSlide className="article_box" key={article.id}>
