@@ -106,7 +106,7 @@
     justify-content: space-between;
     align-items: center;
     width: calc(100% - 100px);
-    margin: 50px auto;
+    margin: 50px auto 100px auto;
 }
 
 .category_box {
