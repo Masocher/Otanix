@@ -90,7 +90,7 @@ const HomeArticles = () => {
 
   return (
     <div className="articles_wrapper">
-      <div className="title_box">
+      <div className="section_title_box">
         <span>جدیدترین مقالات</span>
         <div className="show_btn">
           مشاهده همه

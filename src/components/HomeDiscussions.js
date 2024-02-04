@@ -1,0 +1,89 @@
+// assets
+import "../styles/home-discussions.css";
+import img1 from "../images/animes/1.jpg";
+
+const HomeDiscussions = () => {
+  return (
+    <div className="home_discussions">
+      <div className="section_title_box">
+        <span>پرسش و گفتگو</span>
+        <div className="show_btn">
+            مشاهده گفتگو ها
+        </div>
+      </div>
+
+      <div className="discussions">
+        <div className="discussion_box">
+          <div className="user_box">
+            <div className="user_image">
+              <img src={img1} />
+            </div>
+
+            <div className="user_name">Masocher</div>
+          </div>
+
+          <div className="title_box">وان پیس بهترین انیمه سال !</div>
+
+          <div className="description">
+            داستان درباره جهانی است که به دو گروه انسان‌ها و موجوداتی به نام
+            کاتاوارا تقسیم شده‌اند. تاما که خود یک کاتاواراست بسیار عاشق
+            انسان‌هاست و حتی اگر باید با هم‌نوعان خود بجنگد، آماده است تا آنها
+            را از شر بدی نجات دهد. برادر تاما به نام جینکا اما انسان‌ها را دوست
+            ندارد، نیھل که بیشتر خودش انسان است. این دو برادر به همراه شمشیرزنی
+            بزدل به نام شینسوکه که می‌خواهد قدرتمند شود...
+          </div>
+
+          <div className="show_more">مشاهده جزئیات</div>
+        </div>
+
+        <div className="discussion_box">
+          <div className="user_box">
+            <div className="user_image">
+              <img src={img1} />
+            </div>
+
+            <div className="user_name">Masocher</div>
+          </div>
+
+          <div className="title_box">وان پیس بهترین انیمه سال !</div>
+
+          <div className="description">
+            داستان درباره جهانی است که به دو گروه انسان‌ها و موجوداتی به نام
+            کاتاوارا تقسیم شده‌اند. تاما که خود یک کاتاواراست بسیار عاشق
+            انسان‌هاست و حتی اگر باید با هم‌نوعان خود بجنگد، آماده است تا آنها
+            را از شر بدی نجات دهد. برادر تاما به نام جینکا اما انسان‌ها را دوست
+            ندارد، نیھل که بیشتر خودش انسان است. این دو برادر به همراه شمشیرزنی
+            بزدل به نام شینسوکه که می‌خواهد قدرتمند شود...
+          </div>
+
+          <div className="show_more">مشاهده جزئیات</div>
+        </div>
+
+        <div className="discussion_box">
+          <div className="user_box">
+            <div className="user_image">
+              <img src={img1} />
+            </div>
+
+            <div className="user_name">Masocher</div>
+          </div>
+
+          <div className="title_box">وان پیس بهترین انیمه سال !</div>
+
+          <div className="description">
+            داستان درباره جهانی است که به دو گروه انسان‌ها و موجوداتی به نام
+            کاتاوارا تقسیم شده‌اند. تاما که خود یک کاتاواراست بسیار عاشق
+            انسان‌هاست و حتی اگر باید با هم‌نوعان خود بجنگد، آماده است تا آنها
+            را از شر بدی نجات دهد. برادر تاما به نام جینکا اما انسان‌ها را دوست
+            ندارد، نیھل که بیشتر خودش انسان است. این دو برادر به همراه شمشیرزنی
+            بزدل به نام شینسوکه که می‌خواهد قدرتمند شود...
+          </div>
+
+          <div className="show_more">مشاهده جزئیات</div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default HomeDiscussions;

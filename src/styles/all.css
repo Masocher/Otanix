@@ -15,3 +15,40 @@ body {
   font-family: IranSansB;
   margin: 0;
 }
+
+.section_title_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  width: calc(100% - 60px);
+}
+
+.section_title_box span {
+  margin: 0 0 30px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #5cdb95;
+  width: fit-content;
+  padding: 0 0 15px 100px;
+}
+
+.section_title_box .show_btn {
+  color: #000;
+  font-size: 11px;
+  background-color: #5cdb95;
+  padding: 10px 25px;
+  height: fit-content;
+  transition: 0.2s;
+  cursor: pointer;
+  border: 1px solid #5cdb95;
+  margin-bottom: 30px;
+  display: flex;
+}
+.section_title_box .show_btn:hover {
+  color: #5cdb95;
+  background: none;
+}
+
+.section_title_box .show_btn div {
+  margin-right: 5px;
+}

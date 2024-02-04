@@ -15,7 +15,7 @@ import {
 const HomeTopics = () => {
   return (
     <div className="home_topics">
-      <div className="title_box">
+      <div className="section_title_box">
         <span>انیمه های برتر</span>
         <div className="show_btn">
           مشاهده همه

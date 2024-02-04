@@ -5,42 +5,6 @@
     margin: 40px 0;
 }
 
-.articles_wrapper .title_box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-}
-
-.articles_wrapper .title_box span {
-    margin: 0 0 30px 0;
-    font-size: 18px;
-    border-bottom: 1px solid #5cdb95;
-    width: fit-content;
-    padding: 0 0 15px 100px;
-}
-
-.show_btn {
-    color: #000;
-    font-size: 11px;
-    background-color: #5cdb95;
-    padding: 10px 25px;
-    height: fit-content;
-    transition: .2s;
-    cursor: pointer;
-    border: 1px solid #5cdb95;
-    margin-bottom: 30px;
-    display: flex;
-}
-.show_btn:hover {
-    color: #5cdb95;
-    background: none;
-}
-
-.show_btn div {
-    margin-right: 5px;
-}
-
 .articles_wrapper .bottom_section {
     display: flex;
     justify-content: space-between;
