@@ -2,6 +2,7 @@
 import HomeSlider from "../components/HomeSlider";
 import HomeArticles from "../components/HomeArticles";
 import HomeCategoryBoxes from "../components/HomeCategoryBoxes";
+import HomeTopics from "../components/HomeTopics";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <HomeSlider />
       <HomeCategoryBoxes />
       <HomeArticles />
+      <HomeTopics />
     </div>
   );
 };

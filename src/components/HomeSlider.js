@@ -187,9 +187,9 @@ const HomeSlider = () => {
           <SwiperSlide key={anime.id} className="anime_slide">
             <img className="anime_image" src={anime.cover} />
 
-            <div className="anime_info">
+            <div className="anime_information">
               <div className="main_title">{anime.title}</div>
-              <div className="p_title">{anime.ptitle}</div>
+              <div className="persian_title">{anime.ptitle}</div>
 
               <div className="score_box">
                 <div>
