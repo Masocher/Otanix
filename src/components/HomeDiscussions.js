@@ -6,7 +6,7 @@ const HomeDiscussions = () => {
   return (
     <div className="home_discussions">
       <div className="section_title_box">
-        <span>پرسش و گفتگو</span>
+        <span>بحث و گفتگو</span>
         <div className="show_btn">
             مشاهده گفتگو ها
         </div>
@@ -16,7 +16,7 @@ const HomeDiscussions = () => {
         <div className="discussion_box">
           <div className="user_box">
             <div className="user_image">
-              <img src={img1} />
+              <img src={img1} alt="user-profile" />
             </div>
 
             <div className="user_name">Masocher</div>
@@ -39,7 +39,7 @@ const HomeDiscussions = () => {
         <div className="discussion_box">
           <div className="user_box">
             <div className="user_image">
-              <img src={img1} />
+              <img src={img1} alt="user-profile" />
             </div>
 
             <div className="user_name">Masocher</div>
@@ -62,7 +62,7 @@ const HomeDiscussions = () => {
         <div className="discussion_box">
           <div className="user_box">
             <div className="user_image">
-              <img src={img1} />
+              <img src={img1} alt="user-profile" />
             </div>
 
             <div className="user_name">Masocher</div>

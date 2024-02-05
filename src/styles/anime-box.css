@@ -44,7 +44,6 @@
 .anime_buttons {
     font-size: 14px;
     display: flex;
-    cursor: pointer;
 }
 
 .anime_buttons div {
