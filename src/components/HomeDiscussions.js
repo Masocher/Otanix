@@ -2,14 +2,16 @@
 import "../styles/home-discussions.css";
 import img1 from "../images/animes/1.jpg";
 
+// icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faReply } from "@fortawesome/free-solid-svg-icons";
+
 const HomeDiscussions = () => {
   return (
     <div className="home_discussions">
       <div className="section_title_box">
         <span>بحث و گفتگو</span>
-        <div className="show_btn">
-            مشاهده گفتگو ها
-        </div>
+        <div className="show_btn">مشاهده گفتگو ها</div>
       </div>
 
       <div className="discussions">
@@ -33,7 +35,17 @@ const HomeDiscussions = () => {
             بزدل به نام شینسوکه که می‌خواهد قدرتمند شود...
           </div>
 
-          <div className="show_more">مشاهده جزئیات</div>
+          <div className="discussion_buttons">
+            <div className="show_more">مشاهده جزئیات</div>
+
+            <div className="discussion_reply">
+              <div className="reply_icon">
+                <FontAwesomeIcon icon={faReply} />
+              </div>
+
+              <div className="discussion_reply_num">۰</div>
+            </div>
+          </div>
         </div>
 
         <div className="discussion_box">
@@ -56,7 +68,17 @@ const HomeDiscussions = () => {
             بزدل به نام شینسوکه که می‌خواهد قدرتمند شود...
           </div>
 
-          <div className="show_more">مشاهده جزئیات</div>
+          <div className="discussion_buttons">
+            <div className="show_more">مشاهده جزئیات</div>
+
+            <div className="discussion_reply">
+              <div className="reply_icon">
+                <FontAwesomeIcon icon={faReply} />
+              </div>
+
+              <div className="discussion_reply_num">۰</div>
+            </div>
+          </div>
         </div>
 
         <div className="discussion_box">
@@ -79,7 +101,17 @@ const HomeDiscussions = () => {
             بزدل به نام شینسوکه که می‌خواهد قدرتمند شود...
           </div>
 
-          <div className="show_more">مشاهده جزئیات</div>
+          <div className="discussion_buttons">
+            <div className="show_more">مشاهده جزئیات</div>
+
+            <div className="discussion_reply">
+              <div className="reply_icon">
+                <FontAwesomeIcon icon={faReply} />
+              </div>
+
+              <div className="discussion_reply_num">۰</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -73,3 +73,25 @@
     padding: 0;
     width: 100%;
 }
+
+.discussion_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discussion_reply {
+    display: flex;
+    margin-top: 20px;
+}
+
+.discussion_reply .reply_icon {
+    font-size: 14px;
+    color: #5cdb95;
+    margin: 0 0 1px 5px;
+}
+
+.discussion_reply_num {
+    letter-spacing: 0;
+    font-size: 11px;
+}
