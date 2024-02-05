@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 // pages
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 // react-router
 import { BrowserRouter, useLocation } from "react-router-dom";
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
       </Routes>
 
       {

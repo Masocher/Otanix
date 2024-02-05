@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 
-const SignIn = () => {
+const SignUp = () => {
   const [signFormStatus, setSignFormStatus] = useState("");
 
   setInterval(() => {
@@ -23,26 +23,27 @@ const SignIn = () => {
           <FontAwesomeIcon icon={faClose} />
         </Link>
 
-        <div className="title_box">ورود</div>
+        <div className="title_box">ثبت نام</div>
 
+        <input className="sign_input" type="text" placeholder="نام کاربری" />
         <input className="sign_input" type="email" placeholder="ایمیل" />
         <input className="sign_input" type="password" placeholder="گذرواژه" />
 
         <button className="submit_btn" type="submit">
-          ورود
+          ثبت نام
         </button>
 
         <Link
-          to={"/sign-up"}
+          to={"/sign-in"}
           className="have_account"
           style={{ textDecoration: "none", color: "#fff" }}
         >
-          آیا از قبل ثبت نام نکرده اید ؟
-          <div className="sign_little_btn">ثبت نام</div>
+          آیا از قبل ثبت نام کرده اید ؟
+          <div className="sign_little_btn">ورود</div>
         </Link>
       </form>
     </div>
   );
 };
 
-export default SignIn;
+export default SignUp;

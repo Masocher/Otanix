@@ -16,7 +16,7 @@
     position: relative;
     top: 50px;
     opacity: 0;
-    transition: .8s;
+    transition: .5s ease-out;
 }
 .sign_form.show {
     top: 0;
