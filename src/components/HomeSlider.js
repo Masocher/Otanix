@@ -192,10 +192,10 @@ const HomeSlider = () => {
               <div className="persian_title">{anime.ptitle}</div>
 
               <div className="score_box">
+                {anime.rate}
                 <div>
                   <FontAwesomeIcon icon={faStar} />
                 </div>
-                {anime.rate}
               </div>
 
               <div className="anime_tags">

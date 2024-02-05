@@ -1,16 +1,16 @@
 .home_topics {
-    width: calc(100% - 100px);
-    display: flex;
-    flex-direction: column;
-    margin: 100px auto;
+  width: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
 }
 
 .home_topics .bottom_section {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .home_topics .section_title_box {
-    padding: 0 10px;
-    width: calc(100% - 20px);
+  padding: 0 10px;
+  width: calc(100% - 20px);
 }

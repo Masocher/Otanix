@@ -1,18 +1,18 @@
 @font-face {
-  font-family: IranSans;
-  src: url(../fonts/irsans.ttf);
+  font-family: YekanBakhHeavy;
+  src: url(../fonts/Yekan-Bakh-Heavy.woff);
 }
 
 @font-face {
-  font-family: IranSansB;
-  src: url(../fonts/irsansb.ttf);
+  font-family: YekanBakhBold;
+  src: url(../fonts/Yekan-Bakh-Bold.woff);
 }
 
 body {
   background-color: #1a1a1d;
   direction: rtl;
   color: #fff;
-  font-family: IranSansB;
+  font-family: YekanBakhBold;
   margin: 0;
 }
 
@@ -26,29 +26,30 @@ body {
 
 .section_title_box span {
   margin: 0 0 30px 0;
-  font-size: 18px;
-  border-bottom: 1px solid #5cdb95;
+  font-size: 22px;
+  border-bottom: 1px solid #f5cb5c;
   width: fit-content;
-  padding: 0 0 15px 100px;
+  padding: 0 0 10px 100px;
 }
 
 .section_title_box .show_btn {
   color: #000;
-  font-size: 11px;
-  background-color: #5cdb95;
-  padding: 10px 25px;
+  font-size: 12px;
+  background-color: #f5cb5c;
+  padding: 8px 25px;
   height: fit-content;
   transition: 0.2s;
   cursor: pointer;
-  border: 1px solid #5cdb95;
+  border: 1px solid #f5cb5c;
   margin-bottom: 30px;
   display: flex;
 }
 .section_title_box .show_btn:hover {
-  color: #5cdb95;
+  color: #f5cb5c;
   background: none;
 }
 
 .section_title_box .show_btn div {
-  margin-right: 5px;
+  margin: 3px 5px 0 0;
+  font-size: 11px;
 }

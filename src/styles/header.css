@@ -13,8 +13,8 @@
 
 .logo_box {
   font-size: 30px;
-  font-weight: bold;
-  font-family: sans-serif;
+  font-family: YekanBakhHeavy;
+  color: #f5cb5c;
 }
 
 .header_links {
@@ -24,11 +24,11 @@
 
 .h_link {
   margin: 0 15px;
-  font-size: 11px;
+  font-size: 14px;
   color: #fff !important;
 }
 .h_link.show {
-  color: #5cdb95 !important;
+  color: #f5cb5c !important;
 }
 
 .left_side {
@@ -36,16 +36,16 @@
 }
 
 .sign_btn {
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
   color: #fff;
   background-color: #262626;
   cursor: pointer;
   margin-right: 15px;
-  padding: 10px 20px;
+  padding: 8px 20px;
 }
 
 .log_btn {
-  background-color: #5cdb95;
+  background-color: #f5cb5c;
   color: #000;
 }

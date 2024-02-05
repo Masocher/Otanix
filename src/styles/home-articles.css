@@ -1,88 +1,86 @@
 .articles_wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 40px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
 }
 
 .articles_wrapper .bottom_section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .home_articles_slider {
-    width: 100%;
-    height: fit-content;
-    padding-top: 10px;
+  width: 100%;
+  height: fit-content;
+  padding-top: 10px;
 }
 
 .article_box {
-    width: 248px;
-    padding: 16px;
-    background-color: #232328cb;
-    position: relative;
-    bottom: 0;
-    transition: .2s;
-    border-bottom: 1px solid #232328cb;
+  width: auto;
+  padding: 16px;
+  background-color: #232328cb;
+  position: relative;
+  bottom: 0;
+  transition: 0.2s;
+  border-bottom: 1px solid #232328cb;
 }
 .article_box:hover {
-    bottom: 10px;
-    border-color: #5cdb95;
+  bottom: 10px;
+  border-color: #f5cb5c;
 }
 
 .article_box img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
 }
 
 .article_box .main_title {
-    font-size: 14px;
-    font-family: IranSansB;
-    margin-top: 15px;
-    cursor: pointer;
-    transition: .2s;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 .article_box .main_title:hover {
-    color: #5cdb95;
+  color: #f5cb5c;
 }
 
 .article_info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
-    font-family: IranSans;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
 .study_time {
-    font-size: 10px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
 }
 
 .article_icons {
-    display: flex;
+  display: flex;
 }
 
 .article_icons div {
-    font-size: 14px;
-    padding: 2px 5px;
-    width: 30px;
-    display: flex;
-    align-items: center;
+  font-size: 14px;
+  padding: 2px 5px;
+  width: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .comments_num {
-    color: #5FBDFF;
+  color: #5fbdff;
 }
 
 .likes_num {
-    color: #F31559
+  color: #f31559;
 }
 
 .article_icons div div {
-    border: none;
-    font-size: 10px;
-    font-family: IranSansB;
-    color: #fff;
+  border: none;
+  font-size: 12px;
+  color: #fff;
 }

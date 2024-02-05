@@ -1,144 +1,143 @@
 .slider_container {
-    width: 100%;
-    position: relative;
-    height: 620px;
-    user-select: none;
+  width: 100%;
+  position: relative;
+  height: 620px;
+  user-select: none;
 }
 
 .back_slider {
-    width: 100%;
-    height: 620px;
+  width: 100%;
+  height: 620px;
 }
 
 .back_image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(.2);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.2);
 }
 
 .front_slider {
-    width: 60%;
-    position: absolute;
-    bottom: 530px;
+  width: 60%;
+  position: absolute;
+  bottom: 530px;
 }
 
 .anime_image {
-    width: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-    filter: brightness(.7);
+  width: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: brightness(0.7);
 }
 
 .anime_slide {
-    display: flex !important;
+  display: flex !important;
 }
 
 .anime_information {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .main_title {
-    font-size: 30px;
-    font-family: sans-serif;
-    font-weight: bold;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .persian_title {
-    margin-top: 10px;
+  font-size: 18px;
 }
 
 .score_box {
-    margin: 40px 0 20px 0;
-    font-size: 20px;
-    background-color: #1a1a1d;
-    width: fit-content;
-    padding: 10px 20px;
-    color: #5cdb95;
-    display: flex;
+  margin: 20px 0 20px 0;
+  font-size: 30px;
+  color: #f5cb5c;
+  display: flex;
+  letter-spacing: 1px;
+  font-family: YekanBakhHeavy;
 }
 
 .score_box div {
-    margin: 1.5px 0 0 10px;
-    font-size: 16px;
+  margin: 10px 5px 0 0;
+  font-size: 20px;
 }
 
 .anime_tags {
-    display: flex;
-    font-size: 11px;
+  display: flex;
+  font-size: 12px;
 }
 
-.tag_box  {
-    color: #5cdb95;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 0 5px;
-    border: 1px solid #5cdb95;
+.tag_box {
+  color: #f5cb5c;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  border: 1px solid #f5cb5c;
 }
 
 .anime_description {
-    margin-top: 40px;
-    font-size: 11px;
-    line-height: 22px;
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .play_btn {
-    width: fit-content;
-    font-size: 11px;
-    background-color: #5cdb95;
-    padding: 10px 20px;
-    color: #000;
-    margin-top: 30px;
-    pointer-events:painted;
-    cursor: pointer;
-    transition: .2s;
-    border: 1px solid #5cdb95;
+  width: fit-content;
+  font-size: 14px;
+  background-color: #f5cb5c;
+  padding: 8px 20px;
+  color: #000;
+  margin-top: 30px;
+  pointer-events: painted;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 1px solid #f5cb5c;
 }
 .play_btn:hover {
-    background: none;
-    color: #5cdb95;
+  background: none;
+  color: #f5cb5c;
 }
 
 /* category boxes */
 
 .category_boxes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: calc(100% - 100px);
-    margin: 50px auto 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 100px);
+  margin: 50px auto 100px auto;
 }
 
 .category_box {
-    width: 23%;
-    height: 200px;
-    position: relative;
+  width: 23%;
+  height: 200px;
+  position: relative;
 }
 
 .category_box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    filter: brightness(.3);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(0.3);
 }
 
 .category_box .title_box {
-    font-size: 20px;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    transition: .2s;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #1a1a1d;
+  font-size: 22px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #1a1a1d;
+  font-family: YekanBakhHeavy;
 }
 .category_box .title_box:hover {
-    background-color: #5cdb9543;
-    border-color: #5cdb95;
+  background-color: #f5cb5c43;
+  border-color: #f5cb5c;
 }

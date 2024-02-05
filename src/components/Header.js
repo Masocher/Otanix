@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <div className="header_container">
       <div className="right_side">
-        <div className="logo_box">OTANIX</div>
+        <div className="logo_box">اوتانیکس</div>
 
         <div className="header_links">
           <Link to={"/"} style={{ textDecoration: "none" }}>

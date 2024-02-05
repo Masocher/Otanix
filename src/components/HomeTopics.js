@@ -9,7 +9,7 @@ import {
   faAngleLeft,
   faHeart,
   faBell,
-  faStar
+  faStar,
 } from "@fortawesome/free-solid-svg-icons";
 
 const HomeTopics = () => {
@@ -26,7 +26,7 @@ const HomeTopics = () => {
       </div>
 
       <div className="bottom_section">
-      <div className="anime_box">
+        <div className="anime_box">
           <img src={img1} />
 
           <div className="anime_info">
@@ -47,7 +47,9 @@ const HomeTopics = () => {
 
               <div className="score">
                 ۷.۱۸
-                <span><FontAwesomeIcon icon={faStar} /></span>
+                <span>
+                  <FontAwesomeIcon icon={faStar} />
+                </span>
               </div>
             </div>
 
@@ -75,7 +77,9 @@ const HomeTopics = () => {
 
               <div className="score">
                 ۷.۱۸
-                <span><FontAwesomeIcon icon={faStar} /></span>
+                <span>
+                  <FontAwesomeIcon icon={faStar} />
+                </span>
               </div>
             </div>
 
@@ -103,7 +107,9 @@ const HomeTopics = () => {
 
               <div className="score">
                 ۷.۱۸
-                <span><FontAwesomeIcon icon={faStar} /></span>
+                <span>
+                  <FontAwesomeIcon icon={faStar} />
+                </span>
               </div>
             </div>
 
@@ -131,7 +137,9 @@ const HomeTopics = () => {
 
               <div className="score">
                 ۷.۱۸
-                <span><FontAwesomeIcon icon={faStar} /></span>
+                <span>
+                  <FontAwesomeIcon icon={faStar} />
+                </span>
               </div>
             </div>
 
@@ -159,7 +167,9 @@ const HomeTopics = () => {
 
               <div className="score">
                 ۷.۱۸
-                <span><FontAwesomeIcon icon={faStar} /></span>
+                <span>
+                  <FontAwesomeIcon icon={faStar} />
+                </span>
               </div>
             </div>
 
@@ -187,7 +197,9 @@ const HomeTopics = () => {
 
               <div className="score">
                 ۷.۱۸
-                <span><FontAwesomeIcon icon={faStar} /></span>
+                <span>
+                  <FontAwesomeIcon icon={faStar} />
+                </span>
               </div>
             </div>
 
