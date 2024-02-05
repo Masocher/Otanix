@@ -16,6 +16,7 @@ const Home = () => {
       <HomeTopics />
       <HomeDiscussions />
       <HomeSeasonTopics />
+      <HomeWeeklySchedule />
     </div>
   );
 };

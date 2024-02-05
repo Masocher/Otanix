@@ -3,6 +3,8 @@
   height: auto;
   margin: 0 10px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .anime_box img {
