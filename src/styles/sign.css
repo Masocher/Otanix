@@ -1,0 +1,89 @@
+.sign_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sign_form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 70px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #232328cb;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    opacity: 0;
+    transition: .8s;
+}
+.sign_form.show {
+    top: 0;
+    opacity: 1;
+}
+
+.close_btn {
+    background-color: #f5cb5c;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 10px 0 50%;
+}
+
+.sign_form .title_box {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: YekanBakhHeavy;
+    margin-bottom: 30px;
+}
+
+.sign_input {
+    width: calc(100% - 40px);
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    outline: 0;
+    margin-bottom: 20px;
+    border: none;
+    font-family: YekanBakhBold;
+}
+
+.submit_btn {
+    background-color: #f5cb5c;
+    padding: 15px 20px;
+    width: 100%;
+    outline: 0;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: YekanBakhBold;
+    border: none;
+}
+.submit_btn:hover {
+    background: #f5cc5c85;
+}
+
+.have_account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+    font-size: 12px;
+}
+
+.sign_little_btn {
+    background-color: #f5cb5c;
+    color: #000;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}

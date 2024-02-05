@@ -48,8 +48,8 @@ const Header = () => {
       </div>
 
       <div className="left_side">
-        <div className="sign_btn log_btn">ثبت نام</div>
-        <div className="sign_btn">ورود</div>
+        <Link to={"/sign-up"} className="sign_btn log_btn" style={{ textDecoration: "none" }}>ثبت نام</Link>
+        <Link to={"/sign-in"} className="sign_btn" style={{ textDecoration: "none" }}>ورود</Link>
       </div>
     </div>
   );

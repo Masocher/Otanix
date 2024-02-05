@@ -7,24 +7,37 @@ import Footer from "./components/Footer";
 
 // pages
 import Home from "./pages/Home";
+import SignIn from "./pages/SignIn";
 
 // react-router
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, useLocation } from "react-router-dom";
 import { Route, Routes } from "react-router";
 
 function App() {
+
+  const location = useLocation()
+
   return (
-    <BrowserRouter>
-      <div className="App">
+    <div className="App">
+      {
+        location.pathname === "/sign-in" || location.pathname === "/sign-up" ?
+        null
+        :
         <Header />
+      }
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sign-in" element={<SignIn />} />
+      </Routes>
 
+      {
+        location.pathname === "/sign-in" || location.pathname === "/sign-up" ?
+        null
+        :
         <Footer />
-      </div>
-    </BrowserRouter>
+      }
+    </div>
   );
 }
 
