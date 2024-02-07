@@ -8,56 +8,48 @@
 .sign_form {
     display: flex;
     flex-direction: column;
-    padding: 50px 70px;
-    width: 300px;
+    padding: 35px 50px 50px 50px;
+    width: 360px;
     border-radius: 10px;
     background-color: #232328cb;
     text-align: center;
     position: relative;
-    top: 50px;
-    opacity: 0;
+    top: 0px;
     transition: .5s ease-out;
 }
 .sign_form.show {
-    top: 0;
-    opacity: 1;
-}
-
-.close_btn {
-    background-color: #f5cb5c;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 0 10px 0 50%;
+    top: 6px;
 }
 
 .sign_form .title_box {
     font-size: 30px;
-    margin-bottom: 10px;
     font-family: YekanBakhHeavy;
-    margin-bottom: 30px;
+}
+
+.sign_form .description {
+    font-size: 14px;
+    color: #999;
+    margin: 5px 0 30px 0;
 }
 
 .sign_input {
     width: calc(100% - 40px);
     padding: 15px 20px;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #1a1a1d9c;
     outline: 0;
-    margin-bottom: 20px;
-    border: none;
+    margin-bottom: 15px;
+    border: 1px solid #1a1a1d9c;
     font-family: YekanBakhBold;
+    color: #fff;
+}
+.sign_input:focus {
+    border-color: #f5cb5c;
 }
 
 .submit_btn {
     background-color: #f5cb5c;
-    padding: 15px 20px;
+    padding: 13px 20px;
     width: 100%;
     outline: 0;
     transition: 0.2s;
@@ -65,6 +57,7 @@
     border-radius: 5px;
     font-family: YekanBakhBold;
     border: none;
+    margin-top: 10px;
 }
 .submit_btn:hover {
     background: #f5cc5c85;
@@ -86,4 +79,54 @@
     border-radius: 5px;
     margin-right: 10px;
     cursor: pointer;
+}
+
+.sign_container .top_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #353535;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+}
+
+.sign_container .top_buttons div,
+.sign_container .linked {
+    padding: 8px 0;
+    margin: 0 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5cb5c;
+    color: #000;
+    cursor: pointer;
+}
+
+.sign_container .linked {
+    background: none !important;
+    color: #f5cb5c !important;
+    text-decoration: none;
+}
+
+.sign_container .top_buttons span {
+    margin: 4px 7px 0 0;
+    font-size: 16px;
+}
+
+.sign_back {
+    position: absolute;
+    top: -35px;
+    left: 0;
+    color: #f5cb5c;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.sign_back div {
+    margin: 3px 5px 0 0;
 }

@@ -2,45 +2,51 @@
 import "../styles/sign.css";
 
 // tools
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClose } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLockOpen,
+  faUserPlus,
+  faAngleLeft,
+} from "@fortawesome/free-solid-svg-icons";
 
 const SignUp = () => {
-  const [signFormStatus, setSignFormStatus] = useState("");
-
-  setInterval(() => {
-    setSignFormStatus("show");
-  }, 500);
-
   return (
     <div className="sign_container">
-      <form className={`sign_form ${signFormStatus}`} action="#">
-        <Link to={"/"} className="close_btn">
-          <FontAwesomeIcon icon={faClose} />
+      <form className="sign_form" action="#">
+        <Link className="sign_back" to={"/"} style={{ textDecoration: "none" }}>
+          برگشت به خانه
+          <div>
+            <FontAwesomeIcon icon={faAngleLeft} />
+          </div>
         </Link>
 
-        <div className="title_box">ثبت نام</div>
+        <div className="top_buttons">
+          <div>
+            <FontAwesomeIcon icon={faUserPlus} />
+            <span>عضویت</span>
+          </div>
+
+          <Link className="linked" to={"/sign-in"}>
+            <FontAwesomeIcon icon={faLockOpen} />
+            <span>ورود</span>
+          </Link>
+        </div>
+
+        <div className="title_box">عضویت</div>
+        <div className="description">
+          به اوتانیکس خوش اومدی! برای عضویت اقدام کن
+        </div>
 
         <input className="sign_input" type="text" placeholder="نام کاربری" />
         <input className="sign_input" type="email" placeholder="ایمیل" />
         <input className="sign_input" type="password" placeholder="گذرواژه" />
 
         <button className="submit_btn" type="submit">
-          ثبت نام
+          عضویت
         </button>
-
-        <Link
-          to={"/sign-in"}
-          className="have_account"
-          style={{ textDecoration: "none", color: "#fff" }}
-        >
-          آیا از قبل ثبت نام کرده اید ؟
-          <div className="sign_little_btn">ورود</div>
-        </Link>
       </form>
     </div>
   );

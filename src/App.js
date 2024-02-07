@@ -11,7 +11,7 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 
 // react-router
-import { BrowserRouter, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Route, Routes } from "react-router";
 
 function App() {
