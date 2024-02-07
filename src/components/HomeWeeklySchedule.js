@@ -30,7 +30,7 @@ const HomeWeeklySchedule = () => {
 
       <div className="bottom_section">
         <div className="schedule_notif_box">
-          <img src={img1} />
+          <img src={img1} alt="anime-cover" />
 
           <div className="notif_box_inf">
             <div className="anime_name">One Piece</div>
@@ -39,7 +39,7 @@ const HomeWeeklySchedule = () => {
         </div>
 
         <div className="schedule_notif_box">
-          <img src={img1} />
+          <img src={img1} alt="anime-cover" />
 
           <div className="notif_box_inf">
             <div className="anime_name">One Piece</div>
@@ -48,7 +48,7 @@ const HomeWeeklySchedule = () => {
         </div>
 
         <div className="schedule_notif_box">
-          <img src={img1} />
+          <img src={img1} alt="anime-cover" />
 
           <div className="notif_box_inf">
             <div className="anime_name">One Piece</div>
@@ -57,7 +57,7 @@ const HomeWeeklySchedule = () => {
         </div>
 
         <div className="schedule_notif_box">
-          <img src={img1} />
+          <img src={img1} alt="anime-cover" />
 
           <div className="notif_box_inf">
             <div className="anime_name">One Piece</div>
@@ -66,7 +66,7 @@ const HomeWeeklySchedule = () => {
         </div>
 
         <div className="schedule_notif_box">
-          <img src={img1} />
+          <img src={img1} alt="anime-cover" />
 
           <div className="notif_box_inf">
             <div className="anime_name">One Piece</div>
@@ -75,7 +75,7 @@ const HomeWeeklySchedule = () => {
         </div>
 
         <div className="schedule_notif_box">
-          <img src={img1} />
+          <img src={img1} alt="anime-cover" />
 
           <div className="notif_box_inf">
             <div className="anime_name">One Piece</div>

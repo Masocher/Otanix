@@ -6,12 +6,9 @@ import { Link } from "react-router-dom";
 
 // tools
 import { useLocation } from "react-router-dom";
-import { useState } from "react";
 
 const Header = () => {
-  const locationPath = useLocation();
-  const [location, setLocation] = useState(locationPath.pathname);
-  console.log(location);
+  const location = useLocation();
 
   return (
     <div className="header_container">
@@ -20,27 +17,27 @@ const Header = () => {
 
         <div className="header_links">
           <Link to={"/"} style={{ textDecoration: "none" }}>
-            <div className={`h_link ${location === "/" ? "show" : ""}`}>
+            <div className={`h_link ${location.pathname === "/" ? "show" : ""}`}>
               صفحه اصلی
             </div>
           </Link>
           <Link to={"/"} style={{ textDecoration: "none" }}>
-            <div className={`h_link ${location === "/animes" ? "show" : ""}`}>
+            <div className={`h_link ${location.pathname === "/animes" ? "show" : ""}`}>
               انیمه ها
             </div>
           </Link>
           <Link to={"/"} style={{ textDecoration: "none" }}>
-            <div className={`h_link ${location === "/mangas" ? "show" : ""}`}>
+            <div className={`h_link ${location.pathname === "/mangas" ? "show" : ""}`}>
               مانگا
             </div>
           </Link>
           <Link to={"/"} style={{ textDecoration: "none" }}>
-            <div className={`h_link ${location === "/about" ? "show" : ""}`}>
+            <div className={`h_link ${location.pathname === "/about" ? "show" : ""}`}>
               درباره ما
             </div>
           </Link>
           <Link to={"/"} style={{ textDecoration: "none" }}>
-            <div className={`h_link ${location === "/contact" ? "show" : ""}`}>
+            <div className={`h_link ${location.pathname === "/contact" ? "show" : ""}`}>
               تماس با ما
             </div>
           </Link>

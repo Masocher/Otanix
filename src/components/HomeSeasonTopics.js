@@ -27,7 +27,7 @@ const HomeSeasonTopics = () => {
 
       <div className="bottom_section">
         <div className="anime_box">
-          <img src={img1} />
+          <img src={img1} alt="anime-cover" />
 
           <div className="anime_info">
             <div className="titles">
@@ -57,7 +57,7 @@ const HomeSeasonTopics = () => {
           </div>
         </div>
         <div className="anime_box">
-          <img src={img1} />
+          <img src={img1} alt="anime-cover" />
 
           <div className="anime_info">
             <div className="titles">
@@ -87,7 +87,7 @@ const HomeSeasonTopics = () => {
           </div>
         </div>
         <div className="anime_box">
-          <img src={img1} />
+          <img src={img1} alt="anime-cover" />
 
           <div className="anime_info">
             <div className="titles">
@@ -117,7 +117,7 @@ const HomeSeasonTopics = () => {
           </div>
         </div>
         <div className="anime_box">
-          <img src={img1} />
+          <img src={img1} alt="anime-cover" />
 
           <div className="anime_info">
             <div className="titles">
@@ -147,7 +147,7 @@ const HomeSeasonTopics = () => {
           </div>
         </div>
         <div className="anime_box">
-          <img src={img1} />
+          <img src={img1} alt="anime-cover" />
 
           <div className="anime_info">
             <div className="titles">
@@ -177,7 +177,7 @@ const HomeSeasonTopics = () => {
           </div>
         </div>
         <div className="anime_box">
-          <img src={img1} />
+          <img src={img1} alt="anime-cover" />
 
           <div className="anime_info">
             <div className="titles">

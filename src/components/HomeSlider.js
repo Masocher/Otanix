@@ -27,7 +27,7 @@ const HomeSlider = () => {
       cover: img1,
     },
     {
-      id: 0,
+      id: 1,
       title: "One Piece",
       ptitle: "وان پیس",
       rate: "۷.۱۸",
@@ -40,7 +40,7 @@ const HomeSlider = () => {
       cover: img1,
     },
     {
-      id: 0,
+      id: 2,
       title: "One Piece",
       ptitle: "وان پیس",
       rate: "۷.۱۸",
@@ -53,7 +53,7 @@ const HomeSlider = () => {
       cover: img1,
     },
     {
-      id: 0,
+      id: 3,
       title: "One Piece",
       ptitle: "وان پیس",
       rate: "۷.۱۸",
@@ -66,7 +66,7 @@ const HomeSlider = () => {
       cover: img1,
     },
     {
-      id: 0,
+      id: 4,
       title: "One Piece",
       ptitle: "وان پیس",
       rate: "۷.۱۸",
@@ -79,7 +79,7 @@ const HomeSlider = () => {
       cover: img1,
     },
     {
-      id: 0,
+      id: 5,
       title: "One Piece",
       ptitle: "وان پیس",
       rate: "۷.۱۸",
@@ -92,7 +92,7 @@ const HomeSlider = () => {
       cover: img1,
     },
     {
-      id: 0,
+      id: 6,
       title: "One Piece",
       ptitle: "وان پیس",
       rate: "۷.۱۸",
@@ -105,7 +105,7 @@ const HomeSlider = () => {
       cover: img1,
     },
     {
-      id: 0,
+      id: 7,
       title: "One Piece",
       ptitle: "وان پیس",
       rate: "۷.۱۸",
@@ -118,7 +118,7 @@ const HomeSlider = () => {
       cover: img1,
     },
     {
-      id: 0,
+      id: 8,
       title: "One Piece",
       ptitle: "وان پیس",
       rate: "۷.۱۸",
@@ -131,7 +131,7 @@ const HomeSlider = () => {
       cover: img1,
     },
     {
-      id: 0,
+      id: 9,
       title: "One Piece",
       ptitle: "وان پیس",
       rate: "۷.۱۸",
@@ -156,19 +156,19 @@ const HomeSlider = () => {
         allowTouchMove={false}
       >
         <SwiperSlide>
-          <img className="back_image" src={img1} />
+          <img className="back_image" src={img1} alt="slider-background-cover" />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img className="back_image" src={img1} />
+          <img className="back_image" src={img1} alt="slider-background-cover" />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img className="back_image" src={img1} />
+          <img className="back_image" src={img1} alt="slider-background-cover" />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img className="back_image" src={img1} />
+          <img className="back_image" src={img1} alt="slider-background-cover" />
         </SwiperSlide>
       </Swiper>
 
@@ -185,7 +185,7 @@ const HomeSlider = () => {
       >
         {state.map((anime) => (
           <SwiperSlide key={anime.id} className="anime_slide">
-            <img className="anime_image" src={anime.cover} />
+            <img className="anime_image" src={anime.cover} alt="anime-cover" />
 
             <div className="anime_information">
               <div className="main_title">{anime.title}</div>
