@@ -1,0 +1,274 @@
+.anime_container {
+  width: 100%;
+  position: relative;
+  height: fit-content;
+}
+
+.anime_background_cover {
+  width: 100%;
+  height: 550px;
+  filter: blur(50px) brightness(0.35);
+  object-fit: cover;
+}
+
+.anime_single_box {
+  width: calc(100% - 150px);
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.anime_single_box .right_side {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.anime_single_box .right_side_r_sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anime_single_box .right_side_r_sec .icons {
+  display: flex;
+  margin-top: 20px;
+}
+
+.anime_single_box .right_side_r_sec .icons div {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: #1a1a1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 1px solid #1a1a1d;
+}
+.anime_single_box .right_side_r_sec .icons div:hover {
+  border-color: #f5cb5c;
+  color: #f5cb5c;
+}
+
+.anime_single_box .right_side_information {
+  height: 100%;
+}
+
+.anime_single_box .anime_cover {
+  border-radius: 10px;
+  width: 275px;
+  height: 360px;
+}
+
+.right_side_information {
+  margin-right: 40px;
+}
+
+.anime_single_box .title_box {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 100;
+  border-right: 1px solid #f5cb5c;
+  padding-right: 20px;
+}
+
+.anime_single_box .anime_tags {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f5cc5c3d;
+  padding-bottom: 20px;
+  margin-top: 50px;
+}
+
+.anime_single_box .tags_title_box {
+  margin-left: 10px;
+  font-weight: 100;
+  font-size: 14px;
+  color: #fff;
+}
+
+.anime_single_box .anime_tag_boxes {
+  display: flex;
+  align-items: center;
+}
+
+.anime_single_box .anime_tag {
+  border: 1px solid #f5cb5c;
+  padding: 4.5px 10px;
+  font-size: 12px;
+  color: #f5cb5c;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 10px;
+}
+.anime_single_box .anime_tag:hover {
+  background-color: #f5cb5c;
+  color: #000;
+}
+
+.attributes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 500px;
+}
+
+.attribute {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1d;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}
+
+.attribute_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  color: #f5cb5c;
+}
+
+.attribute_title span {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #fff;
+}
+
+.attribute_icon {
+  font-size: 20px;
+  color: #f5cb5c;
+}
+
+.anime_single_box .left_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.anime_single_box .left_side_title {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f5cc5c3d;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.anime_score_votes {
+  font-size: 12px;
+  background-color: #f5cb5c;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 0 0 15px;
+  color: #000;
+}
+
+.anime_score_box {
+  color: #000;
+  display: flex;
+  align-items: center;
+  display: flex;
+}
+
+.anime_score_box div {
+  font-size: 30px;
+  color: #fff;
+  font-family: YekanBakhHeavy;
+}
+
+.anime_score_box span {
+  color: #f5cb5c;
+  margin: 8px 0 0 5px;
+  font-size: 12px;
+}
+
+.anime_description {
+  font-size: 14px;
+  font-weight: 100;
+  width: 450px;
+  letter-spacing: 0.5px;
+  margin: 20px 0;
+  border-bottom: 1px solid #f5cc5c3d;
+  padding-bottom: 20px;
+}
+
+.play_btn {
+  background-color: #f5cb5c;
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid #f5cb5c;
+  transition: 0.2s;
+  margin: 0;
+}
+.play_btn:hover {
+  background: none;
+  color: #f5cb5c;
+}
+
+/* .last_episode {
+  width: calc(100% - 100px);
+  margin: 50px auto;
+}
+
+.last_episode .section_title_box {
+  padding: 0;
+}
+
+.last_episode_box {
+  width: calc(100% - 40px);
+  padding: 20px;
+  height: 110px;
+  background-color: #232328cb;
+  position: relative;
+}
+
+.last_episode_box img {
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.last_episode_box .buttons {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.play_episode_btn {
+  display: flex;
+  align-items: center;
+  background-color: #f5cb5c;
+  color: #000;
+  padding: 8px 20px 5px 20px;
+  width: fit-content;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #f5cb5c;
+  cursor: pointer;
+  transition: .2s;
+}
+.play_episode_btn:hover {
+  background: none;
+  color: #f5cb5c;
+}
+
+.play_episode_btn div {
+  font-size: 12px;
+  margin: 3px 0 0 8px;
+} */
