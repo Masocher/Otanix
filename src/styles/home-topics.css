@@ -2,7 +2,7 @@
   width: calc(100% - 80px);
   display: flex;
   flex-direction: column;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
 .home_topics .bottom_section {

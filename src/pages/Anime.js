@@ -23,7 +23,7 @@ import {
 // components
 import AnimeCharactersSlider from "../components/AnimeCharactersSlider";
 import Comments from "../components/Comments";
-import HomeTopics from "../components/HomeTopics"
+import HomeTopics from "../components/HomeTopics";
 
 const Anime = () => {
   const state = [
@@ -260,27 +260,42 @@ const Anime = () => {
       </div>
 
       <AnimeCharactersSlider />
-      <HomeTopics state={state} title={"انیمه های مشابه"} showBtn={false} />
-      <Comments />
 
-      {/* <div className="last_episode">
+      <div className="last_episode_wrapper">
         <div className="section_title_box">
           <span>جدیدترین قسمت</span>
         </div>
 
-        <div className="last_episode_box">
-          <img src={img1} alt="new-episode-cover" />
+        <div className="last_episode">
+          <div className="right_side">
+            <img src={img1} />
 
-          <div className="buttons">
-            <div className="play_episode_btn">
-              <div>
-                <FontAwesomeIcon icon={faPlay} />
-              </div>
-              تماشا کنید
+            <div className="time_box">23:20</div>
+
+            <div className="play_icon">
+              <FontAwesomeIcon icon={faPlay} />
             </div>
           </div>
+
+          <div className="description">
+            داستان درباره جهانی است که به دو گروه انسان‌ها و موجوداتی به نام
+            کاتاوارا تقسیم شده‌اند. تاما که خود یک کاتاواراست بسیار عاشق
+            انسان‌هاست و حتی اگر باید با هم‌نوعان خود بجنگد، آماده است تا آنها
+            را از شر بدی نجات دهد. برادر تاما به نام جینکا اما انسان‌ها را دوست
+            ندارد، نیھل که بیشتر خودش انسان است.
+          </div>
+
+          <div className="play_new_ep_btn">
+            <div>
+              <FontAwesomeIcon icon={faPlay} />
+            </div>
+            تماشا کنید
+          </div>
         </div>
-      </div> */}
+      </div>
+
+      <HomeTopics state={state} title={"انیمه های مشابه"} showBtn={false} />
+      <Comments />
     </div>
   );
 };

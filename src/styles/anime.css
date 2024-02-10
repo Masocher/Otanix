@@ -220,55 +220,94 @@
   color: #f5cb5c;
 }
 
-/* .last_episode {
+.last_episode_wrapper {
   width: calc(100% - 100px);
-  margin: 50px auto;
+  margin: 50px auto 0 auto;
 }
 
-.last_episode .section_title_box {
+.last_episode_wrapper .section_title_box {
   padding: 0;
 }
 
-.last_episode_box {
+.last_episode {
   width: calc(100% - 40px);
-  padding: 20px;
-  height: 110px;
   background-color: #232328cb;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
 }
 
-.last_episode_box img {
+.last_episode .right_side {
+  position: relative;
   width: 250px;
+  height: 150px;
+}
+
+.last_episode .right_side img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 5px;
-}
-
-.last_episode_box .buttons {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-}
-
-.play_episode_btn {
-  display: flex;
-  align-items: center;
-  background-color: #f5cb5c;
-  color: #000;
-  padding: 8px 20px 5px 20px;
-  width: fit-content;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 1px solid #f5cb5c;
+  filter: brightness(.8);
   cursor: pointer;
+}
+
+.last_episode .time_box {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  background-color: #1a1a1d;
+  color: #f5cb5c;
+  font-size: 13px;
+  padding: 5px 10px 2px 10px;
+}
+
+.last_episode .play_icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #0000006c;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
   transition: .2s;
 }
-.play_episode_btn:hover {
+.last_episode .play_icon:hover {
+  opacity: 1;
+}
+
+.last_episode .description {
+  font-size: 14px;
+  height: fit-content;
+  width: calc(100% - 270px);
+}
+
+.last_episode .play_new_ep_btn {
+  background-color: #f5cb5c;
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: .2s;
+  font-size: 13px;
+  color: #000;
+  padding: 5px 15px;
+  border: 1px solid #f5cb5c;
+  border-radius: 5px;
+}
+.last_episode .play_new_ep_btn:hover {
   background: none;
   color: #f5cb5c;
 }
 
-.play_episode_btn div {
-  font-size: 12px;
-  margin: 3px 0 0 8px;
-} */
+.last_episode .play_new_ep_btn div {
+  margin: 4px 0 0 5px;
+}
