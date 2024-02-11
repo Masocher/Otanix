@@ -2,6 +2,10 @@
 import "../styles/comments.css";
 import img1 from "../images/animes/1.jpg";
 
+// icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThumbsDown, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
+
 const Comments = () => {
   const state = [
     {
@@ -52,6 +56,22 @@ const Comments = () => {
                 </div>
 
                 <div className="description">{comm.description}</div>
+
+                <div className="comment_buttons">
+                  <div className="comment_btn">
+                    <span>
+                      <FontAwesomeIcon icon={faThumbsUp} />
+                    </span>
+                    <div>0</div>
+                  </div>
+
+                  <div className="comment_btn comm_left_btn">
+                    <span>
+                      <FontAwesomeIcon icon={faThumbsDown} />
+                    </span>
+                    <div>0</div>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

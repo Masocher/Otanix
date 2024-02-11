@@ -268,7 +268,7 @@ const Anime = () => {
 
         <div className="last_episode">
           <div className="right_side">
-            <img src={img1} />
+            <img src={img1} alt="new-episode-cover" />
 
             <div className="time_box">23:20</div>
 
