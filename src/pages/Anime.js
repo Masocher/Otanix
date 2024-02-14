@@ -169,7 +169,7 @@ const Anime = () => {
 
               <div className="anime_tag_boxes">
                 {anime.tags.map((tag) => (
-                  <div className="anime_tag" key={tag.id}>
+                  <div className="tag_box" key={tag.id}>
                     {tag.title}
                   </div>
                 ))}

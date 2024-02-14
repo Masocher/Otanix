@@ -111,7 +111,10 @@ const HomeArticles = () => {
         >
           {state.map((article) => (
             <SwiperSlide className="article_box" key={article.id}>
-              <Link to={"/a"} style={{ textDecoration: "none", color: "#fff" }}>
+              <Link
+                to={`/articles/${article.id}`}
+                style={{ textDecoration: "none", color: "#fff" }}
+              >
                 <img src={article.cover} alt="article-cover" />
 
                 <div className="main_title">{article.title}</div>

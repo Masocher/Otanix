@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Anime from "./pages/Anime";
+import Article from "./pages/Article";
 
 // react-router
 import { useLocation } from "react-router-dom";
@@ -33,6 +34,7 @@ function App() {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/animes/:animeId" element={<Anime />} />
+        <Route path="/articles/:articleId" element={<Article />} />
       </Routes>
 
       {

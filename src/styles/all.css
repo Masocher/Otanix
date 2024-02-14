@@ -53,3 +53,18 @@ body {
   margin: 3px 5px 0 0;
   font-size: 11px;
 }
+
+.tag_box {
+  border: 1px solid #f5cb5c;
+  padding: 4.5px 10px;
+  font-size: 12px;
+  color: #f5cb5c;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 10px;
+}
+.tag_box:hover {
+  background-color: #f5cb5c;
+  color: #000;
+}
