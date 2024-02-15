@@ -49,3 +49,41 @@
   background-color: #f5cb5c;
   color: #000;
 }
+
+.theme_mode_wrapper {
+  display: flex;
+  align-items: center;
+  margin: 5px 0 0 30px;
+}
+
+.theme_mode_wrapper span {
+  color: #fff;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.sun_icon {
+  color: #f5cb5c !important;
+}
+
+.theme_mode_btn {
+  width: 42px;
+  background-color: #f5cb5c;
+  border-radius: 100px;
+  height: 18px;
+  position: relative;
+  cursor: pointer;
+}
+
+.mode_square {
+  background-color: #000;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
