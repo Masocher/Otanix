@@ -21,22 +21,22 @@ const Header = () => {
               صفحه اصلی
             </div>
           </Link>
-          <Link to={"/"} style={{ textDecoration: "none" }}>
+          <Link to={"/animes"} style={{ textDecoration: "none" }}>
             <div className={`h_link ${location.pathname === "/animes" ? "show" : ""}`}>
               انیمه ها
             </div>
           </Link>
-          <Link to={"/"} style={{ textDecoration: "none" }}>
-            <div className={`h_link ${location.pathname === "/mangas" ? "show" : ""}`}>
-              مانگا
+          <Link to={"/discussions"} style={{ textDecoration: "none" }}>
+            <div className={`h_link ${location.pathname === "/discussions" ? "show" : ""}`}>
+              گفتگو ها
             </div>
           </Link>
-          <Link to={"/"} style={{ textDecoration: "none" }}>
+          <Link to={"/about"} style={{ textDecoration: "none" }}>
             <div className={`h_link ${location.pathname === "/about" ? "show" : ""}`}>
               درباره ما
             </div>
           </Link>
-          <Link to={"/"} style={{ textDecoration: "none" }}>
+          <Link to={"/contact"} style={{ textDecoration: "none" }}>
             <div className={`h_link ${location.pathname === "/contact" ? "show" : ""}`}>
               تماس با ما
             </div>
