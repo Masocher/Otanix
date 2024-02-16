@@ -527,8 +527,34 @@ body {
 .App.show .active_users .user_box .rank {
   color: #f26161;
 }
-
 .App.show .active_users .user_box .rank div {
   color: #fff;
   background-color: #f26161;
+}
+
+/* contact page */
+.App.show .contact_container .title_box .mini_title {
+  color: #000;
+}
+.App.show .contact_container .title_box {
+  color: #f26161;
+}
+.App.show .message_form input,
+.App.show .message_form textarea {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #000;
+}
+.App.show .message_form input:focus,
+.App.show .message_form textarea:focus {
+  border-color: #f26161;
+}
+.App.show .message_form button {
+  background-color: #f26161;
+  color: #fff;
+  border: 1px solid #f26161;
+}
+.App.show .message_form button:hover {
+  background: none;
+  color: #f26161;
 }

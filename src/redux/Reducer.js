@@ -4,7 +4,7 @@ import { combineReducers } from "redux";
 // types
 import { CHANGE_THEME } from "./Types";
 
-const themeStatus = false;
+const themeStatus = true;
 
 const themeReducer = (state = themeStatus, action) => {
   switch (action.type) {
