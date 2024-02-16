@@ -85,7 +85,7 @@
     height: fit-content;
 }
 .articles_container.show .left_side {
-    margin-bottom: -50px;
+    margin-bottom: -100px;
 }
 
 .full_screen_btn {
