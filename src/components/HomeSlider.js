@@ -156,19 +156,35 @@ const HomeSlider = () => {
         allowTouchMove={false}
       >
         <SwiperSlide>
-          <img className="back_image" src={img1} alt="slider-background-cover" />
+          <img
+            className="back_image"
+            src={img1}
+            alt="slider-background-cover"
+          />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img className="back_image" src={img1} alt="slider-background-cover" />
+          <img
+            className="back_image"
+            src={img1}
+            alt="slider-background-cover"
+          />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img className="back_image" src={img1} alt="slider-background-cover" />
+          <img
+            className="back_image"
+            src={img1}
+            alt="slider-background-cover"
+          />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img className="back_image" src={img1} alt="slider-background-cover" />
+          <img
+            className="back_image"
+            src={img1}
+            alt="slider-background-cover"
+          />
         </SwiperSlide>
       </Swiper>
 

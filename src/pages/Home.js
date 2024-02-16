@@ -1,5 +1,5 @@
 // assets
-import img1 from "../images/animes/1.jpg"
+import img1 from "../images/animes/1.jpg";
 
 // components
 import HomeSlider from "../components/HomeSlider";

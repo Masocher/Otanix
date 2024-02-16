@@ -51,16 +51,16 @@
 }
 
 .message_form button {
-    background-color: #f5cb5c;
-    color: #000;
-    font-family: yekanBakhBold;
-    padding: 10px 40px;
-    border: 1px solid #f5cb5c;
-    cursor: pointer;
-    transition: .2s;
-    margin: 30px auto 0 auto;
+  background-color: #f5cb5c;
+  color: #000;
+  font-family: yekanBakhBold;
+  padding: 10px 40px;
+  border: 1px solid #f5cb5c;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 30px auto 0 auto;
 }
 .message_form button:hover {
-    background: none;
-    color: #f5cb5c;
+  background: none;
+  color: #f5cb5c;
 }

@@ -95,7 +95,7 @@
   right: 3px;
   top: 50%;
   transform: translate(0, -50%);
-  transition: .2s;
+  transition: 0.2s;
 }
 .mode_square.show {
   right: 25px;
