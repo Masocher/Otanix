@@ -82,6 +82,10 @@ body {
 .App.show .h_link {
   color: #000 !important;
 }
+.App.show .sign_btn {
+  background-color: #fff;
+  color: #000;
+}
 .App.show .log_btn,
 .App.show .play_btn {
   background-color: #f26161;
@@ -103,7 +107,7 @@ body {
   border-color: #f261613d !important;
 }
 .App.show .category_box img {
-  filter: brightness(.5) !important;
+  filter: brightness(0.5) !important;
 }
 .App.show .category_box .title_box {
   border-color: #fff !important;
@@ -139,7 +143,7 @@ body {
   color: #f26161;
 }
 .App.show .comments_num {
-  color: #00A9FF !important;
+  color: #00a9ff !important;
 }
 .App.show .comments_num div,
 .App.show .likes_num div {
@@ -225,5 +229,40 @@ body {
 }
 .App.show .footer_container .icon_box {
   background-color: #fff;
+  color: #f26161;
+}
+.App.show .sign_form {
+  background-color: #fff;
+}
+.App.show .sign_form .title_box {
+  color: #f26161;
+}
+.App.show .sign_input {
+  background-color: #ebecef;
+  border: 1px solid #ebecef;
+  color: #000;
+}
+.App.show .sign_input:focus {
+  border-color: #f26161;
+}
+.App.show .submit_btn {
+  background-color: #f26161;
+  color: #fff;
+}
+.App.show .submit_btn:hover {
+  background: rgb(249, 83, 83);
+}
+.App.show .sign_container .top_buttons {
+  border-bottom: 1px solid #f26161;
+}
+.App.show .sign_container .top_buttons div,
+.sign_container .linked {
+  background-color: #f26161;
+  color: #fff;
+}
+.App.show .sign_container .linked {
+  color: #f26161 !important;
+}
+.App.show .sign_back {
   color: #f26161;
 }
