@@ -1,0 +1,49 @@
+.contact_container {
+  width: calc(100% - 100px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_container .title_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_container .title_box .mini_title {
+  color: #f5cb5c;
+  font-size: 14px;
+}
+
+.message_form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 700px;
+}
+
+.message_form input,
+.message_form textarea {
+  width: calc(48.5% - 30px);
+  font-family: yekanBakhBold;
+  background-color: #232328cb;
+  outline: 0;
+  border: 1px solid #232328cb;
+  transition: 0.2s;
+  margin: 30px 0 20px 0;
+  padding: 15px;
+  color: #fff;
+}
+.message_form input:focus,
+.message_form textarea:focus {
+  border-color: #f5cb5c;
+}
+
+.message_form textarea {
+  width: 100%;
+  margin: 0;
+  resize: vertical;
+  min-height: 200px;
+}
