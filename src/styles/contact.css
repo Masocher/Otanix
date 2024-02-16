@@ -10,11 +10,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: YekanBakhHeavy;
 }
 
 .contact_container .title_box .mini_title {
   color: #f5cb5c;
   font-size: 14px;
+  font-family: yekanBakhBold;
 }
 
 .message_form {
@@ -46,4 +48,19 @@
   margin: 0;
   resize: vertical;
   min-height: 200px;
+}
+
+.message_form button {
+    background-color: #f5cb5c;
+    color: #000;
+    font-family: yekanBakhBold;
+    padding: 10px 40px;
+    border: 1px solid #f5cb5c;
+    cursor: pointer;
+    transition: .2s;
+    margin: 30px auto 0 auto;
+}
+.message_form button:hover {
+    background: none;
+    color: #f5cb5c;
 }

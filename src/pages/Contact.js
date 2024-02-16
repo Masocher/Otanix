@@ -13,6 +13,7 @@ const Contact = () => {
             <input placeholder="شماره تلفن" type="phone" />
             <input placeholder="نام و نام خانوادگی" type="text" />
             <textarea placeholder="متن پیام" />
+            <button type="submit">ارسال پیام</button>
         </form>
     </div>
   );
