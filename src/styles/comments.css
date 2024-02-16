@@ -114,17 +114,6 @@
     margin: 0 0 20px 0;
 }
 
-.comments_section .rate_box .stars {
-    display: flex;
-    color: #f5cb5c;
-}
-
-.comments_section .rate_box .stars div {
-    margin: 0 2px;
-    font-size: 18px;
-    cursor: pointer;
-}
-
 .comments_section .rate_box .submit_rate {
     background-color: #f5cb5c;
     color: #000;

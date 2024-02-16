@@ -1,7 +1,6 @@
 .anime_characters_wrapper {
-    margin-top: 100px;
     width: calc(100% - 100px);
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
 }
 
 .anime_characters_slider {

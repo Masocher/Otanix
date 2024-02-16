@@ -335,3 +335,113 @@ body {
 .App.show .writer_box {
   border: 1px dashed #909090;
 }
+.App.show .anime_background_cover {
+  filter: blur(0px) brightness(0.3);
+}
+.App.show .anime_single_box .right_side_r_sec .icons div {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+.App.show .anime_single_box .right_side_r_sec .icons div:hover {
+  border-color: #f26161;
+  color: #f26161;
+}
+.App.show .anime_single_box .title_box {
+  border-right: 1px solid #f26161;
+}
+.App.show .anime_single_box .anime_tags {
+  border-bottom: 1px solid #f261613d;
+}
+.App.show .attribute {
+  background-color: #fff;
+}
+.App.show .attribute_title {
+  color: #f26161;
+}
+.App.show .attribute_title span {
+  color: #000;
+}
+.App.show .attribute_icon {
+  color: #f26161;
+}
+.App.show .anime_single_box .left_side_title {
+  border-bottom: 1px solid #f261613d;
+}
+.App.show .anime_score_votes {
+  background-color: #f26161;
+  color: #fff;
+}
+.App.show .anime_score_box span {
+  color: #f26161;
+}
+.App.show .last_episode {
+  background-color: #fff;
+}
+.App.show .last_episode .description {
+  color: #000;
+}
+.App.show .last_episode .play_new_ep_btn {
+  background-color: #f26161;
+  color: #fff;
+  border: 1px solid #f26161;
+}
+.App.show .last_episode .play_new_ep_btn:hover {
+  background: none;
+  color: #f26161;
+}
+.App.show .character_box {
+  border-bottom: 1px solid #ccc;
+}
+.App.show .character_box:hover {
+  border-color: #f26161;
+}
+.App.show .char_name {
+  color: #000;
+}
+.App.show .comment_form {
+  background-color: #fff;
+}
+.App.show .comment_form input {
+  background-color: #ebecef;
+  border: 1px solid #ebecef;
+  color: #000;
+}
+.App.show .comment_form input:focus {
+  border-color: #f26161;
+}
+.App.show .comment_form button {
+  background-color: #f26161;
+  color: #fff;
+  border: 1px solid #f26161;
+}
+.App.show .comment_form button:hover {
+  background: none;
+  color: #f26161;
+}
+.App.show .comment_box {
+  background-color: #fff;
+  border-right: 2px solid #f26161;
+  color: #000;
+}
+.App.show .comments_section .rate_box {
+  background-color: #fff;
+  color: #000;
+  border-bottom: 1px solid #f26161;
+}
+.App.show .comments_section .rate_box .submit_rate {
+  background-color: #f26161;
+  color: #fff;
+  border: 1px solid #f26161;
+}
+.App.show .comments_section .rate_box .submit_rate:hover {
+  color: #f26161;
+  background: none;
+}
+.App.show .comment_buttons .comment_btn {
+  background-color: #eee;
+  border: 1px solid #eee;
+}
+.App.show .comment_buttons .comment_btn:hover {
+  border-color: #f26161;
+}
