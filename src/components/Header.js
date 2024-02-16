@@ -11,7 +11,14 @@ import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
+// redux
+import { useDispatch, useSelector } from "react-redux";
+import { changeTheme } from "../redux/Actions";
+
 const Header = () => {
+  const dispatch = useDispatch();
+  const themeStatus = useSelector((rootReducer) => rootReducer.themeReducer);
+
   const location = useLocation();
 
   return (
@@ -67,13 +74,16 @@ const Header = () => {
       </div>
 
       <div className="left_side">
-        <div className="theme_mode_wrapper">
+        <div className={`theme_mode_wrapper ${themeStatus ? "show" : ""}`}>
           <span>
             <FontAwesomeIcon icon={faMoon} />
           </span>
 
-          <div className="theme_mode_btn">
-            <div className="mode_square"></div>
+          <div
+            className="theme_mode_btn"
+            onClick={() => dispatch(changeTheme())}
+          >
+            <div className={`mode_square ${themeStatus ? "show" : ""}`}></div>
           </div>
 
           <span className="sun_icon">

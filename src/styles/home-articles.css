@@ -51,12 +51,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .study_time {
   font-size: 12px;
   letter-spacing: 0.5px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  color: #999;
+}
+.study_time div {
+  margin: 4px 0 0 5px;
 }
 
 .article_icons {

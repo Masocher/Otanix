@@ -17,18 +17,20 @@ import Discussions from "./pages/Discussions";
 import { useLocation } from "react-router-dom";
 import { Route, Routes } from "react-router";
 
-function App() {
+// redux
+import { useSelector } from "react-redux";
 
-  const location = useLocation()
+function App() {
+  const themeStatus = useSelector((rootReducer) => rootReducer.themeReducer);
+
+  const location = useLocation();
 
   return (
-    <div className="App">
-      {
-        location.pathname === "/sign-in" || location.pathname === "/sign-up" ?
-        null
-        :
+    <div className={`App ${themeStatus ? "show" : ""}`}>
+      {location.pathname === "/sign-in" ||
+      location.pathname === "/sign-up" ? null : (
         <Header />
-      }
+      )}
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -39,12 +41,10 @@ function App() {
         <Route path="/articles/:articleId" element={<Article />} />
       </Routes>
 
-      {
-        location.pathname === "/sign-in" || location.pathname === "/sign-up" ?
-        null
-        :
+      {location.pathname === "/sign-in" ||
+      location.pathname === "/sign-up" ? null : (
         <Footer />
-      }
+      )}
     </div>
   );
 }

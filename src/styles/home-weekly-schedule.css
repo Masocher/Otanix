@@ -49,41 +49,41 @@
 }
 
 .weekly_schedule .bottom_section {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .schedule_notif_box {
-    background-color: #1a1a1d;
-    padding: 20px;
-    margin: 10px;
-    display: flex;
-    height: fit-content;
-    width: fit-content;
-    cursor: pointer;
-    transition: .2s;
-    border: 1px solid #1a1a1d;
+  background-color: #1a1a1d;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 1px solid #1a1a1d;
 }
 .schedule_notif_box:hover {
-    border-color: #f5cb5c;
+  border-color: #f5cb5c;
 }
 
 .notif_box_inf {
-    margin: 2px 10px 0 0;
+  margin: 2px 10px 0 0;
 }
 
 .notif_box_inf .description {
-    letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .notif_box_inf .description,
 .notif_box_inf .anime_name {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .schedule_notif_box img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
 }

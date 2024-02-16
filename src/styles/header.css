@@ -57,15 +57,21 @@
 }
 
 .theme_mode_wrapper span {
-  color: #fff;
+  color: #f5cb5c;
   width: fit-content;
   display: flex;
   align-items: center;
   margin: 0 10px;
 }
+.theme_mode_wrapper.show span {
+  color: #000;
+}
 
 .sun_icon {
-  color: #f5cb5c !important;
+  color: #fff !important;
+}
+.theme_mode_wrapper.show .sun_icon {
+  color: #f26161 !important;
 }
 
 .theme_mode_btn {
@@ -75,6 +81,9 @@
   height: 18px;
   position: relative;
   cursor: pointer;
+}
+.theme_mode_wrapper.show .theme_mode_btn {
+  background-color: #f26161;
 }
 
 .mode_square {
@@ -86,4 +95,9 @@
   right: 3px;
   top: 50%;
   transform: translate(0, -50%);
+  transition: .2s;
+}
+.mode_square.show {
+  right: 25px;
+  background-color: #fff;
 }

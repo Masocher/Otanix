@@ -68,3 +68,162 @@ body {
   background-color: #f5cb5c;
   color: #000;
 }
+
+/* light mode */
+
+.App.show {
+  background-color: #ebecef;
+}
+.App.show .logo_box,
+.App.show .h_link.show,
+.App.show .score_box {
+  color: #f26161 !important;
+}
+.App.show .h_link {
+  color: #000 !important;
+}
+.App.show .log_btn,
+.App.show .play_btn {
+  background-color: #f26161;
+  color: #fff;
+  border-color: #f26161;
+}
+.App.show .play_btn:hover {
+  background: none !important;
+}
+.App.show .tag_box {
+  border-color: #f26161 !important;
+  color: #f26161 !important;
+}
+.App.show .tag_box:hover {
+  background-color: #f26161 !important;
+  color: #fff !important;
+}
+.App.show .anime_description {
+  border-color: #f261613d !important;
+}
+.App.show .category_box img {
+  filter: brightness(.5) !important;
+}
+.App.show .category_box .title_box {
+  border-color: #fff !important;
+}
+.App.show .category_box .title_box:hover {
+  border-color: #f26161 !important;
+  background-color: #f2616144 !important;
+}
+.App.show .section_title_box .show_btn {
+  background-color: #f26161;
+  color: #fff;
+  border-color: #f26161;
+}
+.App.show .section_title_box .show_btn:hover {
+  background: none;
+  color: #f26161;
+}
+.App.show .section_title_box span {
+  border-color: #f26161;
+  color: #f26161;
+}
+.App.show .article_box {
+  background-color: #fff;
+  border-color: #fff;
+}
+.App.show .article_box:hover {
+  border-color: #f26161;
+}
+.App.show .article_box .main_title {
+  color: #000;
+}
+.App.show .article_box .main_title:hover {
+  color: #f26161;
+}
+.App.show .comments_num {
+  color: #00A9FF !important;
+}
+.App.show .comments_num div,
+.App.show .likes_num div {
+  color: #000;
+}
+.App.show .anime_info {
+  background-color: #fff;
+  color: #000;
+}
+.App.show .show_anime {
+  background-color: #f26161;
+  color: #fff;
+}
+.App.show .anime_buttons div {
+  background-color: #f26161;
+  color: #fff;
+}
+.App.show .score {
+  color: #f26161;
+}
+.App.show .home_discussions .discussion_box {
+  background-color: #fff;
+  border-color: #fff;
+}
+.App.show .home_discussions .discussion_box:hover {
+  border-color: #f26161;
+}
+.App.show .home_discussions .discussions .show_more {
+  background-color: #f26161;
+  color: #fff;
+  border-color: #f26161;
+}
+.App.show .home_discussions .discussions .title_box {
+  color: #f26161;
+}
+.App.show .home_discussions .discussions .user_box {
+  color: #000;
+}
+.App.show .home_discussions .discussions .description {
+  color: #000;
+}
+.App.show .discussion_reply .reply_icon {
+  color: #f26161;
+}
+.App.show .discussion_reply_num {
+  color: #000;
+}
+.App.show .weekly_schedule {
+  background-color: #fff;
+  color: #000;
+}
+.App.show .weekly_schedule .top_section {
+  border-bottom: 1px solid #f26161;
+}
+.App.show .weekly_schedule .title_box div {
+  color: #f26161;
+}
+.App.show .week_days div {
+  color: #000;
+}
+.App.show .week_days div:hover {
+  color: #f26161;
+}
+.App.show .week_days div.show {
+  background-color: #f26161;
+  color: #fff;
+}
+.App.show .week_days div.show:hover {
+  color: #fff;
+}
+.App.show .schedule_notif_box {
+  background-color: #ebecef;
+  border-color: #ebecef;
+}
+.App.show .schedule_notif_box:hover {
+  border-color: #f26161;
+}
+.App.show .footer_container {
+  color: #000;
+}
+.App.show .footer_container .left_section .title_box {
+  color: #f26161;
+}
+.App.show .footer_container .icon_box {
+  background-color: #fff;
+  color: #f26161;
+}

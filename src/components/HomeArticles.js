@@ -8,6 +8,7 @@ import {
   faHeart,
   faCommentDots,
   faAngleLeft,
+  faClock,
 } from "@fortawesome/free-solid-svg-icons";
 
 // swiper
@@ -132,6 +133,9 @@ const HomeArticles = () => {
                   </div>
 
                   <div className="study_time">
+                    <div>
+                      <FontAwesomeIcon icon={faClock} />
+                    </div>
                     زمان مطالعه : {article.studyTime} دقیقه
                   </div>
                 </div>
