@@ -6,6 +6,9 @@ import img1 from "../images/animes/1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReply } from "@fortawesome/free-solid-svg-icons";
 
+// tools
+import { Link } from "react-router-dom";
+
 const HomeDiscussions = () => {
   return (
     <div className="home_discussions">
@@ -15,7 +18,11 @@ const HomeDiscussions = () => {
       </div>
 
       <div className="discussions">
-        <div className="discussion_box">
+        <Link
+          to="/discussion/0"
+          className="discussion_box"
+          style={{ textDecoration: "none", color: "#fff" }}
+        >
           <div className="user_box">
             <div className="user_image">
               <img src={img1} alt="user-profile" />
@@ -46,9 +53,13 @@ const HomeDiscussions = () => {
               <div className="discussion_reply_num">۰</div>
             </div>
           </div>
-        </div>
+        </Link>
 
-        <div className="discussion_box">
+        <Link
+          to="/discussion/1"
+          className="discussion_box"
+          style={{ textDecoration: "none", color: "#fff" }}
+        >
           <div className="user_box">
             <div className="user_image">
               <img src={img1} alt="user-profile" />
@@ -79,9 +90,13 @@ const HomeDiscussions = () => {
               <div className="discussion_reply_num">۰</div>
             </div>
           </div>
-        </div>
+        </Link>
 
-        <div className="discussion_box">
+        <Link
+          to="/discussion/2"
+          className="discussion_box"
+          style={{ textDecoration: "none", color: "#fff" }}
+        >
           <div className="user_box">
             <div className="user_image">
               <img src={img1} alt="user-profile" />
@@ -112,7 +127,7 @@ const HomeDiscussions = () => {
               <div className="discussion_reply_num">۰</div>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

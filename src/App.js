@@ -12,6 +12,7 @@ import SignUp from "./pages/SignUp";
 import Anime from "./pages/Anime";
 import Discussions from "./pages/Discussions";
 import Contact from "./pages/Contact";
+import Discussion from "./pages/Discussion";
 
 // react-router
 import { useLocation } from "react-router-dom";
@@ -37,6 +38,7 @@ function App() {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/discussions" element={<Discussions />} />
+        <Route path="/discussion/:discussionId" element={<Discussion />} />
         <Route path="/animes/:animeId" element={<Anime />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
