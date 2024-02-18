@@ -3,7 +3,6 @@ import img1 from "../images/animes/1.jpg";
 
 // components
 import HomeSlider from "../components/HomeSlider";
-import HomeArticles from "../components/HomeArticles";
 import HomeCategoryBoxes from "../components/HomeCategoryBoxes";
 import HomeTopics from "../components/HomeTopics";
 import HomeDiscussions from "../components/HomeDiscussions";
@@ -59,7 +58,6 @@ const Home = () => {
     <div>
       <HomeSlider />
       <HomeCategoryBoxes />
-      <HomeArticles />
       <HomeTopics state={state} title={"انیمه های برتر"} showBtn={true} />
       <HomeDiscussions />
       <HomeTopics state={state} title={"انیمه های برتر فصل"} showBtn={true} />

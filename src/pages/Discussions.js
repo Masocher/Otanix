@@ -251,74 +251,59 @@ const Discussions = () => {
             <span>محبوب ترین دسته بندی ها</span>
           </div>
 
-          <div className="category">
-            <div>
-              <FontAwesomeIcon icon={faFolderOpen} />
-            </div>
+          <div className="category_tag">
+            <span>#</span>
+            ناروتو-شیپودن
+          </div>
+          
+          <div className="category_tag">
+            <span>#</span>
             وان پیس
           </div>
 
-          <div className="category">
-            <div>
-              <FontAwesomeIcon icon={faFolderOpen} />
-            </div>
+          <div className="category_tag">
+            <span>#</span>
+            ناروتو
+          </div>
+
+          <div className="category_tag">
+            <span>#</span>
+            ناروتو
+          </div>
+
+          <div className="category_tag">
+            <span>#</span>
             وان پیس
           </div>
 
-          <div className="category">
-            <div>
-              <FontAwesomeIcon icon={faFolderOpen} />
-            </div>
+          <div className="category_tag">
+            <span>#</span>
+            ناروتو-شیپودن
+          </div>
+
+          <div className="category_tag">
+            <span>#</span>
             وان پیس
           </div>
 
-          <div className="category">
-            <div>
-              <FontAwesomeIcon icon={faFolderOpen} />
-            </div>
+          <div className="category_tag">
+            <span>#</span>
+            ناروتو-شیپودن
+          </div>
+
+          <div className="category_tag">
+            <span>#</span>
+            ناروتو
+          </div>
+
+          <div className="category_tag">
+            <span>#</span>
             وان پیس
           </div>
 
-          <div className="category">
-            <div>
-              <FontAwesomeIcon icon={faFolderOpen} />
-            </div>
-            وان پیس
-          </div>
-
-          <div className="category">
-            <div>
-              <FontAwesomeIcon icon={faFolderOpen} />
-            </div>
-            وان پیس
-          </div>
-
-          <div className="category">
-            <div>
-              <FontAwesomeIcon icon={faFolderOpen} />
-            </div>
-            وان پیس
-          </div>
-
-          <div className="category">
-            <div>
-              <FontAwesomeIcon icon={faFolderOpen} />
-            </div>
-            وان پیس
-          </div>
-
-          <div className="category">
-            <div>
-              <FontAwesomeIcon icon={faFolderOpen} />
-            </div>
-            وان پیس
-          </div>
-
-          <div className="category">
-            <div>
-              <FontAwesomeIcon icon={faFolderOpen} />
-            </div>
-            وان پیس
+          <div className="category_tag">
+            <span>#</span>
+            ناروتو
           </div>
         </div>
       </div>

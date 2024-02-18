@@ -115,8 +115,7 @@
   overflow: hidden;
 }
 
-.discussions_container .discussion_box .category,
-.popular_categories .category {
+.discussions_container .discussion_box .category {
   font-size: 12px;
   display: flex;
   align-items: center;
@@ -130,18 +129,12 @@
   margin-top: 20px;
   cursor: pointer;
 }
-.discussions_container .discussion_box .category:hover,
-.popular_categories .category:hover {
+.discussions_container .discussion_box .category:hover {
   background: none;
   color: #f5cb5c;
 }
-.popular_categories .category {
-  margin: 10px 0 0 10px;
-  font-size: 10px;
-}
 
-.discussions_container .discussion_box .category div,
-.popular_categories .category div {
+.discussions_container .discussion_box .category div {
   margin: 5px 0 0 5px;
 }
 
@@ -234,6 +227,30 @@
   border: 1px dashed #505050;
   margin-top: 30px;
   border-radius: 5px;
+}
+
+.popular_categories .category_tag {
+  background-color: #232328cb;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #232328cb;
+  letter-spacing: .5px;
+  transition: .2s;
+}
+.popular_categories .category_tag:hover {
+  border-color: #f5cb5c;
+}
+
+.popular_categories .category_tag span {
+  margin: 0 0 0 5px;
+  position: relative;
+  top: 3px;
+  font-size: 16px;
+  color: #f5cb5c;
 }
 
 .active_users {

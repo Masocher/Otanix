@@ -52,15 +52,6 @@ const Header = () => {
               گفتگو ها
             </div>
           </Link>
-          <Link to={"/about"} style={{ textDecoration: "none" }}>
-            <div
-              className={`h_link ${
-                location.pathname === "/about" ? "show" : ""
-              }`}
-            >
-              درباره ما
-            </div>
-          </Link>
           <Link to={"/contact"} style={{ textDecoration: "none" }}>
             <div
               className={`h_link ${

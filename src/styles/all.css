@@ -531,6 +531,17 @@ body {
   color: #fff;
   background-color: #f26161;
 }
+.App.show .popular_categories .category_tag {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+}
+.App.show .popular_categories .category_tag:hover {
+  border-color: #f26161;
+}
+.App.show .popular_categories .category_tag span {
+  color: #f26161;
+}
 
 /* contact page */
 .App.show .contact_container .title_box .mini_title {
