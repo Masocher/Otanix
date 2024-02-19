@@ -523,3 +523,91 @@ body {
   background: none;
   color: #f26161;
 }
+
+/* discussion single page */
+.App.show .discussion_container .top_section {
+  background-color: #fff;
+}
+.App.show .reply_box {
+  background-color: #ebecef;
+  color: #000;
+}
+.App.show .reply_box div {
+  color: #f26161;
+}
+.App.show .discussion_container .top_section .title_box {
+  border-right: 2px solid #f26161;
+  color: #000;
+}
+.App.show .discussion_container .top_section .description {
+  background-color: #ebecef;
+  color: #000;
+}
+.App.show .discussion_container .top_section .category_content {
+  border: 1px solid #f26161;
+  color: #fff;
+  background-color: #f26161;
+}
+.App.show .discussion_container .top_section .category_content:hover {
+  background: none;
+  color: #f26161;
+}
+.App.show .discussion_container .top_section .user_name {
+  color: #000;
+}
+.App.show .answer_form input {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #000;
+}
+.App.show .answer_form input:focus {
+  border-color: #f26161;
+}
+.App.show .answer_form button {
+  background-color: #f26161;
+  color: #fff;
+  border: 1px solid #f26161;
+}
+.App.show .answer_form button:hover {
+  background: none;
+  color: #f26161;
+}
+.App.show .answer_box {
+  background-color: #fff;
+}
+.App.show .answer_box .user_about .icon_box {
+  color: #f26161;
+}
+.App.show .answer_box .user_about .icon_box span {
+  background-color: #f26161;
+  color: #fff;
+}
+.App.show .answer_box .answer {
+  background-color: #ebecef;
+  color: #000;
+}
+.App.show .answer_box .answer_btn {
+  background-color: #f26161;
+  color: #fff;
+  border: 1px solid #f26161;
+}
+.App.show .answer_box .answer_btn:hover {
+  background: none;
+  color: #f26161;
+}
+.App.show .answer_box .user_box {
+  color: #000;
+}
+.App.show .discussion_container .bottom_section .left_side {
+  background-color: #fff;
+  color: #000;
+}
+.App.show .discussion_anime .show_btn {
+  background-color: #f26161;
+  color: #fff;
+  border: 1px solid #f26161;
+}
+.App.show .discussion_anime .show_btn:hover {
+  background: none;
+  color: #f26161;
+}

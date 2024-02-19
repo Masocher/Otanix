@@ -5,7 +5,7 @@
     flex-direction: column;
 }
 
-.top_section {
+.discussion_container .top_section {
   width: calc(100% - 80px);
   padding: 40px 40px 50px 40px;
   display: flex;
@@ -62,12 +62,6 @@
   margin-top: 30px;
   border-right: 2px solid #f5cb5c;
   padding-right: 20px;
-}
-
-.discussion_container .top_section .title_box div {
-  font-size: 14px;
-  color: #f5cb5c;
-  margin-left: 10px;
 }
 
 .discussion_container .top_section .description {
@@ -229,7 +223,6 @@
     color: #000;
     border-radius: 5px;
     font-size: 17px;
-    margin-bottom: 5px;
     border-radius: 50%;
     padding: 1px 2px 3px 2px;
 }
@@ -289,7 +282,7 @@
 .discussion_anime .show_btn {
     background-color: #f5cb5c;
     color: #000;
-    padding: 5px 0;
+    padding: 8px 0;
     font-size: 12px;
     cursor: pointer;
     transition: .2s;
