@@ -19,7 +19,7 @@ const HomeDiscussions = () => {
 
       <div className="discussions">
         <Link
-          to="/discussion/0"
+          to="/discussions/0"
           className="discussion_box"
           style={{ textDecoration: "none", color: "#fff" }}
         >
@@ -56,7 +56,7 @@ const HomeDiscussions = () => {
         </Link>
 
         <Link
-          to="/discussion/1"
+          to="/discussions/1"
           className="discussion_box"
           style={{ textDecoration: "none", color: "#fff" }}
         >
@@ -93,7 +93,7 @@ const HomeDiscussions = () => {
         </Link>
 
         <Link
-          to="/discussion/2"
+          to="/discussions/2"
           className="discussion_box"
           style={{ textDecoration: "none", color: "#fff" }}
         >

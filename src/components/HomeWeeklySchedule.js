@@ -9,7 +9,7 @@ import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
 const HomeWeeklySchedule = () => {
   return (
     <div className="weekly_schedule">
-      <div className="top_section">
+      <div className="top_side">
         <div className="title_box">
           <div>
             <FontAwesomeIcon icon={faCalendarDays} />
@@ -28,7 +28,7 @@ const HomeWeeklySchedule = () => {
         </div>
       </div>
 
-      <div className="bottom_section">
+      <div className="bottom_side">
         <div className="schedule_notif_box">
           <img src={img1} alt="anime-cover" />
 

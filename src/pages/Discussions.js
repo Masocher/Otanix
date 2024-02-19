@@ -11,6 +11,9 @@ import {
   faPlusCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
+// tools
+import { Link } from "react-router-dom";
+
 const Discussions = () => {
   const discussions = [
     {
@@ -107,35 +110,41 @@ const Discussions = () => {
 
         <div className="discussions_list">
           {discussions.map((discussion) => (
-            <div className="discussion_box" key={discussion.id}>
-              <div className="writer_box">
-                <img src={img1} />
+            <div className="discussion_box">
+              <Link
+                to={`/discussions/${discussion.id}`}
+                key={discussion.id}
+                style={{ textDecoration: "none" }}
+              >
+                <div className="writer_box">
+                  <img src={img1} />
 
-                <div className="witer_about">
-                  <span>
-                    <div className="writer_name">Masocher</div>
-                    <div className="udate_date">1 سال پیش مطرح شد</div>
-                  </span>
+                  <div className="witer_about">
+                    <span>
+                      <div className="writer_name">Masocher</div>
+                      <div className="udate_date">1 سال پیش مطرح شد</div>
+                    </span>
 
-                  <div className="replies_box">
-                    <div>
-                      <FontAwesomeIcon icon={faReply} />
+                    <div className="replies_box">
+                      <div>
+                        <FontAwesomeIcon icon={faReply} />
+                      </div>
+                      5 پاسخ
                     </div>
-                    5 پاسخ
                   </div>
                 </div>
-              </div>
 
-              <div className="title_box">{discussion.title}</div>
+                <div className="title_box">{discussion.title}</div>
 
-              <div className="description">{discussion.about}</div>
+                <div className="description">{discussion.about}</div>
 
-              <div className="category">
-                <div>
-                  <FontAwesomeIcon icon={faFolderOpen} />
+                <div className="category">
+                  <div>
+                    <FontAwesomeIcon icon={faFolderOpen} />
+                  </div>
+                  {discussion.category}
                 </div>
-                {discussion.category}
-              </div>
+              </Link>
             </div>
           ))}
         </div>
@@ -255,7 +264,7 @@ const Discussions = () => {
             <span>#</span>
             ناروتو-شیپودن
           </div>
-          
+
           <div className="category_tag">
             <span>#</span>
             وان پیس

@@ -98,6 +98,7 @@
 
 .discussions_container .discussion_box .writer_name {
   font-size: 18px;
+  color: #fff;
 }
 
 .discussions_container .discussion_box .title_box {
@@ -113,6 +114,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  color: #fff;
 }
 
 .discussions_container .discussion_box .category {
@@ -158,6 +160,7 @@
   font-size: 12px;
   letter-spacing: 0.5px;
   border-radius: 5px;
+  color: #fff;
 }
 
 .replies_box div {
@@ -224,20 +227,20 @@
   flex-wrap: wrap;
   width: calc(100% - 50px);
   padding: 25px;
-  border: 1px dashed #505050;
   margin-top: 30px;
   border-radius: 5px;
+  background-color: #232328cb;
 }
 
 .popular_categories .category_tag {
-  background-color: #232328cb;
+  background-color: #1a1a1d;
   color: #fff;
   font-size: 12px;
   padding: 5px 10px;
   margin: 5px;
   cursor: pointer;
   border-radius: 5px;
-  border: 1px solid #232328cb;
+  border: 1px solid #1a1a1d;
   letter-spacing: .5px;
   transition: .2s;
 }

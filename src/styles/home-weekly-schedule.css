@@ -5,7 +5,7 @@
   padding: 30px;
 }
 
-.weekly_schedule .top_section {
+.weekly_schedule .top_side {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,7 +48,7 @@
   color: #000;
 }
 
-.weekly_schedule .bottom_section {
+.weekly_schedule .bottom_side {
   display: flex;
   flex-wrap: wrap;
 }

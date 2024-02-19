@@ -233,6 +233,9 @@ body {
   background-color: #fff;
   color: #f26161;
 }
+.App.show .weekly_schedule .top_side {
+  border-bottom: 1px solid #ebecef;
+}
 
 /* sign pages light theme */
 .App.show .sign_form {
@@ -269,77 +272,6 @@ body {
 }
 .App.show .sign_back {
   color: #f26161;
-}
-
-/* articles page light theme */
-.App.show .articles_container .right_side {
-  background-color: #fff;
-  border-bottom: 1px solid #f26161;
-  color: #000;
-}
-.App.show .articles_container .right_side.show {
-  background-color: #ebecef;
-  border: none;
-}
-.App.show .golden_dot {
-  background-color: #f26161;
-}
-.App.show .full_screen_btn {
-  background-color: #fff;
-  border: 1px solid #fff;
-  color: #000;
-}
-.App.show .full_screen_btn:hover {
-  color: #f26161;
-  border-color: #f26161;
-}
-.App.show .compress_btn {
-  background-color: #f26161;
-  color: #fff;
-  border: 1px solid #f26161;
-}
-.App.show .compress_btn:hover {
-  background: none;
-  color: #f26161;
-}
-.App.show .last_articles {
-  background-color: #fff;
-}
-.App.show .row_article {
-  background-color: #eee;
-  border: 1px solid #eee;
-  color: #000;
-}
-.App.show .row_article:hover {
-  border-color: #f26161;
-  color: #f26161;
-}
-.App.show .gold_column {
-  background-color: #f26161;
-}
-.App.show .show_all_articles_btn {
-  background-color: #f26161;
-  border: 1px solid #f26161;
-  color: #fff;
-}
-.App.show .show_all_articles_btn:hover {
-  background: none;
-  color: #f26161;
-}
-.App.show .writer_about .name {
-  color: #000;
-}
-.App.show .writer_about .subscribe_btn {
-  background-color: #f26161;
-  color: #fff;
-  border: 1px solid #f26161;
-}
-.App.show .writer_about .subscribe_btn:hover {
-  background: none;
-  color: #f26161;
-}
-.App.show .writer_box {
-  border: 1px dashed #909090;
 }
 
 /* anime single page light theme */
@@ -541,6 +473,28 @@ body {
 }
 .App.show .popular_categories .category_tag span {
   color: #f26161;
+}
+.App.show .replies_box {
+  color: #000;
+}
+.App.show .discussions_container .discussion_box .writer_name {
+  color: #000;
+}
+.App.show .discussions_container .discussion_box .description {
+  color: #000;
+}
+.App.show .popular_categories {
+  background-color: #fff;
+  border: none;
+}
+
+.App.show .popular_categories .category_tag {
+  background-color: #ebecef;
+  color: #000;
+  border: 1px solid #ebecef;
+}
+.App.show .popular_categories .category_tag:hover {
+  border-color: #f26161;
 }
 
 /* contact page */

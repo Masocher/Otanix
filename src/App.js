@@ -38,7 +38,7 @@ function App() {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/discussions" element={<Discussions />} />
-        <Route path="/discussion/:discussionId" element={<Discussion />} />
+        <Route path="/discussions/:discussionId" element={<Discussion />} />
         <Route path="/animes/:animeId" element={<Anime />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
