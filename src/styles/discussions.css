@@ -241,8 +241,8 @@
   cursor: pointer;
   border-radius: 5px;
   border: 1px solid #1a1a1d;
-  letter-spacing: .5px;
-  transition: .2s;
+  letter-spacing: 0.5px;
+  transition: 0.2s;
 }
 .popular_categories .category_tag:hover {
   border-color: #f5cb5c;

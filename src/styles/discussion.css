@@ -1,8 +1,8 @@
 .discussion_container {
-    width: calc(100% - 100px);
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+  width: calc(100% - 100px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .discussion_container .top_section {
@@ -92,7 +92,7 @@
 }
 
 .discussion_info_boxes {
-    display: flex;
+  display: flex;
 }
 
 .discussion_container .top_section .category_content {
@@ -119,186 +119,186 @@
 }
 
 .discussion_container .bottom_section {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 .discussion_container .bottom_section .right_side {
-    width: calc(100% - 270px);
-    display: flex;
-    flex-direction: column;
+  width: calc(100% - 270px);
+  display: flex;
+  flex-direction: column;
 }
 
 .answer_form {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .answer_form input {
-    font-family: YekanBakhBold;
-    width: calc(100% - 150px);
-    border: 1px solid #232328cb;
-    outline: 0;
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #232328cb;
-    color: #fff;
-    transition: .2s;
+  font-family: YekanBakhBold;
+  width: calc(100% - 150px);
+  border: 1px solid #232328cb;
+  outline: 0;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #232328cb;
+  color: #fff;
+  transition: 0.2s;
 }
 .answer_form input:focus {
-    border-color: #f5cb5c;
+  border-color: #f5cb5c;
 }
 
 .answer_form button {
-    background-color: #f5cb5c;
-    color: #000;
-    padding: 14.5px 0;
-    width: 100px;
-    font-family: YekanBakhBold;
-    border: 1px solid #f5cb5c;
-    outline: 0;
-    transition: .2s;
-    cursor: pointer;
-    border-radius: 5px;
-    height: fit-content;
+  background-color: #f5cb5c;
+  color: #000;
+  padding: 14.5px 0;
+  width: 100px;
+  font-family: YekanBakhBold;
+  border: 1px solid #f5cb5c;
+  outline: 0;
+  transition: 0.2s;
+  cursor: pointer;
+  border-radius: 5px;
+  height: fit-content;
 }
 .answer_form button:hover {
-    background: none;
-    color: #f5cb5c;
+  background: none;
+  color: #f5cb5c;
 }
 
 .answers_list {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .answer_box {
-    width: calc(100% - 50px);
-    background-color: #232328cb;
-    padding: 25px;
-    margin-top: 30px;
-    border-radius: 5px;
-    line-height: 30px;
+  width: calc(100% - 50px);
+  background-color: #232328cb;
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 5px;
+  line-height: 30px;
 }
 
 .answer_box .user_box {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .answer_box .user_box img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-left: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
 }
 
 .answer_box .user_about {
-    width: calc(100% - 90px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: calc(100% - 90px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .answer_box .user_about .icon_box {
-    font-size: 10px;
-    color: #f5cb5c;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
+  font-size: 10px;
+  color: #f5cb5c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
 }
 
 .answer_box .user_about .icon_box span {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5cb5c;
-    color: #000;
-    border-radius: 5px;
-    font-size: 17px;
-    border-radius: 50%;
-    padding: 1px 2px 3px 2px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5cb5c;
+  color: #000;
+  border-radius: 5px;
+  font-size: 17px;
+  border-radius: 50%;
+  padding: 1px 2px 3px 2px;
 }
 
 .answer_box .answer {
-    width: calc(100% - 40px);
-    background-color: #1a1a1d;
-    padding: 20px;
-    font-size: 14px;
-    margin: 30px 0;
-    border-radius: 5px;
+  width: calc(100% - 40px);
+  background-color: #1a1a1d;
+  padding: 20px;
+  font-size: 14px;
+  margin: 30px 0;
+  border-radius: 5px;
 }
 
 .answer_box .answer_btn {
-    display: flex;
-    background-color: #f5cb5c;
-    color: #000;
-    font-size: 13px;
-    width: fit-content;
-    padding: 8px 15px 5px 15px;
-    border-radius: 5px;
-    border: 1px solid #f5cb5c;
-    cursor: pointer;
-    transition: .2s;
+  display: flex;
+  background-color: #f5cb5c;
+  color: #000;
+  font-size: 13px;
+  width: fit-content;
+  padding: 8px 15px 5px 15px;
+  border-radius: 5px;
+  border: 1px solid #f5cb5c;
+  cursor: pointer;
+  transition: 0.2s;
 }
 .answer_box .answer_btn:hover {
-    background: none;
-    color: #f5cb5c;
+  background: none;
+  color: #f5cb5c;
 }
 
 .answer_box .answer_btn div {
-    margin: 2px 0 0 5px;
+  margin: 2px 0 0 5px;
 }
 
 .discussion_container .bottom_section .left_side {
-    width: 180px;
-    padding: 30px;
-    border-radius: 5px;
-    background-color: #232328cb;
-    height: fit-content;
+  width: 180px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #232328cb;
+  height: fit-content;
 }
 
 .discussion_container .animes {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
 }
 
 .discussion_anime {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
 }
 
 .discussion_anime .show_btn {
-    background-color: #f5cb5c;
-    color: #000;
-    padding: 8px 0;
-    font-size: 12px;
-    cursor: pointer;
-    transition: .2s;
-    border: 1px solid #f5cb5c;
-    border-radius: 5px;
+  background-color: #f5cb5c;
+  color: #000;
+  padding: 8px 0;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 1px solid #f5cb5c;
+  border-radius: 5px;
 }
 .discussion_anime .show_btn:hover {
-    background: none;
-    color: #f5cb5c;
+  background: none;
+  color: #f5cb5c;
 }
 
 .discussion_anime .title_box {
-    margin: 10px 0;
-    font-size: 14px;
+  margin: 10px 0;
+  font-size: 14px;
 }
 
 .discussion_anime img {
-    border-radius: 5px;
+  border-radius: 5px;
 }
