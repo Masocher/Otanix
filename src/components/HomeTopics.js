@@ -46,16 +46,13 @@ const HomeTopics = ({ state, title, showBtn }) => {
                   <div>
                     <FontAwesomeIcon icon={faHeart} />
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faBell} />
-                  </div>
                 </div>
 
                 <div className="score">
+                  <div>
+                    <span>10</span>/
+                  </div>
                   {anime.rate}
-                  <span>
-                    <FontAwesomeIcon icon={faStar} />
-                  </span>
                 </div>
               </div>
 

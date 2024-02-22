@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Anime from "./pages/Anime";
+import Animes from "./pages/Animes";
 import Discussions from "./pages/Discussions";
 import Contact from "./pages/Contact";
 import Discussion from "./pages/Discussion";
@@ -37,6 +38,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/animes" element={<Animes />} />
         <Route path="/discussions" element={<Discussions />} />
         <Route path="/discussions/:discussionId" element={<Discussion />} />
         <Route path="/animes/:animeId" element={<Anime />} />

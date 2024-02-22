@@ -155,13 +155,16 @@ body {
   background-color: #fff;
   color: #000;
 }
+.App.show .anime_buttons div {
+  background-color: #ebecef;
+  color: #999;
+}
 .App.show .show_anime {
   background-color: #f26161;
   color: #fff;
 }
-.App.show .anime_buttons div {
-  background-color: #f26161;
-  color: #fff;
+.App.show .show_anime:hover {
+  background-color: #000;
 }
 .App.show .score {
   color: #f26161;

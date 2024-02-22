@@ -14,8 +14,8 @@
 
 .anime_info {
   background-color: #232328cb;
-  width: calc(100% - 20px);
-  padding: 15px 10px;
+  width: calc(100% - 32px);
+  padding: 15px 16px;
   margin: 0;
 }
 
@@ -27,31 +27,30 @@
 }
 
 .score {
-  font-size: 16px;
+  font-family: YekanBakhHeavy;
+  font-size: 18px;
   color: #f5cb5c;
   letter-spacing: 1px;
-}
-
-.score span {
-  margin-right: 5px;
-  font-size: 12px;
-}
-
-.anime_buttons {
   display: flex;
+}
+
+.score div {
+  font-size: 14px;
+  margin: 4px 0 0 2px;
+  color: #999;
 }
 
 .anime_buttons div {
-  margin: 0 0 0 10px;
-  width: 28px;
-  height: 28px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #fff;
+  width: 26px;
+  height: 26px;
+  background-color: #1a1a1d;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #303030;
-  font-size: 13px;
-  border-radius: 50%;
-  cursor: pointer;
+  border-radius: 5px;
 }
 
 .show_anime {
@@ -65,6 +64,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .2s;
+}
+.show_anime:hover {
+  background-color: #fff;
 }
 
 .e_title {
