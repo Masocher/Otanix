@@ -4,17 +4,7 @@ import "./styles/all.css";
 // components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
-// pages
-import Home from "./pages/Home";
-import SignIn from "./pages/SignIn";
-import SignUp from "./pages/SignUp";
-import Anime from "./pages/Anime";
-import Animes from "./pages/Animes";
-import Discussions from "./pages/Discussions";
-import Contact from "./pages/Contact";
-import Discussion from "./pages/Discussion";
-import Pannel from "./pages/Pannel";
+import Loading from "./components/Loading";
 
 // react-router
 import { useLocation } from "react-router-dom";
@@ -22,6 +12,18 @@ import { Route, Routes } from "react-router";
 
 // redux
 import { useSelector } from "react-redux";
+
+// pages
+import React, { Suspense } from "react";
+const Home = React.lazy(() => import("./pages/Home"));
+const Contact = React.lazy(() => import("./pages/Contact"));
+const SignIn = React.lazy(() => import("./pages/SignIn"));
+const SignUp = React.lazy(() => import("./pages/SignUp"));
+const Anime = React.lazy(() => import("./pages/Anime"));
+const Animes = React.lazy(() => import("./pages/Animes"));
+const Discussions = React.lazy(() => import("./pages/Discussions"));
+const Discussion = React.lazy(() => import("./pages/Discussion"));
+const Pannel = React.lazy(() => import("./pages/Pannel"));
 
 function App() {
   const themeStatus = useSelector((rootReducer) => rootReducer.themeReducer);
@@ -37,15 +39,78 @@ function App() {
       )}
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/animes" element={<Animes />} />
-        <Route path="/discussions" element={<Discussions />} />
-        <Route path="/discussions/:discussionId" element={<Discussion />} />
-        <Route path="/animes/:animeId" element={<Anime />} />
-        <Route path="/pannel" element={<Pannel />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route
+          path="/"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Home />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/sign-in"
+          element={
+            <Suspense fallback={<Loading />}>
+              <SignIn />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/sign-up"
+          element={
+            <Suspense fallback={<Loading />}>
+              <SignUp />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/animes"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Animes />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/discussions"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Discussions />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/discussions/:discussionId"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Discussion />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/animes/:animeId"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Anime />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/pannel"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Pannel />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Contact />
+            </Suspense>
+          }
+        />
       </Routes>
 
       {location.pathname === "/sign-in" ||

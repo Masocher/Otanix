@@ -31,7 +31,32 @@
 }
 
 .animes_container .search_box {
+  display: flex;
+  position: relative;
   width: calc(80% - 20px) !important;
+}
+
+.search_icon {
+  position: absolute;
+  right: 16px;
+  top: 18px;
+  color: #999;
+  font-size: 14px;
+}
+
+.search_box input {
+  background-color: #232328cb;
+  border: 1px solid #232328cb;
+  font-family: YekanBakhBold;
+  width: calc(100% - 50px);
+  font-size: 14px;
+  padding: 15px 40px 15px 10px;
+  border-radius: 5px;
+  outline: 0;
+  color: #fff;
+}
+.search_box input:focus {
+  border-color: #f5cb5c;
 }
 
 .animes_container .filters_btn {
