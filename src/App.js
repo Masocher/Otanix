@@ -14,6 +14,7 @@ import Animes from "./pages/Animes";
 import Discussions from "./pages/Discussions";
 import Contact from "./pages/Contact";
 import Discussion from "./pages/Discussion";
+import Pannel from "./pages/Pannel";
 
 // react-router
 import { useLocation } from "react-router-dom";
@@ -30,7 +31,8 @@ function App() {
   return (
     <div className={`App ${themeStatus ? "show" : ""}`}>
       {location.pathname === "/sign-in" ||
-      location.pathname === "/sign-up" ? null : (
+      location.pathname === "/sign-up" ||
+      location.pathname === "/pannel" ? null : (
         <Header />
       )}
 
@@ -42,11 +44,13 @@ function App() {
         <Route path="/discussions" element={<Discussions />} />
         <Route path="/discussions/:discussionId" element={<Discussion />} />
         <Route path="/animes/:animeId" element={<Anime />} />
+        <Route path="/pannel" element={<Pannel />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
       {location.pathname === "/sign-in" ||
-      location.pathname === "/sign-up" ? null : (
+      location.pathname === "/sign-up" ||
+      location.pathname === "/pannel" ? null : (
         <Footer />
       )}
     </div>

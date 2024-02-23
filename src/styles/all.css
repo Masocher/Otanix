@@ -155,10 +155,6 @@ body {
   background-color: #fff;
   color: #000;
 }
-.App.show .anime_buttons div {
-  background-color: #ebecef;
-  color: #999;
-}
 .App.show .show_anime {
   background-color: #f26161;
   color: #fff;
@@ -490,7 +486,6 @@ body {
   background-color: #fff;
   border: none;
 }
-
 .App.show .popular_categories .category_tag {
   background-color: #ebecef;
   color: #000;

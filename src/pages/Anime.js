@@ -8,7 +8,7 @@ import { useParams } from "react-router";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHeart,
+  faBookmark,
   faBell,
   faClosedCaptioning,
   faUserPlus,
@@ -150,7 +150,7 @@ const Anime = () => {
 
             <div className="icons">
               <div>
-                <FontAwesomeIcon icon={faHeart} />
+                <FontAwesomeIcon icon={faBookmark} />
               </div>
               <div>
                 <FontAwesomeIcon icon={faBell} />

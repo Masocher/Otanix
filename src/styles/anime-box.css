@@ -41,16 +41,9 @@
 }
 
 .anime_buttons div {
-  font-size: 13px;
+  font-size: 14px;
   cursor: pointer;
-  color: #fff;
-  width: 26px;
-  height: 26px;
-  background-color: #1a1a1d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
+  color: #999;
 }
 
 .show_anime {

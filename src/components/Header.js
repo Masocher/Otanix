@@ -9,7 +9,7 @@ import { useLocation } from "react-router-dom";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { faMoon, faSun, faUser } from "@fortawesome/free-solid-svg-icons";
 
 // redux
 import { useDispatch, useSelector } from "react-redux";
@@ -20,11 +20,17 @@ const Header = () => {
   const themeStatus = useSelector((rootReducer) => rootReducer.themeReducer);
 
   const location = useLocation();
+  
+  const authStatus = useSelector(
+    (rootReducer) => rootReducer.authStatusReducer
+  );
 
   return (
     <div className="header_container">
       <div className="right_side">
-        <div className="logo_box">اوتانیکس</div>
+        <Link to={"/"} className="logo_box" style={{ textDecoration: "none" }}>
+          اوتانیکس
+        </Link>
 
         <div className="header_links">
           <Link to={"/"} style={{ textDecoration: "none" }}>
@@ -82,20 +88,28 @@ const Header = () => {
           </span>
         </div>
 
-        <Link
-          to={"/sign-up"}
-          className="sign_btn log_btn"
-          style={{ textDecoration: "none" }}
-        >
-          ثبت نام
-        </Link>
-        <Link
-          to={"/sign-in"}
-          className="sign_btn"
-          style={{ textDecoration: "none" }}
-        >
-          ورود
-        </Link>
+        {authStatus ? (
+          <Link to={"/pannel"} className="pannel_icon">
+            <FontAwesomeIcon icon={faUser} />
+          </Link>
+        ) : (
+          <div style={{ display: "flex" }}>
+            <Link
+              to={"/sign-up"}
+              className="sign_btn log_btn"
+              style={{ textDecoration: "none" }}
+            >
+              ثبت نام
+            </Link>
+            <Link
+              to={"/sign-in"}
+              className="sign_btn"
+              style={{ textDecoration: "none" }}
+            >
+              ورود
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

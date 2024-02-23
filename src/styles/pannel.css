@@ -1,0 +1,81 @@
+.pannel_wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.pannel_wrapper .back_side {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pannel_wrapper .back_side .top_side {
+    width: calc(82% - 30px);
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 0 30px 30px;
+}
+
+.pannel_wrapper .back_side .menu_section {
+    width: calc(18% - 60px);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.pannel_wrapper .back_side .menu_section .logo_box {
+    margin-bottom: 70px;
+}
+
+.pannel_wrapper .menu_section_btn {
+    display: flex;
+    width: calc(100% - 20px);
+    color: #fff;
+    padding: 12px 15px 8px 0;
+    border-radius: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: .2s;
+}
+.pannel_wrapper .menu_section_btn:hover {
+    color: #f5cb5c;
+}
+.pannel_wrapper .menu_section_btn.show {
+    color: #000;
+    background-color: #f5cb5c;
+}
+
+.pannel_wrapper .menu_section_btn div {
+    margin: 3px 0 0 10px;
+}
+
+.pannel_wrapper .front_side {
+    width: calc(82% - 60px);
+    padding: 30px;
+    min-height: 574px;
+    background-color: #252528;
+    position: absolute;
+    left: 0;
+    top: 103px;
+    border-radius: 0 30px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pannel_wrapper .front_side .anime_box {
+    width: 200px;
+}
+
+.log_out_btn {
+    position: absolute;
+    bottom: -200px;
+    right: 30px;
+    background-color: #FF004D;
+    width: calc(100% - 80px) !important;
+}
+.log_out_btn:hover {
+    color: #fff !important;
+}

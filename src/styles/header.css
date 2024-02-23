@@ -101,3 +101,18 @@
   right: 25px;
   background-color: #fff;
 }
+
+.pannel_icon {
+  background-color: #999;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #000;
+  border-radius: 50%;
+  font-size: 27px;
+  overflow: hidden;
+  margin-top: 5px;
+  cursor: pointer;
+}

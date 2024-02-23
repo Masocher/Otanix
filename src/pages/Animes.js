@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHeart,
+  faBookmark,
   faChartColumn,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
@@ -254,7 +254,7 @@ const Animes = () => {
               <div className="anime_footer">
                 <div className="anime_buttons">
                   <div>
-                    <FontAwesomeIcon icon={faHeart} />
+                    <FontAwesomeIcon icon={faBookmark} />
                   </div>
                 </div>
 

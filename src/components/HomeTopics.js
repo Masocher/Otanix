@@ -6,9 +6,7 @@ import "../styles/anime-box.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleLeft,
-  faHeart,
-  faBell,
-  faStar,
+  faBookmark,
 } from "@fortawesome/free-solid-svg-icons";
 
 // tools
@@ -44,7 +42,7 @@ const HomeTopics = ({ state, title, showBtn }) => {
               <div className="anime_footer">
                 <div className="anime_buttons">
                   <div>
-                    <FontAwesomeIcon icon={faHeart} />
+                    <FontAwesomeIcon icon={faBookmark} />
                   </div>
                 </div>
 
