@@ -61,6 +61,12 @@
 }
 
 .home_discussions .discussions .description {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #fff;
   font-size: 12px;
   line-height: 22px;
 }
@@ -90,4 +96,73 @@
 .discussion_reply_num {
   letter-spacing: 0;
   font-size: 14px;
+}
+
+/* responsive */
+@media (max-width: 769px) {
+  .home_discussions .discussions {
+    flex-direction: column;
+  }
+
+  .home_discussions .discussion_box {
+    width: calc(100% - 40px);
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 426px) {
+  .home_discussions {
+    width: calc(100% - 50px);
+  }
+
+  .home_discussions .discussion_box {
+    padding: 15px;
+    width: calc(100% - 30px);
+  }
+
+  .home_discussions .discussions .show_more {
+    padding: 8px 15px;
+    font-size: 10px;
+  }
+
+  .home_discussions .discussions .title_box {
+    font-size: 14px;
+  }
+
+  .home_discussions .discussions .user_image {
+    width: 35px;
+    height: 35px;
+  }
+
+  .home_discussions .discussions .user_name {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .home_discussions .discussions .description {
+    -webkit-line-clamp: 3;
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .discussion_reply {
+    font-size: 12px;
+  }
+
+  .discussion_reply .reply_icon {
+    font-size: 12px;
+    margin: 4px 0 0 5px;
+  }
+
+  .home_discussions .discussions .show_more {
+    padding: 7px 12px;
+    font-size: 8px;
+  }
+
+  .home_discussions .discussions .title_box {
+    font-size: 12px;
+    margin: 15px 0;
+  }
 }

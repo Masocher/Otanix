@@ -4,6 +4,7 @@
   height: 620px;
   user-select: none;
   background-color: #1a1a1d;
+  overflow: hidden;
 }
 
 .back_slider {
@@ -50,16 +51,19 @@
 
 .score_box {
   margin: 20px 0 20px 0;
-  font-size: 30px;
-  color: #f5cb5c;
-  display: flex;
-  letter-spacing: 1px;
+  font-size: 20px;
+  padding: 2px 15px;
+  border-radius: 5px;
   font-family: YekanBakhHeavy;
+  color: #000;
+  width: fit-content;
+  display: flex;
+  background-color: #f5cb5c;
 }
 
 .score_box div {
-  margin: 10px 5px 0 0;
-  font-size: 20px;
+  font-size: 14px;
+  margin: 6px 0 0 3px;
 }
 
 .anime_tags {
@@ -68,6 +72,12 @@
 }
 
 .anime_description {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #fff;
   margin-top: 30px;
   font-size: 14px;
   line-height: 24px;
@@ -97,7 +107,7 @@
   justify-content: space-between;
   align-items: center;
   width: calc(100% - 100px);
-  margin: 50px auto 100px auto;
+  margin: 50px auto;
 }
 
 .category_box {
@@ -110,7 +120,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 5px;
   filter: brightness(0.3);
 }
 
@@ -123,7 +133,7 @@
   left: 0;
   cursor: pointer;
   transition: 0.2s;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,4 +143,140 @@
 .category_box .title_box:hover {
   background-color: #f5cb5c43;
   border-color: #f5cb5c;
+}
+
+/* responsive */
+@media (max-width: 769px) {
+  .front_slider {
+    width: 80%;
+  }
+
+  .slider_container {
+    height: 500px;
+  }
+
+  .anime_image {
+    width: 220px;
+    height: fit-content;
+  }
+
+  .main_title {
+    font-size: 20px;
+  }
+
+  .persian_title {
+    font-size: 16px;
+  }
+
+  .score_box {
+    font-size: 18px;
+    padding: 2px 15px 0 15px;
+    margin: 10px 0 20px 0;
+  }
+
+  .score_box div {
+    font-size: 12px !important;
+    margin: 5px 0 0 3px !important;
+  }
+
+  .anime_tags {
+    display: flex;
+    font-size: 12px;
+  }
+
+  .anime_description {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .play_btn {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  .category_boxes {
+    margin-bottom: -30px;
+  }
+
+  .category_box {
+    height: 130px;
+  }
+
+  .category_box .title_box {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 426px) {
+  .anime_slide {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .front_slider {
+    bottom: 550px;
+  }
+
+  .anime_image {
+    width: 140px;
+    height: fit-content;
+  }
+
+  .anime_information {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main_title {
+    font-size: 16px;
+  }
+
+  .persian_title {
+    font-size: 16px;
+  }
+
+  .play_btn {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .score_box {
+    display: none;
+  }
+
+  .anime_tags {
+    display: none;
+  }
+
+  .anime_description {
+    display: none;
+  }
+
+  .category_boxes {
+    flex-wrap: wrap;
+    width: calc(100% - 50px);
+  }
+
+  .category_box {
+    width: 48%;
+    margin-bottom: 15px;
+    height: 140px;
+  }
+
+  .category_box .title_box {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 376px) {
+  .category_boxes {
+    width: calc(100% - 30px);
+  }
+
+  .category_box {
+    width: 100%;
+  }
 }

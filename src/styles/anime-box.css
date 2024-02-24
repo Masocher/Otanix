@@ -57,7 +57,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .2s;
+  transition: 0.2s;
 }
 .show_anime:hover {
   background-color: #fff;
@@ -71,4 +71,73 @@
 .p_title {
   font-size: 16px;
   margin-top: 5px;
+}
+
+@media (max-width: 426px) {
+  .score {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  .score div {
+    font-size: 12px;
+  }
+
+  .anime_buttons div {
+    font-size: 13px;
+  }
+
+  .show_anime {
+    font-size: 10px;
+    margin-top: 10px;
+    padding: 8px 0;
+  }
+
+  .e_title {
+    font-size: 12px;
+    font-family: sans-serif;
+  }
+
+  .p_title {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 376px) {
+  .score {
+    font-size: 12px;
+  }
+
+  .score div {
+    font-size: 8px;
+  }
+
+  .anime_buttons div {
+    font-size: 10px;
+  }
+
+  .show_anime {
+    font-size: 7px;
+    padding: 7px 0;
+  }
+
+  .e_title {
+    font-size: 9px;
+    font-family: sans-serif;
+  }
+
+  .p_title {
+    font-size: 9px;
+    margin-top: 5px;
+  }
+
+  .anime_info {
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+
+  .anime_box {
+    margin: 0 5px;
+  }
 }

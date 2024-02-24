@@ -7,10 +7,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-// icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-
 const HomeSlider = () => {
   const state = [
     {
@@ -208,10 +204,10 @@ const HomeSlider = () => {
               <div className="persian_title">{anime.ptitle}</div>
 
               <div className="score_box">
-                {anime.rate}
                 <div>
-                  <FontAwesomeIcon icon={faStar} />
+                  <span>10</span> /
                 </div>
+                {anime.rate}
               </div>
 
               <div className="anime_tags">

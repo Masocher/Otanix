@@ -14,3 +14,34 @@
   padding: 0 10px;
   width: calc(100% - 20px);
 }
+
+/* responsive */
+@media (max-width: 1025px) {
+  .home_topics .bottom_section .anime_box:nth-child(6) {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .home_topics .bottom_section .anime_box:nth-child(5) {
+    display: none;
+  }
+}
+
+@media (max-width: 426px) {
+  .home_topics .bottom_section .anime_box:nth-child(4),
+  .home_topics .bottom_section .anime_box:nth-child(3) {
+    display: none;
+  }
+
+  .home_topics {
+    width: calc(100% - 50px);
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 376px) {
+  .home_topics {
+    width: calc(100% - 30px);
+  }
+}

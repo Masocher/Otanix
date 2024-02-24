@@ -116,3 +116,45 @@
   margin-top: 5px;
   cursor: pointer;
 }
+
+.menu_icon {
+  display: none;
+  color: #f5cb5c;
+  font-size: 22px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* responsive */
+@media (max-width: 769px) {
+  .menu_icon {
+    display: block;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+  .pannel_icon {
+    display: none;
+  }
+
+  .header_container .left_side {
+    display: none;
+  }
+}
+
+@media (max-width: 426px) {
+  .header_container {
+    padding: 20px 50px;
+  }
+
+  .logo_box {
+    font-size: 24px;
+  }
+
+  .header_container {
+    width: calc(100% - 50px);
+    padding: 20px 25px;
+  }
+}

@@ -9,7 +9,12 @@ import { useLocation } from "react-router-dom";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faMoon,
+  faSun,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 
 // redux
 import { useDispatch, useSelector } from "react-redux";
@@ -20,7 +25,7 @@ const Header = () => {
   const themeStatus = useSelector((rootReducer) => rootReducer.themeReducer);
 
   const location = useLocation();
-  
+
   const authStatus = useSelector(
     (rootReducer) => rootReducer.authStatusReducer
   );
@@ -68,6 +73,10 @@ const Header = () => {
             </div>
           </Link>
         </div>
+      </div>
+
+      <div className="menu_icon">
+        <FontAwesomeIcon icon={faBars} />
       </div>
 
       <div className="left_side">
