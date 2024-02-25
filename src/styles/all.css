@@ -632,7 +632,7 @@ body {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 767px) {
   .section_title_box span {
     font-size: 16px;
     padding: 0 0 10px 50px;
@@ -649,7 +649,7 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 424px) {
   .section_title_box span {
     font-size: 12px;
     padding: 0 0 10px 30px;

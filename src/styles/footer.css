@@ -48,7 +48,7 @@
 }
 
 /* responsive */
-@media (max-width: 769px) {
+@media (max-width: 1023px) {
   .footer_container {
     flex-direction: column;
   }
@@ -59,7 +59,7 @@
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 767px) {
   .footer_container {
     width: calc(100% - 50px);
     padding: 100px 25px 50px 25px;
@@ -88,7 +88,7 @@
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 424px) {
   .footer_container .left_section .description {
     font-size: 10px;
   }

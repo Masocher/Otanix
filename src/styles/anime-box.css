@@ -73,7 +73,7 @@
   margin-top: 5px;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 767px) {
   .score {
     font-size: 16px;
     letter-spacing: 0;
@@ -108,7 +108,7 @@
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 424px) {
   .score {
     font-size: 12px;
   }

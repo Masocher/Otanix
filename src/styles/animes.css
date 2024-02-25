@@ -82,19 +82,19 @@
 }
 
 /* responsive */
-@media (max-width: 1025px) {
+@media (max-width: 1439px) {
   .animes_container .anime_box {
     width: calc(100% / 5);
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1023px) {
   .animes_container .anime_box {
     width: calc(100% / 4);
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 767px) {
   .animes_container .anime_box {
     width: calc(100% / 3);
   }

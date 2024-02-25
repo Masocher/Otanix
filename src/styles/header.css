@@ -126,7 +126,7 @@
 }
 
 /* responsive */
-@media (max-width: 769px) {
+@media (max-width: 1023px) {
   .menu_icon {
     display: block;
   }
@@ -144,7 +144,7 @@
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 767px) {
   .header_container {
     padding: 20px 50px;
   }

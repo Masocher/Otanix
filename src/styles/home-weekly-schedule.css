@@ -89,7 +89,7 @@
 }
 
 /* responsive */
-@media (max-width: 769px) {
+@media (max-width: 1023px) {
   .weekly_schedule .top_side {
     flex-direction: column;
   }
@@ -118,7 +118,7 @@
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 767px) {
   .weekly_schedule .top_side {
     padding-bottom: 0px;
   }

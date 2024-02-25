@@ -99,7 +99,7 @@
 }
 
 /* responsive */
-@media (max-width: 769px) {
+@media (max-width: 1023px) {
   .home_discussions .discussions {
     flex-direction: column;
   }
@@ -110,7 +110,7 @@
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 767px) {
   .home_discussions {
     width: calc(100% - 50px);
   }
@@ -146,7 +146,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 424px) {
   .discussion_reply {
     font-size: 12px;
   }

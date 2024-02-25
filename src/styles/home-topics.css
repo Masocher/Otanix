@@ -16,19 +16,19 @@
 }
 
 /* responsive */
-@media (max-width: 1025px) {
+@media (max-width: 1439px) {
   .home_topics .bottom_section .anime_box:nth-child(6) {
     display: none;
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1023px) {
   .home_topics .bottom_section .anime_box:nth-child(5) {
     display: none;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 767px) {
   .home_topics .bottom_section .anime_box:nth-child(4),
   .home_topics .bottom_section .anime_box:nth-child(3) {
     display: none;
@@ -40,7 +40,7 @@
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 424px) {
   .home_topics {
     width: calc(100% - 30px);
   }
