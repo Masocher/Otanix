@@ -303,3 +303,120 @@
   border-radius: 5px;
   margin-bottom: 5px;
 }
+
+/* responsive */
+@media (max-width: 1439px) {
+  .discussions_container {
+    flex-direction: column;
+  }
+
+  .discussions_container .right_side {
+    width: 100%;
+  }
+
+  .discussions_container .left_side {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .discussions_container {
+    width: calc(100% - 30px);
+  }
+
+  .create_discussions {
+    font-size: 8px;
+    width: 100px;
+  }
+
+  .search_box {
+    width: calc(100% - 120px);
+  }
+
+  .search_icon {
+    top: 17px;
+    right: 12px;
+    font-size: 10px;
+  }
+
+  .search_box input {
+    width: calc(100% - 40px);
+    font-size: 8px;
+    padding: 15px 30px 15px 10px;
+  }
+
+  .discussions_container .discussion_box {
+    width: calc(100% - 40px);
+    padding: 20px;
+    margin-top: 15px;
+  }
+
+  .discussions_container .discussion_box .writer_box img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .discussions_container .discussion_box .writer_name {
+    font-size: 12px;
+  }
+
+  .discussions_container .discussion_box .title_box {
+    margin: 15px 0 5px 0;
+    font-size: 12px;
+  }
+
+  .discussions_container .discussion_box .description {
+    font-size: 8px;
+  }
+  
+  .discussions_container .discussion_box .category {
+    font-size: 10px;
+    margin-top: 15px;
+  }
+
+  .discussions_container .discussion_box .udate_date {
+    font-size: 8px;
+  }
+  
+  .discussions_container .discussion_box .witer_about {
+    margin: 0 10px 0 0;
+    width: calc(100% - 50px);
+  }
+
+  .replies_box {
+    padding: 0px 10px;
+    font-size: 8px;
+    letter-spacing: 0;
+  }
+  
+  .replies_box div {
+    margin: 5px 0 0 5px;
+  }
+
+  .popular_categories .category_tag {
+    font-size: 10px;
+  }
+
+  .active_users .user_box img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .active_users .user_name {
+    font-size: 12px;
+  }
+  
+  .active_users .user_box .rank {
+    left: 20px;
+    font-size: 10px;
+  }
+
+  .hot_discussion {
+    font-size: 12px;
+  }
+  
+  .hot_discussion .category {
+    font-size: 9px;
+  }
+}
