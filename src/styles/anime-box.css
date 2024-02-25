@@ -102,6 +102,10 @@
     font-size: 12px;
     margin-top: 5px;
   }
+
+  .animes_anime_box {
+    width: 40% !important;
+  }
 }
 
 @media (max-width: 376px) {

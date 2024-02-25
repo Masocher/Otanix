@@ -242,7 +242,7 @@ const Animes = () => {
 
       <div className="bottom_side">
         {animes.map((anime) => (
-          <div className="anime_box" key={anime.id}>
+          <div className="anime_box animes_anime_box" key={anime.id}>
             <img src={anime.cover} alt="anime-cover" />
 
             <div className="anime_info">

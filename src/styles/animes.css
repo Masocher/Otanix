@@ -80,3 +80,45 @@
 .animes_container .filters_btn div {
   margin: 5px 0 0 8px;
 }
+
+/* responsive */
+@media (max-width: 1025px) {
+  .animes_container .anime_box {
+    width: calc(100% / 5);
+  }
+}
+
+@media (max-width: 769px) {
+  .animes_container .anime_box {
+    width: calc(100% / 4);
+  }
+}
+
+@media (max-width: 426px) {
+  .animes_container .anime_box {
+    width: calc(100% / 3);
+  }
+
+  .animes_container .top_side {
+    width: calc(100% - 30px);
+  }
+
+  .animes_container .filters_btn {
+    font-size: 12px;
+    width: 30%;
+  }
+
+  .animes_container .search_box {
+    width: calc(70% - 15px) !important;
+  }
+
+  .search_icon {
+    font-size: 12px;
+    top: 14.5px;
+  }
+
+  .search_box input {
+    font-size: 12px;
+    padding: 10px 40px 10px 10px;
+  }
+}
