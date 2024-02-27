@@ -1,6 +1,4 @@
 .contact_container {
-  width: calc(100% - 100px);
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,4 +62,52 @@
 .message_form button:hover {
   background: none;
   color: #f5cb5c;
+}
+
+/* responsive */
+@media (max-width: 767px) {
+  .message_form {
+    width: calc(100% - 50px);
+  }
+
+  .message_form input {
+    width: calc(47% - 30px);
+    font-size: 10px;
+  }
+
+  .message_form textarea {
+    font-size: 10px;
+    min-height: 150px;
+  }
+
+  .message_form button {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 424px) {
+  .contact_container .title_box {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: yekanBakhBold;
+  }
+
+  .contact_container .title_box .mini_title {
+    font-size: 10px;
+  }
+
+  .message_form {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .message_form input {
+    width: 100%;
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  .message_form textarea {
+    margin-top: 15px;
+  }
 }
