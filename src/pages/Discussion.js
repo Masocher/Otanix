@@ -68,34 +68,33 @@ const Discussion = () => {
     <div className="discussion_container">
       <div className="top_section">
         <div className="user_box">
-          <img
-            src={img1}
-            className="user_profile_image"
-            alt="user-profile-cover"
-          />
-
-          <div className="user_about">
+          <div className="user_about_top">
+            <img
+              src={img1}
+              className="user_profile_image"
+              alt="user-profile-cover"
+            />
             <span>
               <div className="user_name">Masocher</div>
               <div className="discussion_date">1 سال پیش مطرح شد</div>
             </span>
+          </div>
 
-            <div className="discussion_info_boxes">
-              <div className="category">
-                <div className="category_content">
-                  <div>
-                    <FontAwesomeIcon icon={faFolderOpen} />
-                  </div>
-                  {discussion.category}
-                </div>
-              </div>
-
-              <div className="reply_box">
+          <div className="user_about_bottom">
+            <div className="category">
+              <div className="category_content">
                 <div>
-                  <FontAwesomeIcon icon={faReply} />
+                  <FontAwesomeIcon icon={faFolderOpen} />
                 </div>
-                2 پاسخ
+                {discussion.category}
               </div>
+            </div>
+
+            <div className="reply_box">
+              <div>
+                <FontAwesomeIcon icon={faReply} />
+              </div>
+              2 پاسخ
             </div>
           </div>
         </div>
@@ -115,19 +114,20 @@ const Discussion = () => {
           <div className="answers_list">
             <div className="answer_box">
               <div className="user_box">
-                <img src={img1} alt="user-profile-cover" />
-
-                <div className="user_about">
+                <div className="user_box_top">
+                  <img src={img1} alt="user-profile-cover" />
                   <span>
                     <div className="user_name">Masocher</div>
                     <div className="discussion_date">1 سال پیش مطرح شد</div>
                   </span>
+                </div>
 
+                <div className="user_box_bottom">
                   <div className="icon_box">
                     <span>
                       <FontAwesomeIcon icon={faTriangleExclamation} />
                     </span>
-                    گزارش تخلف
+                    <div>گزارش تخلف</div>
                   </div>
                 </div>
               </div>
