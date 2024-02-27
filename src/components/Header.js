@@ -14,15 +14,22 @@ import {
   faMoon,
   faSun,
   faUser,
+  faClose,
 } from "@fortawesome/free-solid-svg-icons";
 
 // redux
 import { useDispatch, useSelector } from "react-redux";
-import { changeTheme } from "../redux/Actions";
+import { changeTheme, changePopUpStatus } from "../redux/Actions";
+
+// components
+import PopUpMenu from "./PopUpMenu";
 
 const Header = () => {
   const dispatch = useDispatch();
+
   const themeStatus = useSelector((rootReducer) => rootReducer.themeReducer);
+
+  const popUpStatus = useSelector((rootReducer) => rootReducer.popUpReducer);
 
   const location = useLocation();
 
@@ -75,8 +82,8 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="menu_icon">
-        <FontAwesomeIcon icon={faBars} />
+      <div className="menu_icon" onClick={() => dispatch(changePopUpStatus())}>
+        <FontAwesomeIcon icon={popUpStatus ? faClose : faBars} />
       </div>
 
       <div className="left_side">
@@ -120,6 +127,8 @@ const Header = () => {
           </div>
         )}
       </div>
+
+      <PopUpMenu />
     </div>
   );
 };

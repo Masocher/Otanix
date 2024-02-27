@@ -99,6 +99,9 @@ body {
 .App.show .menu_icon {
   color: #f26161;
 }
+.App.show .menu_container {
+  background-color: #ebecef;
+}
 .App.show .score_box {
   color: #fff !important;
   background-color: #f26161;
