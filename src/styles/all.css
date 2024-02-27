@@ -96,6 +96,9 @@ body {
 .App.show .play_btn:hover {
   background: none !important;
 }
+.App.show .menu_icon {
+  color: #f26161;
+}
 .App.show .score_box {
   color: #fff !important;
   background-color: #f26161;

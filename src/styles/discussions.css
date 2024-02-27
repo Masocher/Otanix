@@ -305,7 +305,7 @@
 }
 
 /* responsive */
-@media (max-width: 1439px) {
+@media (max-width: 1181px) {
   .discussions_container {
     flex-direction: column;
   }
