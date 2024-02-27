@@ -63,24 +63,6 @@
   background: #f5cc5c85;
 }
 
-.have_account {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 25px;
-  font-size: 12px;
-}
-
-.sign_little_btn {
-  background-color: #f5cb5c;
-  color: #000;
-  padding: 3px 10px;
-  border-radius: 5px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
 .sign_container .top_buttons {
   display: flex;
   justify-content: center;
@@ -129,4 +111,58 @@
 
 .sign_back div {
   margin: 3px 5px 0 0;
+}
+
+/* responsive */
+@media (max-width: 767px) {
+  .sign_form {
+    padding: 35px 40px 40px 40px;
+    width: calc(100% - 130px);
+  }
+
+  .sign_form .title_box {
+    font-size: 20px;
+  }
+
+  .sign_form .description {
+    font-size: 10px;
+  }
+
+  .sign_input {
+    width: calc(100% - 40px);
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+
+  .submit_btn {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .sign_container .top_buttons div,
+  .sign_container .linked {
+    font-size: 10px;
+    padding: 9px 0;
+  }
+
+  .sign_container .top_buttons span {
+    margin: 3px 7px 0 0;
+    font-size: 12px;
+  }
+
+  .sign_back {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 376px) {
+  .sign_back {
+    left: 30px;
+  }
+
+  .sign_form {
+    padding: 35px 30px 40px 30px;
+    width: calc(100% - 60px);
+    border-radius: 0;
+  }
 }

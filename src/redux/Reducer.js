@@ -20,7 +20,7 @@ const themeReducer = (state = themeStatus, action) => {
   }
 };
 
-const authStatus = true;
+const authStatus = false;
 
 const authStatusReducer = (state = authStatus, action) => {
   switch (action.type) {
