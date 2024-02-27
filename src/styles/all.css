@@ -96,6 +96,10 @@ body {
 .App.show .play_btn:hover {
   background: none !important;
 }
+.App.show .score_box {
+  color: #fff !important;
+  background-color: #f26161;
+}
 .App.show .tag_box {
   border-color: #f26161 !important;
   color: #f26161 !important;
@@ -618,6 +622,20 @@ body {
 .App.show .animes_container .filters_btn:hover {
   background: none;
   color: #f26161;
+}
+
+/* loading box */
+.App.show .inner.one {
+  border-bottom: 3px solid #f26161;
+}
+.App.show .inner.two {
+  border-right: 3px solid #f26161;
+}
+.App.show .inner.three {
+  border-top: 3px solid #f26161;
+}
+.App.show .loading_wrapper {
+  background-color: #fff;
 }
 
 /* responsive */
