@@ -78,7 +78,7 @@ body {
 .App.show .logo_box,
 .App.show .h_link.show,
 .App.show .score_box {
-  color: #f26161 !important;
+  color: #ef4f72 !important;
 }
 .App.show .h_link {
   color: #000 !important;
@@ -89,33 +89,33 @@ body {
 }
 .App.show .log_btn,
 .App.show .play_btn {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 .App.show .play_btn:hover {
   background: none !important;
 }
 .App.show .menu_icon {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .menu_container {
   background-color: #ebecef;
 }
 .App.show .score_box {
   color: #fff !important;
-  background-color: #f26161;
+  background-color: #ef4f72;
 }
 .App.show .tag_box {
-  border-color: #f26161 !important;
-  color: #f26161 !important;
+  border-color: #ef4f72 !important;
+  color: #ef4f72 !important;
 }
 .App.show .tag_box:hover {
-  background-color: #f26161 !important;
+  background-color: #ef4f72 !important;
   color: #fff !important;
 }
 .App.show .anime_description {
-  border-color: #f261613d !important;
+  border-color: #ef4f723d !important;
 }
 .App.show .category_box img {
   filter: brightness(0.5) !important;
@@ -124,34 +124,34 @@ body {
   border-color: #fff !important;
 }
 .App.show .category_box .title_box:hover {
-  border-color: #f26161 !important;
-  background-color: #f2616144 !important;
+  border-color: #ef4f72 !important;
+  background-color: #ef4f7244 !important;
 }
 .App.show .section_title_box .show_btn {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 .App.show .section_title_box .show_btn:hover {
   background: none;
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .section_title_box span {
-  border-color: #f26161;
-  color: #f26161;
+  border-color: #ef4f72;
+  color: #ef4f72;
 }
 .App.show .article_box {
   background-color: #fff;
   border-color: #fff;
 }
 .App.show .article_box:hover {
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 .App.show .article_box .main_title {
   color: #000;
 }
 .App.show .article_box .main_title:hover {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .comments_num {
   color: #00a9ff !important;
@@ -165,29 +165,29 @@ body {
   color: #000;
 }
 .App.show .show_anime {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
 }
 .App.show .show_anime:hover {
   background-color: #000;
 }
 .App.show .score {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .home_discussions .discussion_box {
   background-color: #fff;
   border-color: #fff;
 }
 .App.show .home_discussions .discussion_box:hover {
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 .App.show .home_discussions .discussions .show_more {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 .App.show .home_discussions .discussions .title_box {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .home_discussions .discussions .user_box {
   color: #000;
@@ -196,7 +196,7 @@ body {
   color: #000;
 }
 .App.show .discussion_reply .reply_icon {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .discussion_reply_num {
   color: #000;
@@ -206,19 +206,19 @@ body {
   color: #000;
 }
 .App.show .weekly_schedule .top_section {
-  border-bottom: 1px solid #f26161;
+  border-bottom: 1px solid #ef4f72;
 }
 .App.show .weekly_schedule .title_box div {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .week_days div {
   color: #000;
 }
 .App.show .week_days div:hover {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .week_days div.show {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
 }
 .App.show .week_days div.show:hover {
@@ -229,17 +229,17 @@ body {
   border-color: #eee;
 }
 .App.show .schedule_notif_box:hover {
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 .App.show .footer_container {
   color: #000;
 }
 .App.show .footer_container .left_section .title_box {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .footer_container .icon_box {
   background-color: #fff;
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .weekly_schedule .top_side {
   border-bottom: 1px solid #ebecef;
@@ -250,7 +250,7 @@ body {
   background-color: #fff;
 }
 .App.show .sign_form .title_box {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .sign_input {
   background-color: #ebecef;
@@ -258,28 +258,28 @@ body {
   color: #000;
 }
 .App.show .sign_input:focus {
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 .App.show .submit_btn {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
 }
 .App.show .submit_btn:hover {
   background: rgb(249, 83, 83);
 }
 .App.show .sign_container .top_buttons {
-  border-bottom: 1px solid #f26161;
+  border-bottom: 1px solid #ef4f72;
 }
 .App.show .sign_container .top_buttons div,
 .sign_container .linked {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
 }
 .App.show .sign_container .linked {
-  color: #f26161 !important;
+  color: #ef4f72 !important;
 }
 .App.show .sign_back {
-  color: #f26161;
+  color: #ef4f72;
 }
 
 /* anime single page light theme */
@@ -292,36 +292,36 @@ body {
   border: 1px solid #fff;
 }
 .App.show .anime_single_box .right_side_r_sec .icons div:hover {
-  border-color: #f26161;
-  color: #f26161;
+  border-color: #ef4f72;
+  color: #ef4f72;
 }
 .App.show .anime_single_box .title_box {
-  border-right: 1px solid #f26161;
+  border-right: 1px solid #ef4f72;
 }
 .App.show .anime_single_box .anime_tags {
-  border-bottom: 1px solid #f261613d;
+  border-bottom: 1px solid #ef4f723d;
 }
 .App.show .attribute {
   background-color: #fff;
 }
 .App.show .attribute_title {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .attribute_title span {
   color: #000;
 }
 .App.show .attribute_icon {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .anime_single_box .left_side_title {
-  border-bottom: 1px solid #f261613d;
+  border-bottom: 1px solid #ef4f723d;
 }
 .App.show .anime_score_votes {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
 }
 .App.show .anime_score_box span {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .last_episode {
   background-color: #fff;
@@ -330,19 +330,19 @@ body {
   color: #000;
 }
 .App.show .last_episode .play_new_ep_btn {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
-  border: 1px solid #f26161;
+  border: 1px solid #ef4f72;
 }
 .App.show .last_episode .play_new_ep_btn:hover {
   background: none;
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .character_box {
   border-bottom: 1px solid #ccc;
 }
 .App.show .character_box:hover {
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 .App.show .char_name {
   color: #000;
@@ -356,34 +356,34 @@ body {
   color: #000;
 }
 .App.show .comment_form input:focus {
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 .App.show .comment_form button {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
-  border: 1px solid #f26161;
+  border: 1px solid #ef4f72;
 }
 .App.show .comment_form button:hover {
   background: none;
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .comment_box {
   background-color: #fff;
-  border-right: 2px solid #f26161;
+  border-right: 2px solid #ef4f72;
   color: #000;
 }
 .App.show .comments_section .rate_box {
   background-color: #fff;
   color: #000;
-  border-bottom: 1px solid #f26161;
+  border-bottom: 1px solid #ef4f72;
 }
 .App.show .comments_section .rate_box .submit_rate {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
-  border: 1px solid #f26161;
+  border: 1px solid #ef4f72;
 }
 .App.show .comments_section .rate_box .submit_rate:hover {
-  color: #f26161;
+  color: #ef4f72;
   background: none;
 }
 .App.show .comment_buttons .comment_btn {
@@ -391,7 +391,7 @@ body {
   border: 1px solid #eee;
 }
 .App.show .comment_buttons .comment_btn:hover {
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 
 /* discussions page light theme */
@@ -401,16 +401,16 @@ body {
   color: #000;
 }
 .App.show .search_box input:focus {
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 .App.show .create_discussions {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
-  border: 1px solid #f26161;
+  border: 1px solid #ef4f72;
 }
 .App.show .create_discussions:hover {
   background: none;
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .discussions_container .discussion_box {
   background-color: #fff;
@@ -418,27 +418,27 @@ body {
   color: #000;
 }
 .App.show .discussions_container .discussion_box:hover {
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 .App.show .discussions_container .discussion_box .title_box {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .discussions_container .discussion_box .category,
 .App.show .popular_categories .category {
-  border: 1px solid #f26161;
+  border: 1px solid #ef4f72;
   color: #fff;
-  background-color: #f26161;
+  background-color: #ef4f72;
 }
 .App.show .discussions_container .discussion_box .category:hover,
 .App.show .popular_categories .category:hover {
   background: none;
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .replies_box {
   background-color: #eee;
 }
 .App.show .replies_box div {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .hot_discussions {
   background-color: #fff;
@@ -449,13 +449,13 @@ body {
   color: #000;
 }
 .App.show .hot_discussion:hover {
-  color: #f26161;
-  border-color: #f26161;
+  color: #ef4f72;
+  border-color: #ef4f72;
 }
 .App.show .hot_discussion .category {
   color: #fff;
-  border: 1px solid #f26161;
-  background-color: #f26161;
+  border: 1px solid #ef4f72;
+  background-color: #ef4f72;
 }
 .App.show .popular_categories {
   border: 1px dashed #909090;
@@ -465,11 +465,11 @@ body {
   color: #000;
 }
 .App.show .active_users .user_box .rank {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .active_users .user_box .rank div {
   color: #fff;
-  background-color: #f26161;
+  background-color: #ef4f72;
 }
 .App.show .popular_categories .category_tag {
   background-color: #fff;
@@ -477,10 +477,10 @@ body {
   border: 1px solid #fff;
 }
 .App.show .popular_categories .category_tag:hover {
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 .App.show .popular_categories .category_tag span {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .replies_box {
   color: #000;
@@ -501,7 +501,7 @@ body {
   border: 1px solid #ebecef;
 }
 .App.show .popular_categories .category_tag:hover {
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 
 /* contact page */
@@ -509,7 +509,7 @@ body {
   color: #000;
 }
 .App.show .contact_container .title_box {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .message_form input,
 .App.show .message_form textarea {
@@ -519,16 +519,16 @@ body {
 }
 .App.show .message_form input:focus,
 .App.show .message_form textarea:focus {
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 .App.show .message_form button {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
-  border: 1px solid #f26161;
+  border: 1px solid #ef4f72;
 }
 .App.show .message_form button:hover {
   background: none;
-  color: #f26161;
+  color: #ef4f72;
 }
 
 /* discussion single page */
@@ -540,10 +540,10 @@ body {
   color: #000;
 }
 .App.show .reply_box div {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .discussion_container .top_section .title_box {
-  border-right: 2px solid #f26161;
+  border-right: 2px solid #ef4f72;
   color: #000;
 }
 .App.show .discussion_container .top_section .description {
@@ -551,13 +551,13 @@ body {
   color: #000;
 }
 .App.show .discussion_container .top_section .category_content {
-  border: 1px solid #f26161;
+  border: 1px solid #ef4f72;
   color: #fff;
-  background-color: #f26161;
+  background-color: #ef4f72;
 }
 .App.show .discussion_container .top_section .category_content:hover {
   background: none;
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .discussion_container .top_section .user_name {
   color: #000;
@@ -568,25 +568,25 @@ body {
   color: #000;
 }
 .App.show .answer_form input:focus {
-  border-color: #f26161;
+  border-color: #ef4f72;
 }
 .App.show .answer_form button {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
-  border: 1px solid #f26161;
+  border: 1px solid #ef4f72;
 }
 .App.show .answer_form button:hover {
   background: none;
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .answer_box {
   background-color: #fff;
 }
 .App.show .answer_box .user_about .icon_box {
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .answer_box .user_about .icon_box span {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
 }
 .App.show .answer_box .answer {
@@ -594,13 +594,13 @@ body {
   color: #000;
 }
 .App.show .answer_box .answer_btn {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
-  border: 1px solid #f26161;
+  border: 1px solid #ef4f72;
 }
 .App.show .answer_box .answer_btn:hover {
   background: none;
-  color: #f26161;
+  color: #ef4f72;
 }
 .App.show .answer_box .user_box {
   color: #000;
@@ -610,35 +610,35 @@ body {
   color: #000;
 }
 .App.show .discussion_anime .show_btn {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
-  border: 1px solid #f26161;
+  border: 1px solid #ef4f72;
 }
 .App.show .discussion_anime .show_btn:hover {
   background: none;
-  color: #f26161;
+  color: #ef4f72;
 }
 
 /* animes page */
 .App.show .animes_container .filters_btn {
-  background-color: #f26161;
+  background-color: #ef4f72;
   color: #fff;
-  border: 1px solid #f26161;
+  border: 1px solid #ef4f72;
 }
 .App.show .animes_container .filters_btn:hover {
   background: none;
-  color: #f26161;
+  color: #ef4f72;
 }
 
 /* loading box */
 .App.show .inner.one {
-  border-bottom: 3px solid #f26161;
+  border-bottom: 3px solid #ef4f72;
 }
 .App.show .inner.two {
-  border-right: 3px solid #f26161;
+  border-right: 3px solid #ef4f72;
 }
 .App.show .inner.three {
-  border-top: 3px solid #f26161;
+  border-top: 3px solid #ef4f72;
 }
 .App.show .loading_wrapper {
   background-color: #fff;
