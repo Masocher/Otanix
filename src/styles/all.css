@@ -54,7 +54,7 @@ body {
   font-size: 11px;
 }
 
-.tag_box {
+.App .tag_box {
   border: 1px solid #f5cb5c;
   padding: 4.5px 10px;
   font-size: 12px;
@@ -64,7 +64,7 @@ body {
   transition: 0.2s;
   margin-left: 10px;
 }
-.tag_box:hover {
+.App .tag_box:hover {
   background-color: #f5cb5c;
   color: #000;
 }
@@ -106,11 +106,11 @@ body {
   color: #fff !important;
   background-color: #ef4f72;
 }
-.App.show .tag_box {
+.App .App.show .tag_box {
   border-color: #ef4f72 !important;
   color: #ef4f72 !important;
 }
-.App.show .tag_box:hover {
+.App .App.show .tag_box:hover {
   background-color: #ef4f72 !important;
   color: #fff !important;
 }
@@ -653,6 +653,12 @@ body {
   body {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 1023px) {
+  .App .tag_box {
+    font-size: 10px !important;
   }
 }
 

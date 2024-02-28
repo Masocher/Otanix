@@ -180,13 +180,13 @@
 }
 
 .anime_description {
+  padding-bottom: 20px;
   font-size: 14px;
   font-weight: 100;
   width: 450px;
   letter-spacing: 0.5px;
   margin: 20px 0;
   border-bottom: 1px solid #f5cc5c3d;
-  padding-bottom: 20px;
 }
 
 .play_btn {
@@ -295,4 +295,225 @@
 
 .last_episode .play_new_ep_btn div {
   margin: 4px 0 0 5px;
+}
+
+/* responsive */
+@media (max-width: 1439px) {
+  .anime_single_box {
+    width: calc(100% - 150px);
+    align-items: center;
+    flex-direction: column;
+    top: 50px;
+    transform: translate(-50%, 0);
+  }
+
+  .anime_background_cover {
+    height: 750px;
+    overflow: hidden;
+  }
+
+  .anime_single_box .left_side {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .anime_description {
+    width: 100%;
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .last_episode .right_side {
+    width: 200px;
+    height: 120px;
+  }
+
+  .last_episode .description {
+    width: calc(100% - 220px);
+    font-size: 12px;
+  }
+
+  .last_episode .play_new_ep_btn {
+    bottom: 10px;
+    left: 20px;
+    font-size: 10px;
+  }
+
+  .anime_single_box .anime_cover {
+    width: 205px;
+    height: 290px;
+  }
+
+  .anime_single_box .title_box {
+    font-size: 18px;
+  }
+
+  .anime_single_box .anime_tags {
+    margin-top: 30px;
+  }
+
+  .anime_single_box .tags_title_box {
+    font-size: 12px;
+  }
+
+  .attributes {
+    width: 400px;
+  }
+
+  .attribute_title {
+    font-size: 8px;
+  }
+
+  .attribute_title span {
+    font-size: 10px;
+  }
+
+  .attribute_icon {
+    font-size: 18px;
+  }
+
+  .anime_score_votes {
+    font-size: 10px;
+  }
+
+  .anime_score_box div {
+    font-size: 26px;
+  }
+
+  .anime_score_box span {
+    font-size: 10px;
+  }
+
+  .anime_single_box .right_side_r_sec .icons div {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .attribute {
+    width: 85px;
+    height: 85px;
+  }
+
+  .attribute_title {
+    font-size: 7px;
+  }
+
+  .attribute_title span {
+    font-size: 9px;
+  }
+
+  .attribute_icon {
+    font-size: 16px;
+  }
+
+  .anime_single_box .right_side {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .anime_single_box .anime_cover {
+    width: 165px;
+    height: 220px;
+  }
+
+  .anime_single_box {
+    width: calc(100% - 50px);
+    align-items: center;
+    flex-direction: column;
+    top: 20px;
+  }
+
+  .anime_background_cover {
+    min-height: 1000px;
+  }
+
+  .right_side_information {
+    margin: 20px 0 0 0;
+  }
+
+  .anime_single_box .right_side_r_sec .icons div {
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .attributes {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tags_title_box {
+    display: none;
+  }
+
+  .anime_tag_boxes {
+    flex-wrap: wrap;
+  }
+
+  .tag_box {
+    margin-top: 10px;
+  }
+
+  .anime_single_box .title_box {
+    font-size: 14px;
+  }
+
+  .anime_description {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .play_btn {
+    font-size: 10px;
+  }
+
+  .last_episode_wrapper {
+    width: calc(100% - 50px);
+  }
+
+  .last_episode .description {
+    width: calc(100% - 90px);
+    font-size: 8px;
+  }
+
+  .last_episode .right_side {
+    width: 80px;
+    height: 80px;
+  }
+
+  .last_episode .play_new_ep_btn {
+    font-size: 8px;
+    padding: 2px 8px;
+  }
+
+  .last_episode .time_box {
+    left: 0;
+    bottom: 0;
+    font-size: 8px;
+  }
+
+  .last_episode .play_icon {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 424px) {
+  .last_episode {
+    flex-direction: column;
+  }
+
+  .last_episode .description {
+    width: 100%;
+    font-size: 8px;
+    margin-bottom: 25px;
+  }
+
+  .last_episode .right_side {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+  }
 }

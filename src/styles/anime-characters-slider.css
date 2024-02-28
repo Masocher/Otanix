@@ -42,3 +42,16 @@
   color: #999;
   font-size: 12px;
 }
+
+/* responsive */
+@media (max-width: 767px) {
+  .anime_characters_wrapper {
+    width: calc(100% - 50px);
+  }
+}
+
+@media (max-width: 424px) {
+  .anime_characters_wrapper {
+    margin: 120px auto 0 auto;
+  }
+}

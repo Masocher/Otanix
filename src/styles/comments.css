@@ -159,3 +159,122 @@
 .comm_left_btn span {
   margin-top: 4px;
 }
+
+/* responsive */
+@media (max-width: 1439px) {
+  .comment_box .description {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .comments_section .rate_box {
+    padding: 30px 20px;
+  }
+
+  .comments_section .rate_box .title_box {
+    font-size: 14px;
+    letter-spacing: 0;
+    margin: 0 0 15px 0;
+  }
+  
+  .comments_section .rate_box .submit_rate {
+    font-size: 12px;
+  }
+
+  .comment_form input {
+    font-size: 12px;
+  }
+  
+  .comment_form button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .comments_section {
+    flex-direction: column-reverse;
+  }
+
+  .comments_section_wrapper {
+    width: 100%;
+  }
+
+  .comments_section .rate_box {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 30px 0;
+    border: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .comment_box .description {
+    font-size: 9px;
+    line-height: 20px;
+  }
+
+  .comment_box .user_cover {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .comment_box .user_name {
+    font-size: 12px;
+  }
+
+  .comment_buttons {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .comment_buttons .comment_btn {
+    font-size: 10px;
+    width: 55px;
+    padding-top: 3px;
+  }
+
+  .comments_section .rate_box {
+    padding: 25px 0;
+  }
+
+  .comments_section .rate_box .submit_rate {
+    font-size: 10px;
+  }
+
+  .comments_section .rate_box .title_box {
+    font-size: 12px;
+    margin: 0 0 12px 0;
+  }
+
+  .comment_form input {
+    font-size: 8px;
+    padding: 12px 30px;
+  }
+  
+  .comment_form button {
+    font-size: 8px;
+    padding: 11px 0;
+  }
+
+  .comment_form {
+    width: calc(100% - 40px + 2px);
+    padding: 20px;
+  }
+
+  .comments_container {
+    width: calc(100% - 50px);
+  }
+}
+
+@media (max-width: 424px) {
+  .comment_box .description {
+    font-size: 7px;
+    line-height: 16px;
+  }
+
+  .comment_buttons .comment_btn {
+    font-size: 8px;
+    width: 50px;
+    padding-top: 2px;
+  }
+}

@@ -90,7 +90,6 @@ const AnimeCharactersSlider = () => {
       </div>
 
       <Swiper
-        slidesPerView={7}
         loop={true}
         modules={[Autoplay]}
         autoplay={{ delay: 2000 }}
@@ -100,6 +99,26 @@ const AnimeCharactersSlider = () => {
         className="anime_characters_slider"
         allowTouchMove={true}
         spaceBetween={30}
+        breakpoints={{
+          1440: {
+            slidesPerView: 7,
+          },
+          1024: {
+            slidesPerView: 5,
+          },
+          768: {
+            slidesPerView: 4,
+          },
+          425: {
+            slidesPerView: 2,
+          },
+          375: {
+            slidesPerView: 2,
+          },
+          320: {
+            slidesPerView: 2,
+          },
+        }}
       >
         {state.map((char) => (
           <SwiperSlide className="character_box" key={char.id}>
