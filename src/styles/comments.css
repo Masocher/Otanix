@@ -209,8 +209,8 @@
 
 @media (max-width: 767px) {
   .comment_box .description {
-    font-size: 9px;
-    line-height: 20px;
+    font-size: 11px;
+    line-height: 24px;
   }
 
   .comment_box .user_cover {
@@ -228,7 +228,7 @@
   }
   
   .comment_buttons .comment_btn {
-    font-size: 10px;
+    font-size: 12px;
     width: 55px;
     padding-top: 3px;
   }
@@ -268,13 +268,17 @@
 
 @media (max-width: 424px) {
   .comment_box .description {
-    font-size: 7px;
-    line-height: 16px;
+    font-size: 10px;
+    line-height: 20px;
   }
 
   .comment_buttons .comment_btn {
-    font-size: 8px;
     width: 50px;
     padding-top: 2px;
+  }
+
+  .comment_box {
+    width: calc(100% - 40px);
+    padding: 20px;
   }
 }
