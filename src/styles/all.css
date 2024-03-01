@@ -106,11 +106,11 @@ body {
   color: #fff !important;
   background-color: #ef4f72;
 }
-.App .App.show .tag_box {
+.App.show .tag_box {
   border-color: #ef4f72 !important;
   color: #ef4f72 !important;
 }
-.App .App.show .tag_box:hover {
+.App.show .tag_box:hover {
   background-color: #ef4f72 !important;
   color: #fff !important;
 }
