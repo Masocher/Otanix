@@ -631,14 +631,8 @@ body {
 }
 
 /* loading box */
-.App.show .inner.one {
-  border-bottom: 3px solid #ef4f72;
-}
-.App.show .inner.two {
-  border-right: 3px solid #ef4f72;
-}
-.App.show .inner.three {
-  border-top: 3px solid #ef4f72;
+.App.show .ldio-9ghozaihh0b div {
+  border: 20px solid #ef4f72;
 }
 .App.show .loading_wrapper {
   background-color: #fff;

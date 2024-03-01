@@ -4,10 +4,10 @@ import "../styles/loading.css";
 const Loading = () => {
   return (
     <div className="loading_wrapper">
-      <div class="loader">
-        <div class="inner one"></div>
-        <div class="inner two"></div>
-        <div class="inner three"></div>
+      <div class="loadingio-spinner-rolling-oc83xtm5bt9">
+        <div class="ldio-9ghozaihh0b">
+          <div></div>
+        </div>
       </div>
     </div>
   );
