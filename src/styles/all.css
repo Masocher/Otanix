@@ -638,6 +638,20 @@ body {
   background-color: #fff;
 }
 
+/* characters page */
+.App.show .characters_container .filters_btn {
+  background-color: #ef4f72;
+  border: 1px solid #ef4f72;
+  color: #fff;
+}
+.App.show .characters_container .filters_btn:hover {
+  background: none;
+  color: #ef4f72;
+}
+.App.show .characters_container .voice_actor {
+  color: #ef4f72;
+}
+
 /* responsive */
 @media (min-width: 1441px) {
   .App {

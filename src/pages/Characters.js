@@ -114,7 +114,7 @@ const Characters = () => {
     <div className="characters_container">
       <div className="top_side">
         <form className="search_box" action="#">
-          <input placeholder="جستجو در انیمه ها ..." />
+          <input placeholder="جستجو در کاراکتر ها ..." />
           <div className="search_icon">
             <FontAwesomeIcon icon={faMagnifyingGlass} />
           </div>
