@@ -70,6 +70,15 @@ const Header = () => {
               گفتگو ها
             </div>
           </Link>
+          <Link to={"/characters"} style={{ textDecoration: "none" }}>
+            <div
+              className={`h_link ${
+                location.pathname === "/characters" ? "show" : ""
+              }`}
+            >
+              کاراکتر ها
+            </div>
+          </Link>
           <Link to={"/contact"} style={{ textDecoration: "none" }}>
             <div
               className={`h_link ${

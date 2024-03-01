@@ -29,7 +29,11 @@ const PopUpMenu = () => {
   return (
     <div className={`menu_container ${popUpStatus ? "show" : ""}`}>
       {authStatus ? (
-        <Link to={"/pannel"} className="pannel_icon" onClick={() => dispatch(changePopUpStatus())}>
+        <Link
+          to={"/pannel"}
+          className="pannel_icon"
+          onClick={() => dispatch(changePopUpStatus())}
+        >
           <FontAwesomeIcon icon={faUser} />
         </Link>
       ) : (
@@ -67,19 +71,31 @@ const PopUpMenu = () => {
         </span>
       </div>
 
-      <Link to={"/"} style={{ textDecoration: "none" }} onClick={() => dispatch(changePopUpStatus())}>
+      <Link
+        to={"/"}
+        style={{ textDecoration: "none" }}
+        onClick={() => dispatch(changePopUpStatus())}
+      >
         <div className={`h_link ${location.pathname === "/" ? "show" : ""}`}>
           صفحه اصلی
         </div>
       </Link>
-      <Link to={"/animes"} style={{ textDecoration: "none" }} onClick={() => dispatch(changePopUpStatus())}>
+      <Link
+        to={"/animes"}
+        style={{ textDecoration: "none" }}
+        onClick={() => dispatch(changePopUpStatus())}
+      >
         <div
           className={`h_link ${location.pathname === "/animes" ? "show" : ""}`}
         >
           انیمه ها
         </div>
       </Link>
-      <Link to={"/discussions"} style={{ textDecoration: "none" }} onClick={() => dispatch(changePopUpStatus())}>
+      <Link
+        to={"/discussions"}
+        style={{ textDecoration: "none" }}
+        onClick={() => dispatch(changePopUpStatus())}
+      >
         <div
           className={`h_link ${
             location.pathname === "/discussions" ? "show" : ""
@@ -88,7 +104,24 @@ const PopUpMenu = () => {
           گفتگو ها
         </div>
       </Link>
-      <Link to={"/contact"} style={{ textDecoration: "none" }} onClick={() => dispatch(changePopUpStatus())}>
+      <Link
+        to={"/characters"}
+        style={{ textDecoration: "none" }}
+        onClick={() => dispatch(changePopUpStatus())}
+      >
+        <div
+          className={`h_link ${
+            location.pathname === "/characters" ? "show" : ""
+          }`}
+        >
+          کاراکتر ها
+        </div>
+      </Link>
+      <Link
+        to={"/contact"}
+        style={{ textDecoration: "none" }}
+        onClick={() => dispatch(changePopUpStatus())}
+      >
         <div
           className={`h_link ${location.pathname === "/contact" ? "show" : ""}`}
         >
