@@ -23,14 +23,14 @@
   border-radius: 10px;
   cursor: pointer;
   object-fit: cover;
-  transition: .2s;
+  transition: 0.2s;
 }
 .char_box img:hover {
-    opacity: .7;
+  opacity: 0.7;
 }
 
 .char_name {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .characters_container .voice_actor {
@@ -94,4 +94,102 @@
 
 .characters_container .filters_btn div {
   margin: 5px 0 0 8px;
+}
+
+/* responsive */
+@media (max-width: 1439px) {
+  .char_box {
+    width: calc(100% / 7);
+  }
+}
+
+@media (max-width: 1023px) {
+  .char_box {
+    width: calc(100% / 5);
+  }
+}
+
+@media (max-width: 767px) {
+  .char_box {
+    width: calc(100% / 4);
+  }
+
+  .characters_container .top_side {
+    width: calc(100% - 30px);
+  }
+
+  .filters_btn {
+    font-size: 12px;
+    width: 30%;
+  }
+
+  .search_box {
+    width: calc(70% - 15px) !important;
+  }
+
+  .filters_btn {
+    top: 14.5px;
+  }
+
+  .search_box input {
+    font-size: 12px;
+    padding: 10px 40px 10px 10px;
+  }
+
+  .characters_container .anime_box {
+    width: calc(100% / 3);
+  }
+
+  .characters_container .top_side {
+    width: calc(100% - 30px);
+  }
+
+  .characters_container .filters_btn {
+    font-size: 12px;
+    width: 30%;
+  }
+
+  .characters_container .search_box {
+    width: calc(70% - 15px) !important;
+  }
+
+  .search_icon {
+    font-size: 12px;
+    top: 14.5px;
+  }
+
+  .search_box input {
+    font-size: 12px;
+    padding: 10px 40px 10px 10px;
+  }
+}
+
+@media (max-width: 601px) {
+  .characters_wrapper {
+    width: 100%;
+  }
+
+  .char_box {
+    width: 40%;
+  }
+
+  .char_name {
+    font-size: 12px;
+  }
+
+  .characters_container .voice_actor {
+    color: #f5cb5c;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 424px) {
+  .char_name {
+    font-size: 10px;
+  }
+
+  .characters_container .voice_actor {
+    color: #f5cb5c;
+    font-size: 8px;
+  }
 }

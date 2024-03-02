@@ -1,6 +1,6 @@
 // assets
-import "../styles/characters.css";
 import "../styles/animes.css";
+import "../styles/characters.css";
 import img1 from "../images/animes/1.jpg";
 
 // icons
