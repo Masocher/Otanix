@@ -25,6 +25,7 @@ const Discussions = React.lazy(() => import("./pages/Discussions"));
 const Discussion = React.lazy(() => import("./pages/Discussion"));
 const Pannel = React.lazy(() => import("./pages/Pannel"));
 const Characters = React.lazy(() => import("./pages/Characters"));
+const Character = React.lazy(() => import("./pages/Character"));
 
 function App() {
   const themeStatus = useSelector((rootReducer) => rootReducer.themeReducer);
@@ -117,6 +118,14 @@ function App() {
           element={
             <Suspense fallback={<Loading />}>
               <Characters />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/characters/:characterId"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Character />
             </Suspense>
           }
         />

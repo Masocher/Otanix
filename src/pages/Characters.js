@@ -9,20 +9,9 @@ import {
   faMagnifyingGlass,
   faChartColumn,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Characters = () => {
-  //   const characters = [
-  //     {
-  //         id: 0,
-  //         name: "لوفی کلاه حصیری",
-  //         anime: "وان پیس",
-  //         age: "20",
-  //         voiceActor: "مایومی تاناکا",
-  //         cover: img1,
-  //         creator: "ائیچیرو اودا"
-  //     }
-  //   ]
-
   const characters = [
     {
       id: 0,
@@ -131,7 +120,10 @@ const Characters = () => {
       <div className="characters_wrapper">
         {characters.map((char) => (
           <div className="char_box" key={char.id}>
-            <img src={char.cover} />
+            <Link to={`/characters/${char.id}`}>
+              <img src={char.cover} />
+            </Link>
+            
             <div className="char_name">{char.name}</div>
             <div className="voice_actor">{char.voiceActor}</div>
           </div>
