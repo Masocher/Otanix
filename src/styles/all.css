@@ -632,11 +632,11 @@ body {
 
 /* loading box */
 .App.show .ldio-9ghozaihh0b div {
-  border: 20px solid #fff;
+  border: 20px solid #ff7231;
   border-top-color: transparent;
 }
 .App.show .loading_wrapper {
-  background-color: #ff7231;
+  background-color: #fff;
 }
 
 /* characters page */
