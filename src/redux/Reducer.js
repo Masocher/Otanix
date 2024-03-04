@@ -8,7 +8,7 @@ import {
   CHANGE_POP_UP_STATUS,
 } from "./Types";
 
-const themeStatus = true;
+const themeStatus = false;
 
 const themeReducer = (state = themeStatus, action) => {
   switch (action.type) {

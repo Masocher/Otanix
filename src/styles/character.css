@@ -1,78 +1,111 @@
 .character_wrapper {
-    width: calc(100% - 100px);
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  width: calc(100% - 100px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .character_wrapper .right_side {
-    width: 25%;
+  width: 25%;
 }
 
 .character_wrapper .right_side img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .character_wrapper .left_side {
-    width: 72%;
-    display: flex;
-    flex-direction: column;
+  width: 72%;
+  display: flex;
+  flex-direction: column;
 }
 
 .character_wrapper .left_side div {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
 }
 
 .mini_t {
-    color: #f5cb5c;
-    font-size: 12px;
-    margin-left: 10px;
+  color: #f5cb5c;
+  font-size: 12px;
+  margin-left: 10px;
 }
 
 .char_name {
-    font-size: 14px !important;
+  font-size: 14px !important;
 }
 
 .char_about {
-    font-size: 14px;
-    line-height: 26px;
-    flex-direction: column;
-    align-items: flex-start !important;
+  font-size: 14px;
+  line-height: 26px;
+  flex-direction: column;
+  align-items: flex-start !important;
 }
 
 .character_wrapper .character_box {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .character_wrapper .anime_characters_slider {
-    margin: 0 !important;
-    padding: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .character_wrapper .character_box .voice_actor {
-    margin: 0;
+  margin: 0;
 }
 
 .char_about_slider .mini_t {
-    margin-bottom: -20px;
+  margin-bottom: -20px;
 }
 
 .char_name_main {
-    font-size: 30px !important;
-    margin-bottom: 10px;
+  font-size: 30px !important;
+  margin-bottom: 10px;
 }
 
 .character_box .char_name {
-    font-size: 12px !important;
+  font-size: 12px !important;
 }
 
 .char_about_description {
-    margin: 30px 0 20px 0 !important;
-    border: solid #f5cc5c3d;
-    border-width: 1px 0 1px 0;
-    padding: 25px 0;
+  margin: 30px 0 20px 0 !important;
+  border: solid #f5cc5c3d;
+  border-width: 1px 0 1px 0;
+  padding: 25px 0;
+}
+
+/* responsive */
+@media (max-width: 767px) {
+  .character_wrapper {
+    width: calc(100% - 50px);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .character_wrapper .left_side {
+    width: 100%;
+  }
+
+  .character_wrapper .right_side {
+    width: 165px;
+  }
+
+  .character_wrapper .right_side img {
+    border-radius: 10px;
+  }
+
+  .char_name_main {
+    font-size: 26px !important;
+    margin-top: 25px !important;
+  }
+
+  .char_about {
+    font-size: 12px;
+    line-height: 26px;
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
 }

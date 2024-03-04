@@ -253,7 +253,7 @@ const Character = () => {
                 slidesPerView: 4,
               },
               425: {
-                slidesPerView: 2,
+                slidesPerView: 3,
               },
               375: {
                 slidesPerView: 2,
