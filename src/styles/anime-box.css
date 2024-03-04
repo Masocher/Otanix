@@ -73,6 +73,7 @@
   margin-top: 5px;
 }
 
+/* responsive */
 @media (max-width: 767px) {
   .score {
     font-size: 16px;
@@ -109,31 +110,8 @@
 }
 
 @media (max-width: 424px) {
-  .score {
-    font-size: 12px;
-  }
-
-  .score div {
-    font-size: 8px;
-  }
-
   .anime_buttons div {
     font-size: 10px;
-  }
-
-  .show_anime {
-    font-size: 7px;
-    padding: 7px 0;
-  }
-
-  .e_title {
-    font-size: 9px;
-    font-family: sans-serif;
-  }
-
-  .p_title {
-    font-size: 9px;
-    margin-top: 5px;
   }
 
   .anime_info {

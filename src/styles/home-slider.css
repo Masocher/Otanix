@@ -276,8 +276,10 @@
   .category_boxes {
     width: calc(100% - 30px);
   }
+}
 
+@media (max-width: 322px) {
   .category_box {
-    width: 100%;
+    height: 120px;
   }
 }

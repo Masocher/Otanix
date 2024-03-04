@@ -116,6 +116,7 @@
 
   .characters_container .top_side {
     width: calc(100% - 30px);
+    margin: 10px auto 10px auto;
   }
 
   .filters_btn {

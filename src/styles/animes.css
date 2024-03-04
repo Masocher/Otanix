@@ -101,6 +101,7 @@
 
   .animes_container .top_side {
     width: calc(100% - 30px);
+    margin: 10px auto 25px auto;
   }
 
   .animes_container .filters_btn {
