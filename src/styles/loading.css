@@ -33,7 +33,7 @@
 .ldio-9ghozaihh0b div {
   animation: ldio-9ghozaihh0b 1s linear infinite;
   top: 200px;
-  left: 100px;
+  left: 200px;
 }
 
 .loadingio-spinner-rolling-oc83xtm5bt9 {
@@ -52,4 +52,14 @@
 
 .ldio-9ghozaihh0b div {
   box-sizing: content-box;
+}
+
+/* responsive */
+@media (max-width: 767px) {
+  .ldio-9ghozaihh0b div {
+    width: 80px;
+    height: 80px;
+    border: 16px solid #f5cb5c;
+    border-top-color: transparent;
+  } 
 }
