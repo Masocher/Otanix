@@ -1,0 +1,141 @@
+.admin_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.admin_menu {
+  width: 220px;
+  padding: 0 40px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #232328cb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin_menu .main_title {
+  font-size: 26px;
+  margin: 40px 0 40px 0;
+}
+
+.table_btn {
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.table_btn.show {
+  background-color: #f5cb5c;
+  color: #000;
+}
+
+.admin_container .tables {
+  width: calc(100% - 370px);
+  padding: 40px 30px;
+  min-height: 100vh;
+  background-color: #232328cb;
+}
+
+/* admin animes */
+.table_list {
+  width: 100%;
+  background-color: #1a1a1d;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.table_list div {
+  text-align: center;
+}
+
+.table_list div:nth-child(1) {
+  width: 60%;
+}
+
+.table_list div:nth-child(2) {
+  border-left: 1px solid #404040;
+  border-right: 1px solid #404040;
+  width: 15%;
+}
+
+.table_list div:nth-child(3) {
+  width: 25%;
+}
+
+.anime_table {
+  width: calc(100% - 30px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1d;
+  padding: 15px;
+  border-top: 1px solid #292929;
+  border-right: 1px solid #232328cb;
+  transition: .2s;
+}
+.anime_table:hover {
+  border-right: 1px solid #f5cb5c;
+}
+
+.anime_table img {
+  width: 60px;
+  object-fit: cover;
+}
+
+.anime_table_inf {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.anime_table_inf span {
+  margin-right: 15px;
+}
+
+.anime_table_score {
+  width: 15.4%;
+  text-align: center;
+  border-left: 1px solid #404040;
+  border-right: 1px solid #404040;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.anime_table_buttons {
+  width: 24.4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.at_btn {
+  width: calc(100% - 150px);
+  padding: 6px 0;
+  background-color: #f5cb5c;
+  color: #000;
+  font-size: 12px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: .2s;
+}
+.at_btn:hover {
+  background-color: #f5cc5c70;
+}
+
+.delete_btn {
+  margin-top: 10px;
+  background-color: #ff004d;
+  color: #fff;
+}
+.delete_btn:hover {
+  background-color: #ff004d70;
+}

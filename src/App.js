@@ -26,6 +26,7 @@ const Discussion = React.lazy(() => import("./pages/Discussion"));
 const Pannel = React.lazy(() => import("./pages/Pannel"));
 const Characters = React.lazy(() => import("./pages/Characters"));
 const Character = React.lazy(() => import("./pages/Character"));
+const Admin = React.lazy(() => import("./pages/Admin"));
 
 function App() {
   const themeStatus = useSelector((rootReducer) => rootReducer.themeReducer);
@@ -36,7 +37,8 @@ function App() {
     <div className={`App ${themeStatus ? "show" : ""}`}>
       {location.pathname === "/sign-in" ||
       location.pathname === "/sign-up" ||
-      location.pathname === "/pannel" ? null : (
+      location.pathname === "/pannel" ||
+      location.pathname === "/admin" ? null : (
         <Header />
       )}
 
@@ -49,6 +51,7 @@ function App() {
             </Suspense>
           }
         />
+
         <Route
           path="/sign-in"
           element={
@@ -57,6 +60,7 @@ function App() {
             </Suspense>
           }
         />
+
         <Route
           path="/sign-up"
           element={
@@ -65,6 +69,7 @@ function App() {
             </Suspense>
           }
         />
+
         <Route
           path="/animes"
           element={
@@ -73,6 +78,7 @@ function App() {
             </Suspense>
           }
         />
+
         <Route
           path="/discussions"
           element={
@@ -81,6 +87,7 @@ function App() {
             </Suspense>
           }
         />
+
         <Route
           path="/discussions/:discussionId"
           element={
@@ -89,6 +96,7 @@ function App() {
             </Suspense>
           }
         />
+
         <Route
           path="/animes/:animeId"
           element={
@@ -97,6 +105,7 @@ function App() {
             </Suspense>
           }
         />
+
         <Route
           path="/pannel"
           element={
@@ -105,6 +114,7 @@ function App() {
             </Suspense>
           }
         />
+
         <Route
           path="/contact"
           element={
@@ -113,6 +123,7 @@ function App() {
             </Suspense>
           }
         />
+
         <Route
           path="/characters"
           element={
@@ -121,6 +132,7 @@ function App() {
             </Suspense>
           }
         />
+
         <Route
           path="/characters/:characterId"
           element={
@@ -129,11 +141,21 @@ function App() {
             </Suspense>
           }
         />
+
+        <Route
+          path="/admin"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Admin />
+            </Suspense>
+          }
+        />
       </Routes>
 
       {location.pathname === "/sign-in" ||
       location.pathname === "/sign-up" ||
-      location.pathname === "/pannel" ? null : (
+      location.pathname === "/pannel" ||
+      location.pathname === "/admin" ? null : (
         <Footer />
       )}
     </div>
