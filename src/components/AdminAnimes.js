@@ -31,7 +31,7 @@ const AdminAnimes = () => {
 
           <div className="anime_table_buttons">
             <div className="at_btn">ویرایش</div>
-            <div className="at_btn delete_btn">حذف</div>
+            <div className="at_btn show_btn">نمایش</div>
           </div>
         </div>
       ))}

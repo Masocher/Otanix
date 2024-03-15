@@ -257,9 +257,159 @@ const adminAnimesReducer = (state = adminAnimes) => {
   return state;
 };
 
+const characters = [
+  {
+    id: 0,
+    name: "مانکی دی لوفی",
+    voiceActor: "مایومی تاناکا",
+    cover: img1,
+  },
+  {
+    id: 1,
+    name: "مانکی دی لوفی",
+    voiceActor: "مایومی تاناکا",
+    cover: img1,
+  },
+  {
+    id: 2,
+    name: "مانکی دی لوفی",
+    voiceActor: "مایومی تاناکا",
+    cover: img1,
+  },
+  {
+    id: 3,
+    name: "مانکی دی لوفی",
+    voiceActor: "مایومی تاناکا",
+    cover: img1,
+  },
+  {
+    id: 4,
+    name: "مانکی دی لوفی",
+    voiceActor: "مایومی تاناکا",
+    cover: img1,
+  },
+  {
+    id: 5,
+    name: "مانکی دی لوفی",
+    voiceActor: "مایومی تاناکا",
+    cover: img1,
+  },
+  {
+    id: 6,
+    name: "مانکی دی لوفی",
+    voiceActor: "مایومی تاناکا",
+    cover: img1,
+  },
+  {
+    id: 7,
+    name: "مانکی دی لوفی",
+    voiceActor: "مایومی تاناکا",
+    cover: img1,
+  },
+  {
+    id: 8,
+    name: "مانکی دی لوفی",
+    voiceActor: "مایومی تاناکا",
+    cover: img1,
+  },
+  {
+    id: 9,
+    name: "مانکی دی لوفی",
+    voiceActor: "مایومی تاناکا",
+    cover: img1,
+  },
+  {
+    id: 10,
+    name: "مانکی دی لوفی",
+    voiceActor: "مایومی تاناکا",
+    cover: img1,
+  },
+  {
+    id: 11,
+    name: "مانکی دی لوفی",
+    voiceActor: "مایومی تاناکا",
+    cover: img1,
+  },
+  {
+    id: 12,
+    name: "مانکی دی لوفی",
+    voiceActor: "مایومی تاناکا",
+    cover: img1,
+  },
+  {
+    id: 13,
+    name: "مانکی دی لوفی",
+    voiceActor: "مایومی تاناکا",
+    cover: img1,
+  },
+];
+
+const charactersReducer = (state = characters) => {
+  return state;
+};
+
+const discussions = [
+  {
+    id: 0,
+    title: "آخرین قسمت وان پیس !",
+    category: "وان پیس",
+  },
+  {
+    id: 1,
+    title: "آخرین قسمت وان پیس !",
+    category: "وان پیس",
+  },
+  {
+    id: 2,
+    title: "آخرین قسمت وان پیس !",
+    category: "وان پیس",
+  },
+  {
+    id: 3,
+    title: "آخرین قسمت وان پیس !",
+    category: "وان پیس",
+  },
+  {
+    id: 4,
+    title: "آخرین قسمت وان پیس !",
+    category: "وان پیس",
+  },
+  {
+    id: 5,
+    title: "آخرین قسمت وان پیس !",
+    category: "وان پیس",
+  },
+  {
+    id: 6,
+    title: "آخرین قسمت وان پیس !",
+    category: "وان پیس",
+  },
+  {
+    id: 7,
+    title: "آخرین قسمت وان پیس !",
+    category: "وان پیس",
+  },
+  {
+    id: 8,
+    title: "آخرین قسمت وان پیس !",
+    category: "وان پیس",
+  },
+  {
+    id: 9,
+    title: "آخرین قسمت وان پیس !",
+    category: "وان پیس",
+  },
+];
+
+const discussionsReducer = (state = discussions) => {
+  return state;
+};
+
 export const rootReducer = combineReducers({
   themeReducer,
   authStatusReducer,
   popUpReducer,
   adminAnimesReducer,
+  charactersReducer,
+  discussionsReducer,
 });

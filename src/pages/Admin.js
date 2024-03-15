@@ -20,14 +20,16 @@ const Admin = () => {
         <div className="main_title">پـنــل ادمـــیـن</div>
 
         <div
-          className={`table_btn ${adminSections == "animes" ? "show" : ""}`}
+          className={`table_btn ${adminSections === "animes" ? "show" : ""}`}
           onClick={() => setAdminSections("animes")}
         >
           انیمه ها
         </div>
 
         <div
-          className={`table_btn ${adminSections == "characters" ? "show" : ""}`}
+          className={`table_btn ${
+            adminSections === "characters" ? "show" : ""
+          }`}
           onClick={() => setAdminSections("characters")}
         >
           کاراکتر ها
@@ -35,7 +37,7 @@ const Admin = () => {
 
         <div
           className={`table_btn ${
-            adminSections == "discussions" ? "show" : ""
+            adminSections === "discussions" ? "show" : ""
           }`}
           onClick={() => setAdminSections("discussions")}
         >
@@ -43,14 +45,14 @@ const Admin = () => {
         </div>
 
         <div
-          className={`table_btn ${adminSections == "comments" ? "show" : ""}`}
+          className={`table_btn ${adminSections === "comments" ? "show" : ""}`}
           onClick={() => setAdminSections("comments")}
         >
           کامنت ها
         </div>
 
         <div
-          className={`table_btn ${adminSections == "users" ? "show" : ""}`}
+          className={`table_btn ${adminSections === "users" ? "show" : ""}`}
           onClick={() => setAdminSections("users")}
         >
           کاربران
@@ -58,15 +60,15 @@ const Admin = () => {
       </div>
 
       <div className="tables">
-        {adminSections == "animes" ? (
+        {adminSections === "animes" ? (
           <AdminAnimes />
-        ) : adminSections == "characters" ? (
+        ) : adminSections === "characters" ? (
           <AdminCharacters />
-        ) : adminSections == "discussions" ? (
+        ) : adminSections === "discussions" ? (
           <AdminDiscussions />
-        ) : adminSections == "comments" ? (
+        ) : adminSections === "comments" ? (
           <AdminComments />
-        ) : adminSections == "users" ? (
+        ) : adminSections === "users" ? (
           <AdminUsers />
         ) : (
           "nothing"

@@ -70,6 +70,18 @@
   width: 25%;
 }
 
+.admin_comments .table_list div:nth-child(1),
+.admin_users .table_list div:nth-child(1) {
+  width: 75%;
+}
+
+.admin_comments .table_list div:nth-child(2),
+.admin_users .table_list div:nth-child(2) {
+  border-left: none;
+  border-right: 1px solid #404040;
+  width: 25%;
+}
+
 .anime_table {
   width: calc(100% - 30px);
   display: flex;
@@ -78,11 +90,6 @@
   background-color: #1a1a1d;
   padding: 15px;
   border-top: 1px solid #292929;
-  border-right: 1px solid #232328cb;
-  transition: .2s;
-}
-.anime_table:hover {
-  border-right: 1px solid #f5cb5c;
 }
 
 .anime_table img {
@@ -90,17 +97,33 @@
   object-fit: cover;
 }
 
-.anime_table_inf {
+.discussion_anime_table_inf img,
+.comment_anime_table_inf img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 20px;
+  object-fit: cover;
+}
+
+.anime_table_inf,
+.discussion_anime_table_inf,
+.comment_anime_table_inf {
   display: flex;
   align-items: center;
   width: 60%;
+}
+
+.comment_anime_table_inf {
+  width: 75%;
 }
 
 .anime_table_inf span {
   margin-right: 15px;
 }
 
-.anime_table_score {
+.anime_table_score,
+.anime_table_voice_actor {
   width: 15.4%;
   text-align: center;
   border-left: 1px solid #404040;
@@ -109,15 +132,19 @@
   letter-spacing: 0.5px;
 }
 
+.anime_table_voice_actor {
+  font-size: 14px;
+}
+
 .anime_table_buttons {
   width: 24.4%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .at_btn {
-  width: calc(100% - 150px);
+  width: calc(100% - 180px);
   padding: 6px 0;
   background-color: #f5cb5c;
   color: #000;
@@ -125,17 +152,34 @@
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
 .at_btn:hover {
-  background-color: #f5cc5c70;
+  background-color: #f5cc5c90;
+}
+
+.show_btn {
+  margin-right: 15px;
+  background-color: #387adf;
+  color: #fff;
+}
+.show_btn:hover {
+  background-color: #387adf90;
 }
 
 .delete_btn {
-  margin-top: 10px;
   background-color: #ff004d;
   color: #fff;
 }
 .delete_btn:hover {
-  background-color: #ff004d70;
+  background-color: #ff004d90;
+}
+
+.profile_btn {
+  margin-right: 15px;
+  background-color: #f5cb5c;
+  color: #000;
+}
+.profile_btn:hover {
+  background-color: #f5cb5c90;
 }
