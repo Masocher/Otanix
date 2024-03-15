@@ -1,5 +1,5 @@
 // assets
-import "../styles/admin.css"
+import "../styles/admin.css";
 import img1 from "../images/animes/1.jpg";
 
 // redux

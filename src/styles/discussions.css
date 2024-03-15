@@ -370,7 +370,7 @@
     font-size: 10px;
     line-height: 22px;
   }
-  
+
   .discussions_container .discussion_box .category {
     font-size: 10px;
     margin-top: 15px;
@@ -379,7 +379,7 @@
   .discussions_container .discussion_box .udate_date {
     font-size: 8px;
   }
-  
+
   .discussions_container .discussion_box .witer_about {
     margin: 0 10px 0 0;
     width: calc(100% - 50px);
@@ -390,7 +390,7 @@
     font-size: 10px;
     letter-spacing: 0;
   }
-  
+
   .replies_box div {
     margin: 5px 0 0 5px;
   }
@@ -407,7 +407,7 @@
   .active_users .user_name {
     font-size: 12px;
   }
-  
+
   .active_users .user_box .rank {
     left: 20px;
     font-size: 10px;
@@ -416,7 +416,7 @@
   .hot_discussion {
     font-size: 12px;
   }
-  
+
   .hot_discussion .category {
     font-size: 9px;
   }

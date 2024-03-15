@@ -4,10 +4,7 @@ import "../styles/anime-box.css";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleLeft,
-  faBookmark,
-} from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft, faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 // tools
 import { Link } from "react-router-dom";

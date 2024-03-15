@@ -123,7 +123,7 @@ const Characters = () => {
             <Link to={`/characters/${char.id}`}>
               <img src={char.cover} />
             </Link>
-            
+
             <div className="char_name">{char.name}</div>
             <div className="voice_actor">{char.voiceActor}</div>
           </div>

@@ -176,7 +176,7 @@
     letter-spacing: 0;
     margin: 0 0 15px 0;
   }
-  
+
   .comments_section .rate_box .submit_rate {
     font-size: 12px;
   }
@@ -184,7 +184,7 @@
   .comment_form input {
     font-size: 12px;
   }
-  
+
   .comment_form button {
     font-size: 12px;
   }
@@ -217,7 +217,7 @@
     width: 35px;
     height: 35px;
   }
-  
+
   .comment_box .user_name {
     font-size: 12px;
   }
@@ -226,7 +226,7 @@
     display: flex;
     margin-top: 20px;
   }
-  
+
   .comment_buttons .comment_btn {
     font-size: 12px;
     width: 55px;
@@ -250,7 +250,7 @@
     font-size: 8px;
     padding: 12px 30px;
   }
-  
+
   .comment_form button {
     font-size: 8px;
     padding: 11px 0;
