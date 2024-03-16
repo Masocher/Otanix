@@ -72,7 +72,7 @@
   color: #fff !important;
 }
 .theme_mode_wrapper.show .sun_icon {
-  color: #ff7231 !important;
+  color: #ff407d !important;
 }
 
 .theme_mode_btn {
@@ -84,7 +84,7 @@
   cursor: pointer;
 }
 .theme_mode_wrapper.show .theme_mode_btn {
-  background-color: #ff7231;
+  background-color: #ff407d;
 }
 
 .mode_square {
