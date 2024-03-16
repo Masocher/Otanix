@@ -14,7 +14,16 @@ import {
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 
+// components
+import AnimesFilters from "../components/AnimesFilters";
+
+// redux
+import { useDispatch } from "react-redux";
+import { openAnimesFilters } from "../redux/Actions";
+
 const Animes = () => {
+  const dispatch = useDispatch();
+
   const animes = [
     {
       id: 0,
@@ -224,6 +233,8 @@ const Animes = () => {
 
   return (
     <div className="animes_container">
+      <AnimesFilters />
+      
       <div className="top_side">
         <form className="search_box" action="#">
           <input placeholder="جستجو در انیمه ها ..." />
@@ -232,7 +243,10 @@ const Animes = () => {
           </div>
         </form>
 
-        <div className="filters_btn">
+        <div
+          className="filters_btn"
+          onClick={() => dispatch(openAnimesFilters())}
+        >
           <div>
             <FontAwesomeIcon icon={faChartColumn} />
           </div>

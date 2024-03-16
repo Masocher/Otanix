@@ -6,10 +6,12 @@ import {
   CHANGE_THEME,
   CHANGE_AUTH_STATUS,
   CHANGE_POP_UP_STATUS,
+  OPEN_ANIMES_FILTERS,
 } from "./Types";
 
 import img1 from "../images/animes/1.jpg";
 
+// otanix tool
 const themeStatus = false;
 
 const themeReducer = (state = themeStatus, action) => {
@@ -46,6 +48,19 @@ const popUpReducer = (state = popUpStatus, action) => {
   }
 };
 
+const animesFilters = false;
+
+const animesFiltersReducer = (state = animesFilters, action) => {
+  switch (action.type) {
+    case OPEN_ANIMES_FILTERS:
+      return (state = !state);
+
+    default:
+      return state;
+  }
+};
+
+// otanix data
 const adminAnimes = [
   {
     id: 0,
@@ -412,4 +427,5 @@ export const rootReducer = combineReducers({
   adminAnimesReducer,
   charactersReducer,
   discussionsReducer,
+  animesFiltersReducer,
 });

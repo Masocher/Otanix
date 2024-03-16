@@ -2,6 +2,7 @@ import {
   CHANGE_THEME,
   CHANGE_AUTH_STATUS,
   CHANGE_POP_UP_STATUS,
+  OPEN_ANIMES_FILTERS,
 } from "./Types";
 
 export const changeTheme = () => {
@@ -14,4 +15,8 @@ export const changeAuthStatus = () => {
 
 export const changePopUpStatus = () => {
   return { type: CHANGE_POP_UP_STATUS };
+};
+
+export const openAnimesFilters = () => {
+  return { type: OPEN_ANIMES_FILTERS };
 };
