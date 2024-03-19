@@ -8,7 +8,6 @@ import { openAnimesFilters } from "../redux/Actions";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faClose,
   faAngleDown,
   faAngleLeft,
 } from "@fortawesome/free-solid-svg-icons";
@@ -68,7 +67,9 @@ const AnimesFilters = () => {
             </span>
           </div>
 
-          <div className={`filters_buttons ${age ? "show" : ""}`}>
+          <div
+            className={`filters_buttons filters_buttons_2 ${age ? "show" : ""}`}
+          >
             <div onClick={() => setAge(false)}>همه</div>
             <div onClick={() => setAge(false)}>بالای 3 سال</div>
             <div onClick={() => setAge(false)}>بالای 13 سال</div>

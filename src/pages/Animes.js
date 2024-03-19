@@ -233,8 +233,6 @@ const Animes = () => {
 
   return (
     <div className="animes_container">
-      <AnimesFilters />
-      
       <div className="top_side">
         <form className="search_box" action="#">
           <input placeholder="جستجو در انیمه ها ..." />
@@ -253,6 +251,8 @@ const Animes = () => {
           فیلتر ها
         </div>
       </div>
+
+      <AnimesFilters />
 
       <div className="bottom_side">
         {animes.map((anime) => (
