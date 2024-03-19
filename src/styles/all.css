@@ -655,24 +655,14 @@ body {
   overflow: hidden;
 }
 .App.show .submit_filters {
-  height: 44px;
-  width: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
   background-color: #ff407d;
   color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s;
   border: 1px solid #ff407d;
 }
 .App.show .submit_filters:hover {
   background: none;
   color: #ff407d;
 }
-
 
 /* loading box */
 .App.show .ldio-9ghozaihh0b div {
@@ -696,6 +686,75 @@ body {
 .App.show .characters_container .voice_actor {
   color: #ff407d;
 }
+
+/* admin page */
+.App.show .admin_menu {
+  background-color: #fff;
+}
+.App.show .table_btn {
+  color: #000;
+}
+.App.show .table_btn.show {
+  background-color: #ff407d;
+  color: #fff;
+}
+.App.show .admin_container .tables {
+  background-color: #fff;
+}
+.App.show .table_list {
+  background-color: #ebecef;
+  color: #000;
+}
+.App.show .table_list div:nth-child(2) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.App.show .admin_comments .table_list div:nth-child(2),
+.admin_users .table_list div:nth-child(2) {
+  border-right: 1px solid #ccc;
+}
+.App.show .anime_table {
+  background-color: #ebecef;
+  border-top: 1px solid #ccc;
+  color: #000;
+}
+.App.show .anime_table_score,
+.anime_table_voice_actor {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.App.show .at_btn {
+  background-color: #ff407d;
+  color: #fff;
+}
+.App.show .at_btn:hover {
+  background-color: #ff407d90;
+}
+.App.show .show_btn {
+  background-color: #387adf;
+  color: #fff;
+}
+.App.show .show_btn:hover {
+  background-color: #387adf90;
+}
+.App.show .delete_btn {
+  background-color: #ff004d;
+  color: #fff;
+}
+.App.show .delete_btn:hover {
+  background-color: #ff004d90;
+}
+.App.show .profile_btn {
+  background-color: #387adf;
+  color: #fff;
+}
+.App.show .profile_btn:hover {
+  background-color: #387adf90;
+}
+.App.show .admin_menu .main_title {
+  color: #000;
+}
+
 
 /* responsive */
 @media (min-width: 1441px) {

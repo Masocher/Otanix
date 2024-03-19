@@ -183,3 +183,11 @@
 .profile_btn:hover {
   background-color: #f5cb5c90;
 }
+
+.admin_container .theme_mode_wrapper {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 0;
+}

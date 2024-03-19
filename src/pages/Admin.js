@@ -11,7 +11,19 @@ import AdminUsers from "../components/AdminUsers";
 // tools
 import { useState } from "react";
 
+// icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+
+// redux
+import { useDispatch, useSelector } from "react-redux";
+import { changeTheme } from "../redux/Actions";
+
 const Admin = () => {
+  const dispatch = useDispatch();
+
+  const themeStatus = useSelector((rootReducer) => rootReducer.themeReducer);
+
   const [adminSections, setAdminSections] = useState("animes");
 
   return (
@@ -56,6 +68,23 @@ const Admin = () => {
           onClick={() => setAdminSections("users")}
         >
           کاربران
+        </div>
+
+        <div className={`theme_mode_wrapper ${themeStatus ? "show" : ""}`}>
+          <span>
+            <FontAwesomeIcon icon={faMoon} />
+          </span>
+
+          <div
+            className="theme_mode_btn"
+            onClick={() => dispatch(changeTheme())}
+          >
+            <div className={`mode_square ${themeStatus ? "show" : ""}`}></div>
+          </div>
+
+          <span className="sun_icon">
+            <FontAwesomeIcon icon={faSun} />
+          </span>
         </div>
       </div>
 
