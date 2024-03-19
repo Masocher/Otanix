@@ -629,6 +629,50 @@ body {
   background: none;
   color: #ff407d;
 }
+.App.show .filters {
+  background-color: #fff;
+}
+.App.show .f_btn .title {
+  background-color: #ebecef;
+}
+.App.show .filters_buttons {
+  background-color: #ebecef;
+}
+.App.show .filters_buttons::-webkit-scrollbar-track {
+  background: #ebecef;
+}
+.App.show .filters_buttons::-webkit-scrollbar-thumb {
+  background: #ff407d;
+}
+.App.show .filters_buttons::-webkit-scrollbar-thumb:hover {
+  background: #ff407d;
+}
+.App.show .filters_buttons div:hover {
+  background-color: #ff407d;
+  color: #fff;
+}
+.App.show .filters_buttons_2 {
+  overflow: hidden;
+}
+.App.show .submit_filters {
+  height: 44px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  background-color: #ff407d;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 1px solid #ff407d;
+}
+.App.show .submit_filters:hover {
+  background: none;
+  color: #ff407d;
+}
+
 
 /* loading box */
 .App.show .ldio-9ghozaihh0b div {
