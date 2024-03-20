@@ -186,8 +186,107 @@
 
 .admin_container .theme_mode_wrapper {
   position: absolute;
-  bottom: 80px;
+  bottom: 50px;
   left: 50%;
   transform: translate(-50%, 0);
   margin: 0;
+}
+
+/* responsive */
+@media (max-width: 1439px) {
+  .table_list div:nth-child(1) {
+    width: 55%;
+  }
+
+  .table_list div:nth-child(3) {
+    width: 30%;
+  }
+
+  .admin_comments .table_list div:nth-child(1),
+  .admin_users .table_list div:nth-child(1) {
+    width: 70%;
+  }
+
+  .admin_comments .table_list div:nth-child(2),
+  .admin_users .table_list div:nth-child(2) {
+    width: 30%;
+  }
+
+  .anime_table_inf,
+  .discussion_anime_table_inf,
+  .comment_anime_table_inf {
+    width: 55%;
+  }
+
+  .anime_table_buttons {
+    width: 29.4%;
+  }
+
+  .at_btn {
+    width: calc(100% - 200px);
+  }
+}
+
+@media (max-width: 1300px) {
+  .at_btn {
+    width: calc(100% - 175px);
+    font-size: 11px;
+  }
+
+  .anime_table_inf span,
+  .discussion_anime_table_inf span,
+  .comment_anime_table_inf span {
+    font-size: 14px;
+  }
+
+  .anime_table_score,
+  .anime_table_voice_actor {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  .anime_table_voice_actor {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .anime_table_inf,
+  .discussion_anime_table_inf,
+  .comment_anime_table_inf {
+    width: 50%;
+  }
+
+  .anime_table_buttons {
+    width: 34.4%;
+  }
+
+  .table_list div:nth-child(1) {
+    width: 50%;
+  }
+
+  .table_list div:nth-child(3) {
+    width: 35%;
+  }
+
+  .admin_comments .table_list div:nth-child(1),
+  .admin_users .table_list div:nth-child(1) {
+    width: 65%;
+  }
+
+  .admin_comments .table_list div:nth-child(2),
+  .admin_users .table_list div:nth-child(2) {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .at_btn {
+    width: calc(100% - 150px);
+    font-size: 11px;
+  }
+
+  .show_btn, .profile_btn {
+    margin-right: 10px;
+  }
 }

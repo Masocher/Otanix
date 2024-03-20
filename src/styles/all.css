@@ -710,7 +710,7 @@ body {
   border-right: 1px solid #ccc;
 }
 .App.show .admin_comments .table_list div:nth-child(2),
-.admin_users .table_list div:nth-child(2) {
+.App.show .admin_users .table_list div:nth-child(2) {
   border-right: 1px solid #ccc;
 }
 .App.show .anime_table {
@@ -719,7 +719,7 @@ body {
   color: #000;
 }
 .App.show .anime_table_score,
-.anime_table_voice_actor {
+.App.show .anime_table_voice_actor {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
