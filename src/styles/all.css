@@ -755,7 +755,6 @@ body {
   color: #000;
 }
 
-
 /* responsive */
 @media (min-width: 1441px) {
   .App {
@@ -788,6 +787,18 @@ body {
   .section_title_box .show_btn div {
     margin: 1.5px 5px 0 0;
     font-size: 10px;
+  }
+
+  .App.show .f_btn .title {
+    background-color: #fff;
+  }
+
+  .App.show .filters_buttons {
+    background-color: #fff;
+  }
+
+  .App.show .filters_buttons::-webkit-scrollbar-track {
+    background: #fff;
   }
 }
 

@@ -7,10 +7,7 @@ import { openAnimesFilters } from "../redux/Actions";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleDown,
-  faAngleLeft,
-} from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
 // tools
 import { useState } from "react";
@@ -93,6 +90,7 @@ const AnimesFilters = () => {
           </div>
 
           <div className={`filters_buttons ${score ? "show" : ""}`}>
+            <div onClick={() => setScore(false)}>همه</div>
             <div onClick={() => setScore(false)}>1 از 10</div>
             <div onClick={() => setScore(false)}>2 از 10</div>
             <div onClick={() => setScore(false)}>3 از 10</div>
