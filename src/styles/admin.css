@@ -286,7 +286,8 @@
     font-size: 11px;
   }
 
-  .show_btn, .profile_btn {
+  .show_btn,
+  .profile_btn {
     margin-right: 10px;
   }
 }
