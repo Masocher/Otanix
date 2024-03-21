@@ -11,7 +11,16 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
+// components
+import CharactersFilters from "../components/CharactersFilters";
+
+// redux
+import { useDispatch } from "react-redux";
+import { openCharactersFilters } from "../redux/Actions";
+
 const Characters = () => {
+  const dispatch = useDispatch();
+
   const characters = [
     {
       id: 0,
@@ -109,13 +118,18 @@ const Characters = () => {
           </div>
         </form>
 
-        <div className="filters_btn">
+        <div
+          className="filters_btn"
+          onClick={() => dispatch(openCharactersFilters())}
+        >
           <div>
             <FontAwesomeIcon icon={faChartColumn} />
           </div>
           فیلتر ها
         </div>
       </div>
+
+      <CharactersFilters />
 
       <div className="characters_wrapper">
         {characters.map((char) => (

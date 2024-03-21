@@ -7,6 +7,7 @@ import {
   CHANGE_AUTH_STATUS,
   CHANGE_POP_UP_STATUS,
   OPEN_ANIMES_FILTERS,
+  OPEN_CHARACTERS_FILTERS,
 } from "./Types";
 
 import img1 from "../images/animes/1.jpg";
@@ -53,6 +54,18 @@ const animesFilters = false;
 const animesFiltersReducer = (state = animesFilters, action) => {
   switch (action.type) {
     case OPEN_ANIMES_FILTERS:
+      return (state = !state);
+
+    default:
+      return state;
+  }
+};
+
+const charactersFilters = false;
+
+const charactersFiltersReducer = (state = charactersFilters, action) => {
+  switch (action.type) {
+    case OPEN_CHARACTERS_FILTERS:
       return (state = !state);
 
     default:
@@ -428,4 +441,5 @@ export const rootReducer = combineReducers({
   charactersReducer,
   discussionsReducer,
   animesFiltersReducer,
+  charactersFiltersReducer,
 });
