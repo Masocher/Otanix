@@ -687,6 +687,18 @@ body {
   color: #ff407d;
 }
 
+/* character single page */
+.App.show .mini_t {
+  color: #ff407d;
+}
+.App.show .char_about_description {
+  border: solid #ff407d3d;
+  border-width: 1px 0 1px 0;
+}
+.App.show .char_about {
+  color: #000;
+}
+
 /* admin page */
 .App.show .admin_menu {
   background-color: #fff;
