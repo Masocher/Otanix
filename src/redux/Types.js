@@ -7,3 +7,6 @@ export const CHANGE_POP_UP_STATUS = "CHANGE_POP_UP_STATUS";
 export const OPEN_ANIMES_FILTERS = "OPEN_ANIMES_FILTERS";
 
 export const OPEN_CHARACTERS_FILTERS = "OPEN_CHARACTERS_FILTERS";
+
+// authenticating
+export const SIGN_IN = "SIGN_IN";

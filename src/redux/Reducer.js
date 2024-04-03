@@ -8,9 +8,12 @@ import {
   CHANGE_POP_UP_STATUS,
   OPEN_ANIMES_FILTERS,
   OPEN_CHARACTERS_FILTERS,
+  SIGN_IN,
 } from "./Types";
 
 import img1 from "../images/animes/1.jpg";
+
+import axios from "axios";
 
 // otanix tool
 const themeStatus = false;
@@ -25,7 +28,7 @@ const themeReducer = (state = themeStatus, action) => {
   }
 };
 
-const authStatus = true;
+const authStatus = false;
 
 const authStatusReducer = (state = authStatus, action) => {
   switch (action.type) {
@@ -433,6 +436,38 @@ const discussionsReducer = (state = discussions) => {
   return state;
 };
 
+// authenticating
+const userToken = null;
+
+const isAuthenticated = null;
+
+const keepUser = (token) => {
+  axios.defaults.headers.common["Authorization"] = "Token " + token;
+  token = userToken;
+  localStorage.setItem("token", token);
+};
+
+const signInReducer = (state = isAuthenticated, action) => {
+  switch (action.type) {
+    case SIGN_IN:
+      axios.defaults.headers.common["Authorization"] = "";
+      axios
+        .post("https://otanix-api.liara.run/api/auth/token/", {
+          username: action.payload.username,
+          password: action.payload.password,
+        })
+        .then((response) => {
+          keepUser(response.data.auth_token);
+          state = true;
+        })
+        .catch((error) => console.log(error.response));
+      return state;
+
+    default:
+      return state;
+  }
+};
+
 export const rootReducer = combineReducers({
   themeReducer,
   authStatusReducer,
@@ -442,4 +477,5 @@ export const rootReducer = combineReducers({
   discussionsReducer,
   animesFiltersReducer,
   charactersFiltersReducer,
+  signInReducer,
 });

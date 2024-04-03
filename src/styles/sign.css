@@ -43,6 +43,12 @@
   font-family: YekanBakhBold;
   color: #fff;
 }
+.sign_input.error {
+  border-color: red;
+}
+.sign_input.correct {
+  border-color: #1a1a1d9c;
+}
 .sign_input:focus {
   border-color: #f5cb5c;
 }
@@ -111,6 +117,10 @@
 
 .sign_back div {
   margin: 3px 5px 0 0;
+}
+
+.Toastify__toast-theme--light {
+  background-color: #000;
 }
 
 /* responsive */

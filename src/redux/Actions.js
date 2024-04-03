@@ -4,6 +4,7 @@ import {
   CHANGE_POP_UP_STATUS,
   OPEN_ANIMES_FILTERS,
   OPEN_CHARACTERS_FILTERS,
+  SIGN_IN,
 } from "./Types";
 
 export const changeTheme = () => {
@@ -25,3 +26,8 @@ export const openAnimesFilters = () => {
 export const openCharactersFilters = () => {
   return { type: OPEN_CHARACTERS_FILTERS };
 };
+
+// authenticating
+export const signIn = (username, password) => {
+  return { type: SIGN_IN, payload: {username : username, password : password} }
+}
