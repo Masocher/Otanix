@@ -13,6 +13,9 @@ import { Route, Routes } from "react-router";
 // redux
 import { useSelector } from "react-redux";
 
+// react-hot-toast
+import { Toaster } from "react-hot-toast";
+
 // pages
 import React, { Suspense } from "react";
 const Home = React.lazy(() => import("./pages/Home"));
@@ -158,6 +161,8 @@ function App() {
       location.pathname === "/admin" ? null : (
         <Footer />
       )}
+
+      <Toaster position="bottom-left" reverseOrder={false} />
     </div>
   );
 }

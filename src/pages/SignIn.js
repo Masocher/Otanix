@@ -3,7 +3,7 @@ import "../styles/sign.css";
 
 // tools
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,7 +18,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { signIn } from "../redux/Actions";
 
 // react-hot-toast
-import { Toaster, toast } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 
 const SignIn = () => {
   const themeStatus = useSelector((rootReducer) => rootReducer.themeReducer);
@@ -36,13 +36,15 @@ const SignIn = () => {
   let [usernameInputStatus, setUsernameInputStatus] = useState(false);
   let [passwordInputStatus, setPasswordInputStatus] = useState(false);
 
+  const navigate = useNavigate()
+
   const submitForm = (username, password) => {
     if (username.length < 1) {
       toast.error("نام کاربری الزامی است", {
         style: {
           borderRadius: "10px",
           fontSize: "14px",
-          background: `${themeStatus ? "#fff" : "#282828"}`,
+          background: `${themeStatus ? "#fff" : "#232328"}`,
           color: `${themeStatus ? "#000" : "#fff"}`,
           padding: "10px 20px 10px 15px",
         },
@@ -53,7 +55,7 @@ const SignIn = () => {
         style: {
           borderRadius: "10px",
           fontSize: "14px",
-          background: `${themeStatus ? "#fff" : "#282828"}`,
+          background: `${themeStatus ? "#fff" : "#232328"}`,
           color: `${themeStatus ? "#000" : "#fff"}`,
           padding: "10px 20px 10px 15px",
         },
@@ -64,7 +66,7 @@ const SignIn = () => {
         style: {
           borderRadius: "10px",
           fontSize: "14px",
-          background: `${themeStatus ? "#fff" : "#282828"}`,
+          background: `${themeStatus ? "#fff" : "#232328"}`,
           color: `${themeStatus ? "#000" : "#fff"}`,
           padding: "10px 20px 10px 15px",
         },
@@ -75,7 +77,7 @@ const SignIn = () => {
         style: {
           borderRadius: "10px",
           fontSize: "14px",
-          background: `${themeStatus ? "#fff" : "#282828"}`,
+          background: `${themeStatus ? "#fff" : "#232328"}`,
           color: `${themeStatus ? "#000" : "#fff"}`,
           padding: "10px 20px 10px 15px",
         },
@@ -89,12 +91,12 @@ const SignIn = () => {
         style: {
           borderRadius: "10px",
           fontSize: "14px",
-          background: `${themeStatus ? "#fff" : "#282828"}`,
+          background: `${themeStatus ? "#fff" : "#232328"}`,
           color: `${themeStatus ? "#000" : "#fff"}`,
           padding: "10px 20px 10px 15px",
         },
       });
-      // Router.push("/");
+      navigate("/")
       // dispatch(stopLoading());
     }
   };
@@ -156,8 +158,6 @@ const SignIn = () => {
           </button>
         </form>
       </div>
-
-      <Toaster position="bottom-left" reverseOrder={false} />
     </div>
   );
 };
