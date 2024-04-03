@@ -14,13 +14,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 // redux
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { signIn } from "../redux/Actions";
 
 // react-hot-toast
 import { Toaster, toast } from "react-hot-toast";
 
 const SignIn = () => {
+  const themeStatus = useSelector((rootReducer) => rootReducer.themeReducer);
+
   const dispatch = useDispatch();
 
   const location = useLocation();
@@ -40,8 +42,8 @@ const SignIn = () => {
         style: {
           borderRadius: "10px",
           fontSize: "14px",
-          background: "#282828",
-          color: "#fff",
+          background: `${themeStatus ? "#fff" : "#282828"}`,
+          color: `${themeStatus ? "#000" : "#fff"}`,
           padding: "10px 20px 10px 15px",
         },
       });
@@ -51,8 +53,8 @@ const SignIn = () => {
         style: {
           borderRadius: "10px",
           fontSize: "14px",
-          background: "#282828",
-          color: "#fff",
+          background: `${themeStatus ? "#fff" : "#282828"}`,
+          color: `${themeStatus ? "#000" : "#fff"}`,
           padding: "10px 20px 10px 15px",
         },
       });
@@ -62,8 +64,8 @@ const SignIn = () => {
         style: {
           borderRadius: "10px",
           fontSize: "14px",
-          background: "#282828",
-          color: "#fff",
+          background: `${themeStatus ? "#fff" : "#282828"}`,
+          color: `${themeStatus ? "#000" : "#fff"}`,
           padding: "10px 20px 10px 15px",
         },
       });
@@ -73,8 +75,8 @@ const SignIn = () => {
         style: {
           borderRadius: "10px",
           fontSize: "14px",
-          background: "#282828",
-          color: "#fff",
+          background: `${themeStatus ? "#fff" : "#282828"}`,
+          color: `${themeStatus ? "#000" : "#fff"}`,
           padding: "10px 20px 10px 15px",
         },
       });
@@ -87,8 +89,8 @@ const SignIn = () => {
         style: {
           borderRadius: "10px",
           fontSize: "14px",
-          background: "#282828",
-          color: "#fff",
+          background: `${themeStatus ? "#fff" : "#282828"}`,
+          color: `${themeStatus ? "#000" : "#fff"}`,
           padding: "10px 20px 10px 15px",
         },
       });
