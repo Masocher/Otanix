@@ -1,10 +1,11 @@
 // tools
 import { combineReducers } from "redux";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 // types
 import {
   CHANGE_THEME,
-  CHANGE_AUTH_STATUS,
   CHANGE_POP_UP_STATUS,
   OPEN_ANIMES_FILTERS,
   OPEN_CHARACTERS_FILTERS,
@@ -13,8 +14,6 @@ import {
 
 import img1 from "../images/animes/1.jpg";
 
-import axios from "axios";
-
 // otanix tool
 const themeStatus = false;
 
@@ -22,18 +21,6 @@ const themeReducer = (state = themeStatus, action) => {
   switch (action.type) {
     case CHANGE_THEME:
       return (state = !state);
-
-    default:
-      return state;
-  }
-};
-
-const authStatus = false;
-
-const authStatusReducer = (state = authStatus, action) => {
-  switch (action.type) {
-    case CHANGE_AUTH_STATUS:
-      return (state = true);
 
     default:
       return state;
@@ -441,10 +428,12 @@ const userToken = null;
 
 const isAuthenticated = null;
 
-const keepUser = (token) => {
+const keepUser = (token, state) => {
   axios.defaults.headers.common["Authorization"] = "Token " + token;
   token = userToken;
   localStorage.setItem("token", token);
+  state = true;
+  localStorage.setItem("isAuthenticated", state);
 };
 
 const signInReducer = (state = isAuthenticated, action) => {
@@ -457,10 +446,55 @@ const signInReducer = (state = isAuthenticated, action) => {
           password: action.payload.password,
         })
         .then((response) => {
-          keepUser(response.data.auth_token);
-          state = true;
+          keepUser(response.data.auth_token, state);
+          console.log("you are logging in ...");
+          toast.success("با موفقیت وارد شدید", {
+            style: {
+              borderRadius: "10px",
+              background: `${themeStatus ? "#fff" : "#232328"}`,
+              color: `${themeStatus ? "#000" : "#fff"}`,
+              padding: "10px 20px 10px 15px",
+            },
+          });
+          console.log("you logged in !");
         })
-        .catch((error) => console.log(error.response));
+        .catch((error) => {
+          if (error.response) {
+            console.log(error.response);
+            if (error.response.data.detail) {
+              toast.error(error.response.data.detail, {
+                style: {
+                  borderRadius: "10px",
+                  background: `${themeStatus ? "#fff" : "#232328"}`,
+                  color: `${themeStatus ? "#000" : "#fff"}`,
+                  padding: "10px 20px 10px 15px",
+                },
+              });
+            } else if (error.response.data.username) {
+              toast.error("نام کاربری : " + error.response.data.username, {
+                style: {
+                  borderRadius: "10px",
+                  background: `${themeStatus ? "#fff" : "#232328"}`,
+                  color: `${themeStatus ? "#000" : "#fff"}`,
+                  padding: "10px 20px 10px 15px",
+                },
+              });
+            } else if (error.response.data.password) {
+              toast.error("گذرواژه : " + error.response.data.password, {
+                style: {
+                  borderRadius: "10px",
+                  background: `${themeStatus ? "#fff" : "#232328"}`,
+                  color: `${themeStatus ? "#000" : "#fff"}`,
+                  padding: "10px 20px 10px 15px",
+                },
+              });
+            }
+          } else if (error.request) {
+            console.log("request error : " + error.request);
+          } else {
+            console.log("error message : " + error.message);
+          }
+        });
       return state;
 
     default:
@@ -470,7 +504,6 @@ const signInReducer = (state = isAuthenticated, action) => {
 
 export const rootReducer = combineReducers({
   themeReducer,
-  authStatusReducer,
   popUpReducer,
   adminAnimesReducer,
   charactersReducer,

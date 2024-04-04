@@ -1,6 +1,5 @@
 import {
   CHANGE_THEME,
-  CHANGE_AUTH_STATUS,
   CHANGE_POP_UP_STATUS,
   OPEN_ANIMES_FILTERS,
   OPEN_CHARACTERS_FILTERS,
@@ -9,10 +8,6 @@ import {
 
 export const changeTheme = () => {
   return { type: CHANGE_THEME };
-};
-
-export const changeAuthStatus = () => {
-  return { type: CHANGE_AUTH_STATUS };
 };
 
 export const changePopUpStatus = () => {
@@ -29,5 +24,5 @@ export const openCharactersFilters = () => {
 
 // authenticating
 export const signIn = (username, password) => {
-  return { type: SIGN_IN, payload: {username : username, password : password} }
-}
+  return { type: SIGN_IN, payload: { username: username, password: password } };
+};

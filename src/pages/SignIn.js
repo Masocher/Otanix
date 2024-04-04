@@ -3,7 +3,7 @@ import "../styles/sign.css";
 
 // tools
 import { useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,15 +14,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 // redux
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { signIn } from "../redux/Actions";
 
-// react-hot-toast
-import { toast } from "react-hot-toast";
-
 const SignIn = () => {
-  const themeStatus = useSelector((rootReducer) => rootReducer.themeReducer);
-
   const dispatch = useDispatch();
 
   const location = useLocation();
@@ -30,70 +25,9 @@ const SignIn = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const passwordRegex = /^(?=.{8,20})/;
-  const usernameRegex = /^(?=.{4,20}$)(?![_.])[a-zA-Z0-9@/./+/-/_]/;
-
-  let [usernameInputStatus, setUsernameInputStatus] = useState(false);
-  let [passwordInputStatus, setPasswordInputStatus] = useState(false);
-
-  const navigate = useNavigate();
-
   const submitForm = (username, password) => {
-    if (username.length < 1) {
-      toast.error("نام کاربری الزامی است", {
-        style: {
-          borderRadius: "10px",
-          background: `${themeStatus ? "#fff" : "#232328"}`,
-          color: `${themeStatus ? "#000" : "#fff"}`,
-          padding: "10px 20px 10px 15px",
-        },
-      });
-      setUsernameInputStatus(true);
-    } else if (usernameRegex.test(username) === false) {
-      toast.error("نام کاربری قابل قبول نیست", {
-        style: {
-          borderRadius: "10px",
-          background: `${themeStatus ? "#fff" : "#232328"}`,
-          color: `${themeStatus ? "#000" : "#fff"}`,
-          padding: "10px 20px 10px 15px",
-        },
-      });
-      setUsernameInputStatus(true);
-    } else if (password.length < 1) {
-      toast.error("رمز عبور الزامی است", {
-        style: {
-          borderRadius: "10px",
-          background: `${themeStatus ? "#fff" : "#232328"}`,
-          color: `${themeStatus ? "#000" : "#fff"}`,
-          padding: "10px 20px 10px 15px",
-        },
-      });
-      setPasswordInputStatus(true);
-    } else if (passwordRegex.test(password) === false) {
-      toast.error("رمز عبور قابل قبول نیست", {
-        style: {
-          borderRadius: "10px",
-          background: `${themeStatus ? "#fff" : "#232328"}`,
-          color: `${themeStatus ? "#000" : "#fff"}`,
-          padding: "10px 20px 10px 15px",
-        },
-      });
-      setPasswordInputStatus(true);
-    } else {
-      setUsernameInputStatus(false);
-      setPasswordInputStatus(false);
-      dispatch(signIn(username, password));
-      toast.success("با موفقیت وارد شدید", {
-        style: {
-          borderRadius: "10px",
-          background: `${themeStatus ? "#fff" : "#232328"}`,
-          color: `${themeStatus ? "#000" : "#fff"}`,
-          padding: "10px 20px 10px 15px",
-        },
-      });
-      navigate("/");
-      // dispatch(stopLoading());
-    }
+    dispatch(signIn(username, password));
+    // dispatch(stopLoading());
   };
 
   return (
@@ -127,18 +61,14 @@ const SignIn = () => {
 
         <form onSubmit={(e) => e.preventDefault()}>
           <input
-            className={`sign_input ${
-              usernameInputStatus === true ? "error" : "correct"
-            }`}
+            className="sign_input"
             type="text"
             placeholder="نام کاربری"
             onChange={(e) => setUsername(e.target.value)}
           />
 
           <input
-            className={`sign_input ${
-              passwordInputStatus === true ? "error" : "correct"
-            }`}
+            className="sign_input"
             type="password"
             placeholder="گذرواژه"
             onChange={(e) => setPassword(e.target.value)}

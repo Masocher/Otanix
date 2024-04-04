@@ -33,10 +33,6 @@ const Header = () => {
 
   const location = useLocation();
 
-  const authStatus = useSelector(
-    (rootReducer) => rootReducer.authStatusReducer
-  );
-
   return (
     <div className="header_container">
       <div className="right_side">
@@ -113,7 +109,7 @@ const Header = () => {
           </span>
         </div>
 
-        {authStatus ? (
+        {localStorage.getItem("isAuthenticated") ? (
           <Link to={"/pannel"} className="pannel_icon">
             <FontAwesomeIcon icon={faUser} />
           </Link>

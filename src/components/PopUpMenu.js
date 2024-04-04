@@ -22,13 +22,9 @@ const PopUpMenu = () => {
 
   const location = useLocation();
 
-  const authStatus = useSelector(
-    (rootReducer) => rootReducer.authStatusReducer
-  );
-
   return (
     <div className={`menu_container ${popUpStatus ? "show" : ""}`}>
-      {authStatus ? (
+      {localStorage.getItem("isAuthenticated") ? (
         <Link
           to={"/pannel"}
           className="pannel_icon"
