@@ -36,14 +36,13 @@ const SignIn = () => {
   let [usernameInputStatus, setUsernameInputStatus] = useState(false);
   let [passwordInputStatus, setPasswordInputStatus] = useState(false);
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const submitForm = (username, password) => {
     if (username.length < 1) {
       toast.error("نام کاربری الزامی است", {
         style: {
           borderRadius: "10px",
-          fontSize: "14px",
           background: `${themeStatus ? "#fff" : "#232328"}`,
           color: `${themeStatus ? "#000" : "#fff"}`,
           padding: "10px 20px 10px 15px",
@@ -54,7 +53,6 @@ const SignIn = () => {
       toast.error("نام کاربری قابل قبول نیست", {
         style: {
           borderRadius: "10px",
-          fontSize: "14px",
           background: `${themeStatus ? "#fff" : "#232328"}`,
           color: `${themeStatus ? "#000" : "#fff"}`,
           padding: "10px 20px 10px 15px",
@@ -65,7 +63,6 @@ const SignIn = () => {
       toast.error("رمز عبور الزامی است", {
         style: {
           borderRadius: "10px",
-          fontSize: "14px",
           background: `${themeStatus ? "#fff" : "#232328"}`,
           color: `${themeStatus ? "#000" : "#fff"}`,
           padding: "10px 20px 10px 15px",
@@ -76,7 +73,6 @@ const SignIn = () => {
       toast.error("رمز عبور قابل قبول نیست", {
         style: {
           borderRadius: "10px",
-          fontSize: "14px",
           background: `${themeStatus ? "#fff" : "#232328"}`,
           color: `${themeStatus ? "#000" : "#fff"}`,
           padding: "10px 20px 10px 15px",
@@ -90,13 +86,12 @@ const SignIn = () => {
       toast.success("با موفقیت وارد شدید", {
         style: {
           borderRadius: "10px",
-          fontSize: "14px",
           background: `${themeStatus ? "#fff" : "#232328"}`,
           color: `${themeStatus ? "#000" : "#fff"}`,
           padding: "10px 20px 10px 15px",
         },
       });
-      navigate("/")
+      navigate("/");
       // dispatch(stopLoading());
     }
   };

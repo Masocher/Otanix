@@ -108,6 +108,16 @@
   border-bottom: 1px solid #f5cb5c;
 }
 
+.rate_box.show {
+  padding: 15px 20px 5px 20px !important;
+}
+
+.rate_box .rate_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .comments_section .rate_box .title_box {
   font-size: 18px;
   letter-spacing: 0.5px;
@@ -122,6 +132,7 @@
   border: 1px solid #f5cb5c;
   cursor: pointer;
   transition: 0.2s;
+  width: fit-content;
 }
 .comments_section .rate_box .submit_rate:hover {
   color: #f5cb5c;
@@ -158,6 +169,69 @@
 
 .comm_left_btn span {
   margin-top: 4px;
+}
+
+.rate_stars {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.rate_stars .stars {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.star_icon {
+  font-size: 22px;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.star_icon.show {
+  color: #f5cb5c !important;
+}
+
+.submit_rate_mini_btn {
+  color: #000;
+  background-color: #f5cb5c;
+  border-radius: 5px;
+  padding: 5px 0;
+  width: 60px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 1px solid #f5cb5c;
+}
+.submit_rate_mini_btn:hover {
+  background: none;
+  color: #f5cb5c;
+}
+
+.emoji {
+  font-size: 18px;
+}
+
+.rate_stars span {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.emoji_status {
+  background-color: #f5cb5c;
+  color: #000;
+  height: 34px;
+  width: 34px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
 }
 
 /* responsive */

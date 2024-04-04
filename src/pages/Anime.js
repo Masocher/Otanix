@@ -295,7 +295,7 @@ const Anime = () => {
       </div>
 
       <HomeTopics state={state} title={"انیمه های مشابه"} showBtn={false} />
-      <Comments />
+      <Comments anime={anime} />
     </div>
   );
 };
