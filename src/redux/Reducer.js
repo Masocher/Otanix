@@ -507,35 +507,38 @@ const signInReducer = (state = isAuthenticated, action) => {
 const onStart = (state = isAuthenticated, action) => {
   switch (action.type) {
     case ON_START:
-      const accessToken = localStorage.getItem("token");
-      axios
-        .post("https://otanix-api.liara.run/api/auth/token/verify/", {
-          token: accessToken,
-        })
-        .then((response) => {
-          keepUser(accessToken, state);
-          console.log("access token is valid : " + accessToken);
-        })
-        .catch((error) => {
-          if (error.response.data.code == "token_not_valid") {
-            const refreshToken = localStorage.getItem("refreshToken");
-            axios
-              .post("https://otanix-api.liara.run/api/auth/token/refresh/", {
-                refresh: refreshToken,
-              })
-              .then((response) => {
-                keepUser(response.data.access, state);
-                console.log(
-                  "access token was not valid so , access token is refreshed ! " + response.data.access
-                );
-              })
-              .catch((error) => {
-                localStorage.setItem("isAuthenticated", false);
-              });
-          } else {
-            console.log("sending refresh token error : " + error);
-          }
-        });
+      if (localStorage.getItem("isAuthenticated") && localStorage.getItem("token")) {
+        const accessToken = localStorage.getItem("token");
+        axios
+          .post("https://otanix-api.liara.run/api/auth/token/verify/", {
+            token: accessToken,
+          })
+          .then((response) => {
+            keepUser(accessToken, state);
+            console.log("access token is valid : " + accessToken);
+          })
+          .catch((error) => {
+            if (error.response.data.code == "token_not_valid") {
+              const refreshToken = localStorage.getItem("refreshToken");
+              axios
+                .post("https://otanix-api.liara.run/api/auth/token/refresh/", {
+                  refresh: refreshToken,
+                })
+                .then((response) => {
+                  keepUser(response.data.access, state);
+                  console.log(
+                    "access token was not valid so , access token is refreshed ! " +
+                      response.data.access
+                  );
+                })
+                .catch((error) => {
+                  localStorage.setItem("isAuthenticated", false);
+                });
+            } else {
+              console.log("sending refresh token error : " + error);
+            }
+          });
+      }
       return state;
 
     default:
