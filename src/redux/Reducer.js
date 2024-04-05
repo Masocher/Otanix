@@ -424,13 +424,10 @@ const discussionsReducer = (state = discussions) => {
 };
 
 // authenticating
-const userToken = null;
-
 const isAuthenticated = null;
 
 const keepUser = (token, state) => {
   axios.defaults.headers.common["Authorization"] = "Token " + token;
-  token = userToken;
   localStorage.setItem("token", token);
   state = true;
   localStorage.setItem("isAuthenticated", state);
@@ -446,7 +443,7 @@ const signInReducer = (state = isAuthenticated, action) => {
           password: action.payload.password,
         })
         .then((response) => {
-          keepUser(response.data.auth_token, state);
+          keepUser(response.data.access, state);
           console.log("you are logging in ...");
           toast.success("با موفقیت وارد شدید", {
             style: {
