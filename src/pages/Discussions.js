@@ -110,7 +110,7 @@ const Discussions = () => {
 
         <div className="discussions_list">
           {discussions.map((discussion) => (
-            <div className="discussion_box">
+            <div className="discussion_box" key={discussion.id}>
               <Link
                 to={`/discussions/${discussion.id}`}
                 key={discussion.id}

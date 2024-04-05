@@ -11,7 +11,11 @@ import { useLocation } from "react-router-dom";
 import { Route, Routes } from "react-router";
 
 // redux
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { onStart } from "./redux/Actions";
+
+// tools
+import { useEffect } from "react";
 
 // react-hot-toast
 import { Toaster } from "react-hot-toast";
@@ -32,9 +36,15 @@ const Character = React.lazy(() => import("./pages/Character"));
 const Admin = React.lazy(() => import("./pages/Admin"));
 
 function App() {
+  const dispatch = useDispatch();
+
   const themeStatus = useSelector((rootReducer) => rootReducer.themeReducer);
 
   const location = useLocation();
+
+  useEffect(() => {
+    dispatch(onStart());
+  }, [location.pathname]);
 
   return (
     <div className={`App ${themeStatus ? "show" : ""}`}>
