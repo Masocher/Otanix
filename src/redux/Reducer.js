@@ -457,6 +457,7 @@ const signInReducer = (state = isAuthenticated, action) => {
             },
           });
           console.log("you logged in !");
+          window.location.replace("/");
         })
         .catch((error) => {
           if (error.response) {
