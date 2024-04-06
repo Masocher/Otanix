@@ -117,7 +117,7 @@ const Discussions = () => {
                 style={{ textDecoration: "none" }}
               >
                 <div className="writer_box">
-                  <img src={img1} />
+                  <img src={img1} alt="user avatar" />
 
                   <div className="witer_about">
                     <span>

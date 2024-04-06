@@ -11,6 +11,7 @@ import {
   OPEN_CHARACTERS_FILTERS,
   SIGN_IN,
   ON_START,
+  LOG_OUT,
 } from "./Types";
 
 import img1 from "../images/animes/1.jpg";
@@ -428,7 +429,7 @@ const discussionsReducer = (state = discussions) => {
 const isAuthenticated = null;
 
 const keepUser = (token, state) => {
-  axios.defaults.headers.common["Authorization"] = "Token " + token;
+  axios.defaults.headers.common["Authorization"] = "Bearer " + token;
   localStorage.setItem("token", token);
   state = true;
   localStorage.setItem("isAuthenticated", state);
@@ -504,10 +505,79 @@ const signInReducer = (state = isAuthenticated, action) => {
   }
 };
 
+const logOut = (state = isAuthenticated) => {
+  const refreshToken = localStorage.getItem("refreshToken");
+  axios
+    .post("https://otanix-api.liara.run/api/auth/token/logout/", {
+      refresh: refreshToken,
+    })
+    .then((response) => {
+      localStorage.removeItem("refreshToken");
+      localStorage.removeItem("token");
+      localStorage.setItem("isAuthenticated", false);
+      axios.defaults.headers.common["Authorization"] = "";
+      toast.error("به دلیل وجود مشکلی از حساب خود خارج شدید", {
+        style: {
+          borderRadius: "10px",
+          background: `${themeStatus ? "#fff" : "#232328"}`,
+          color: `${themeStatus ? "#000" : "#fff"}`,
+          padding: "10px 20px 10px 15px",
+        },
+      });
+      setTimeout(() => {
+        window.location.replace("/");
+      }, 1000);
+    })
+    .catch((error) => {
+      console.log("error while removig refresh token : " + error.response.data);
+    });
+  return state;
+};
+
+const logOutReducer = (state = isAuthenticated, action) => {
+  switch (action.type) {
+    case LOG_OUT:
+      const refreshToken = localStorage.getItem("refreshToken");
+      axios
+        .post("https://otanix-api.liara.run/api/auth/token/logout/", {
+          refresh: refreshToken,
+        })
+        .then((response) => {
+          localStorage.removeItem("refreshToken");
+          localStorage.removeItem("token");
+          localStorage.removeItem("isAuthenticated");
+          axios.defaults.headers.common["Authorization"] = "";
+          toast.success("با موفقیت از حساب خود خارج شدید", {
+            style: {
+              borderRadius: "10px",
+              background: `${themeStatus ? "#fff" : "#232328"}`,
+              color: `${themeStatus ? "#000" : "#fff"}`,
+              padding: "10px 20px 10px 15px",
+            },
+          });
+          setTimeout(() => {
+            window.location.replace("/");
+          }, 1000);
+        })
+        .catch((error) => {
+          console.log(
+            "error while removig refresh token : " + error.response.data
+          );
+        });
+      return state;
+
+    default:
+      return state;
+  }
+};
+
 const onStart = (state = isAuthenticated, action) => {
   switch (action.type) {
     case ON_START:
-      if (localStorage.getItem("isAuthenticated") && localStorage.getItem("token")) {
+      if (
+        localStorage.getItem("isAuthenticated") &&
+        localStorage.getItem("token")
+      ) {
         const accessToken = localStorage.getItem("token");
         axios
           .post("https://otanix-api.liara.run/api/auth/token/verify/", {
@@ -518,7 +588,7 @@ const onStart = (state = isAuthenticated, action) => {
             console.log("access token is valid : " + accessToken);
           })
           .catch((error) => {
-            if (error.response.data.code == "token_not_valid") {
+            if (error.response.data.code === "token_not_valid") {
               const refreshToken = localStorage.getItem("refreshToken");
               axios
                 .post("https://otanix-api.liara.run/api/auth/token/refresh/", {
@@ -535,9 +605,12 @@ const onStart = (state = isAuthenticated, action) => {
                   localStorage.setItem("isAuthenticated", false);
                 });
             } else {
+              logOut();
               console.log("sending refresh token error : " + error);
             }
           });
+      } else {
+        localStorage.removeItem("isAuthenticated");
       }
       return state;
 
@@ -556,4 +629,5 @@ export const rootReducer = combineReducers({
   charactersFiltersReducer,
   signInReducer,
   onStart,
+  logOutReducer,
 });

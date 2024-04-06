@@ -21,7 +21,7 @@ import {
 
 // redux
 import { useDispatch, useSelector } from "react-redux";
-import { changeTheme } from "../redux/Actions";
+import { changeTheme, logOut } from "../redux/Actions";
 
 const Pannel = () => {
   const dispatch = useDispatch();
@@ -74,7 +74,10 @@ const Pannel = () => {
             کامنت های شما
           </div>
 
-          <div className="menu_section_btn log_out_btn">
+          <div
+            className="menu_section_btn log_out_btn"
+            onClick={() => dispatch(logOut())}
+          >
             <div>
               <FontAwesomeIcon icon={faArrowRight} />
             </div>

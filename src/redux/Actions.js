@@ -5,6 +5,7 @@ import {
   OPEN_CHARACTERS_FILTERS,
   SIGN_IN,
   ON_START,
+  LOG_OUT,
 } from "./Types";
 
 export const changeTheme = () => {
@@ -30,4 +31,8 @@ export const signIn = (username, password) => {
 
 export const onStart = () => {
   return { type: ON_START };
+};
+
+export const logOut = () => {
+  return { type: LOG_OUT };
 };
