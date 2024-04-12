@@ -70,7 +70,7 @@ const SignIn = () => {
           <input
             className="sign_input"
             type="password"
-            placeholder="گذرواژه"
+            placeholder="رمز عبور"
             onChange={(e) => setPassword(e.target.value)}
           />
 

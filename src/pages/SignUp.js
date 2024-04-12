@@ -3,6 +3,7 @@ import "../styles/sign.css";
 
 // tools
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,10 +13,25 @@ import {
   faAngleLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
+// redux
+import { useDispatch } from "react-redux";
+import { signUp } from "../redux/Actions";
+
 const SignUp = () => {
+  const dispatch = useDispatch();
+
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const submitForm = (username, email, password) => {
+    dispatch(signUp(username, email, password));
+    // dispatch(stopLoading());
+  };
+
   return (
     <div className="sign_container">
-      <form className="sign_form" action="#">
+      <div className="sign_form" action="#">
         <Link className="sign_back" to={"/"} style={{ textDecoration: "none" }}>
           برگشت به خانه
           <div>
@@ -40,14 +56,37 @@ const SignUp = () => {
           به اوتانیکس خوش اومدی! برای عضویت اقدام کن
         </div>
 
-        <input className="sign_input" type="text" placeholder="نام کاربری" />
-        <input className="sign_input" type="email" placeholder="ایمیل" />
-        <input className="sign_input" type="password" placeholder="گذرواژه" />
+        <form onSubmit={(e) => e.preventDefault()}>
+          <input
+            className="sign_input"
+            type="text"
+            placeholder="نام کاربری"
+            onChange={(e) => setUsername(e.target.value)}
+          />
 
-        <button className="submit_btn" type="submit">
-          عضویت
-        </button>
-      </form>
+          <input
+            className="sign_input"
+            type="email"
+            placeholder="ایمیل"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+
+          <input
+            className="sign_input"
+            type="password"
+            placeholder="رمز عبور"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+
+          <button
+            className="submit_btn"
+            type="submit"
+            onClick={() => submitForm(username, email, password)}
+          >
+            عضویت
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

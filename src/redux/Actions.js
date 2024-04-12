@@ -3,6 +3,7 @@ import {
   CHANGE_POP_UP_STATUS,
   OPEN_ANIMES_FILTERS,
   OPEN_CHARACTERS_FILTERS,
+  SIGN_UP,
   SIGN_IN,
   ON_START,
   LOG_OUT,
@@ -25,6 +26,17 @@ export const openCharactersFilters = () => {
 };
 
 // authenticating
+export const signUp = (username, email, password) => {
+  return {
+    type: SIGN_UP,
+    payload: {
+      username: username,
+      email: email,
+      password: password,
+    },
+  };
+};
+
 export const signIn = (username, password) => {
   return { type: SIGN_IN, payload: { username: username, password: password } };
 };

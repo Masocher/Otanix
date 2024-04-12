@@ -12,6 +12,7 @@ import {
   SIGN_IN,
   ON_START,
   LOG_OUT,
+  SIGN_UP,
 } from "./Types";
 
 import img1 from "../images/animes/1.jpg";
@@ -428,6 +429,86 @@ const discussionsReducer = (state = discussions) => {
 // authenticating
 const isAuthenticated = null;
 
+const signUpReducer = (state = isAuthenticated, action) => {
+  switch (action.type) {
+    case SIGN_UP:
+      axios
+        .post("https://otanix-api.liara.run/api/auth/users/register/", {
+          username: action.payload.username,
+          email: action.payload.email,
+          password: action.payload.password,
+          password2: action.payload.password,
+        })
+        .then((response) => {
+          console.log("you are signing up ...");
+          toast.success("با موفقیت عضو شدید", {
+            style: {
+              borderRadius: "10px",
+              background: `${themeStatus ? "#fff" : "#232328"}`,
+              color: `${themeStatus ? "#000" : "#fff"}`,
+              padding: "10px 20px 10px 15px",
+            },
+          });
+          console.log("you signed up !");
+          setTimeout(() => {
+            window.location.replace("/sign-in");
+          }, 1000);
+        })
+        .catch((error) => {
+          if (error.response) {
+            console.log(error.response);
+            if (error.response.data.detail) {
+              toast.error(error.response.data.detail, {
+                style: {
+                  borderRadius: "10px",
+                  background: `${themeStatus ? "#fff" : "#232328"}`,
+                  color: `${themeStatus ? "#000" : "#fff"}`,
+                  padding: "10px 20px 10px 15px",
+                },
+              });
+            } else if (error.response.data.username) {
+              toast.error("نام کاربری : " + error.response.data.username, {
+                style: {
+                  borderRadius: "10px",
+                  background: `${themeStatus ? "#fff" : "#232328"}`,
+                  color: `${themeStatus ? "#000" : "#fff"}`,
+                  padding: "10px 20px 10px 15px",
+                },
+              });
+            } else if (error.response.data.email) {
+              toast.error("ایمیل : " + error.response.data.email, {
+                style: {
+                  borderRadius: "10px",
+                  background: `${themeStatus ? "#fff" : "#232328"}`,
+                  color: `${themeStatus ? "#000" : "#fff"}`,
+                  padding: "10px 20px 10px 15px",
+                },
+              });
+            } else if (error.response.data.password) {
+              error.response.data.password.map((err) => {
+                toast.error("رمز عبور : " + err, {
+                  style: {
+                    borderRadius: "10px",
+                    background: `${themeStatus ? "#fff" : "#232328"}`,
+                    color: `${themeStatus ? "#000" : "#fff"}`,
+                    padding: "10px 20px 10px 15px",
+                  },
+                });
+              });
+            }
+          } else if (error.request) {
+            console.log("request error : " + error.request);
+          } else {
+            console.log("error message : " + error.message);
+          }
+        });
+      return state;
+
+    default:
+      return state;
+  }
+};
+
 const keepUser = (token, state) => {
   axios.defaults.headers.common["Authorization"] = "Bearer " + token;
   localStorage.setItem("token", token);
@@ -483,7 +564,7 @@ const signInReducer = (state = isAuthenticated, action) => {
                 },
               });
             } else if (error.response.data.password) {
-              toast.error("گذرواژه : " + error.response.data.password, {
+              toast.error("رمز عبور : " + error.response.data.password, {
                 style: {
                   borderRadius: "10px",
                   background: `${themeStatus ? "#fff" : "#232328"}`,
@@ -627,6 +708,7 @@ export const rootReducer = combineReducers({
   discussionsReducer,
   animesFiltersReducer,
   charactersFiltersReducer,
+  signUpReducer,
   signInReducer,
   onStart,
   logOutReducer,
