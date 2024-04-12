@@ -23,6 +23,7 @@
   width: 60%;
   position: absolute;
   bottom: 530px;
+  overflow: hidden;
 }
 
 .anime_image {
@@ -34,7 +35,6 @@
 
 .anime_slide {
   display: flex !important;
-  padding-left: 5px;
 }
 
 .anime_information {

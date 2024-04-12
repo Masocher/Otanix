@@ -145,7 +145,6 @@ const HomeSlider = () => {
       <Swiper
         slidesPerView={1}
         loop={true}
-        spaceBetween={50}
         modules={[Autoplay]}
         autoplay={{ delay: 3500 }}
         className="back_slider"
