@@ -25,13 +25,19 @@ const PopUpMenu = () => {
   return (
     <div className={`menu_container ${popUpStatus ? "show" : ""}`}>
       {localStorage.getItem("isAuthenticated") ? (
-        <Link
-          to={"/pannel"}
-          className="pannel_icon"
-          onClick={() => dispatch(changePopUpStatus())}
-        >
-          <FontAwesomeIcon icon={faUser} />
-        </Link>
+        <div className="menu_icon_box">
+          <Link
+            to={"/pannel"}
+            className="pannel_icon"
+            onClick={() => dispatch(changePopUpStatus())}
+          >
+            <FontAwesomeIcon icon={faUser} />
+          </Link>
+
+          <div className="p_i_b_username">
+            {JSON.parse(localStorage.getItem("user")).username}
+          </div>
+        </div>
       ) : (
         <div style={{ display: "flex" }}>
           <Link

@@ -103,9 +103,13 @@ const Pannel = () => {
             </span>
           </div>
 
-          <Link to={"/pannel"} className="pannel_icon">
-            <FontAwesomeIcon icon={faUser} />
-          </Link>
+          <div className="pannel_icon_box">
+            <div className="p_i_b_username">{JSON.parse(localStorage.getItem("user")).username}</div>
+
+            <Link to={"/pannel"} className="pannel_icon">
+              <FontAwesomeIcon icon={faUser} />
+            </Link>
+          </div>
         </div>
       </div>
 

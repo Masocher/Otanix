@@ -81,3 +81,17 @@
 .log_out_btn:hover {
   color: #fff !important;
 }
+
+.pannel_icon_box {
+  display: flex;
+  align-items: center;
+}
+
+.pannel_icon_box div {
+  font-size: 14px;
+  letter-spacing: .5px;
+}
+
+.p_i_b_username {
+  margin: 10px 0 0 15px;
+}
