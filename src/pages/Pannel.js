@@ -104,7 +104,7 @@ const Pannel = () => {
           </div>
 
           <div className="pannel_icon_box">
-            <div className="p_i_b_username">{JSON.parse(localStorage.getItem("user")).username}</div>
+            <div className="p_i_b_username">{localStorage.getItem("user")}</div>
 
             <Link to={"/pannel"} className="pannel_icon">
               <FontAwesomeIcon icon={faUser} />

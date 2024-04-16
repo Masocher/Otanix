@@ -427,8 +427,6 @@ const discussionsReducer = (state = discussions) => {
 };
 
 // authenticating
-let user = null;
-
 const isAuthenticated = null;
 
 const signUpReducer = (state = isAuthenticated, action) => {
@@ -628,8 +626,9 @@ const logOutReducer = (state = isAuthenticated, action) => {
         .then((response) => {
           localStorage.removeItem("refreshToken");
           localStorage.removeItem("token");
-          localStorage.removeItem("user")
+          localStorage.removeItem("user");
           localStorage.removeItem("isAuthenticated");
+          localStorage.removeItem("user");
           axios.defaults.headers.common["Authorization"] = "";
           toast.success("با موفقیت از حساب خود خارج شدید", {
             style: {
@@ -669,9 +668,8 @@ const onStart = (state = isAuthenticated, action) => {
           .get("https://otanix-api.liara.run/api/auth/users/me/")
           .then((response) => {
             keepUser(accessToken, state);
+            localStorage.setItem("user", response.data.username);
             console.log("access token is valid : " + accessToken);
-            user = response.data;
-            localStorage.setItem("user", JSON.stringify(user));
           })
           .catch((error) => {
             console.log("error response : " + error);
