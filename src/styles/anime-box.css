@@ -9,7 +9,8 @@
 
 .anime_box img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  height: 300px;
 }
 
 .anime_info {
