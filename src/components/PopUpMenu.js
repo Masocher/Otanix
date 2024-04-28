@@ -34,12 +34,12 @@ const PopUpMenu = () => {
             <FontAwesomeIcon icon={faUser} />
           </Link>
 
-          <div className="p_i_b_username">{localStorage.getItem("user")}</div>
-          
           <div className="p_i_b_username">
-            {localStorage.getItem("user")
-              ? JSON.parse(localStorage.getItem("user")).username
-              : ""}
+            {localStorage.getItem("user") ? localStorage.getItem("user") : ""}
+          </div>
+
+          <div className="p_i_b_username">
+            {localStorage.getItem("user") ? localStorage.getItem("user") : ""}
           </div>
         </div>
       ) : (
