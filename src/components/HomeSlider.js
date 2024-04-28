@@ -140,6 +140,7 @@ const HomeSlider = () => {
       cover: img1,
     },
   ];
+  
   return (
     <div className="slider_container">
       <Swiper

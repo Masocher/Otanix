@@ -14,7 +14,6 @@ import {
   faFaceLaugh,
   faFaceGrinStars,
   faQuestion,
-  faFaceAngry,
 } from "@fortawesome/free-solid-svg-icons";
 
 // tools

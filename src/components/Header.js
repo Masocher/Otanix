@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 // tools
 import { useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
