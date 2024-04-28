@@ -35,7 +35,9 @@ const PopUpMenu = () => {
           </Link>
 
           <div className="p_i_b_username">
-            {JSON.parse(localStorage.getItem("user")).username}
+            {localStorage.getItem("user")
+              ? JSON.parse(localStorage.getItem("user")).username
+              : ""}
           </div>
         </div>
       ) : (

@@ -4,7 +4,7 @@ import img1 from "../images/animes/1.jpg";
 
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Zoom } from "swiper/modules";
 import "swiper/css";
 
 const HomeSlider = () => {
@@ -139,7 +139,7 @@ const HomeSlider = () => {
         "داستان درباره جهانی است که به دو گروه انسان‌ها و موجوداتی به نام کاتاوارا تقسیم شده‌اند. تاما که خود یک کاتاواراست بسیار عاشق انسان‌هاست و حتی اگر باید با هم‌نوعان خود بجنگد، آماده است تا آنها را از شر بدی نجات دهد. برادر تاما به نام جینکا اما انسان‌ها را دوست ندارد، نیھل که بیشتر خودش انسان است. این دو برادر به همراه شمشیرزنی بزدل به نام شینسوکه که می‌خواهد قدرتمند شود...",
       cover: img1,
     },
-  ];
+  ];Zoom
   return (
     <div className="slider_container">
       <Swiper
