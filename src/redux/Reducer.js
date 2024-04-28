@@ -487,7 +487,7 @@ const signUpReducer = (state = isAuthenticated, action) => {
                 },
               });
             } else if (error.response.data.password) {
-              error.response.data.password.map((err) => {
+              error.response.data.password.map((err) =>
                 toast.error("رمز عبور : " + err, {
                   style: {
                     borderRadius: "10px",
@@ -495,11 +495,11 @@ const signUpReducer = (state = isAuthenticated, action) => {
                     color: `${themeStatus ? "#000" : "#fff"}`,
                     padding: "10px 20px 10px 15px",
                   },
-                });
-              });
+                })
+              );
             }
           } else if (error.request) {
-            console.log("request error : " + error.request);
+            console.log(error.request);
           } else {
             console.log("error message : " + error.message);
           }
@@ -628,7 +628,7 @@ const logOutReducer = (state = isAuthenticated, action) => {
         .then((response) => {
           localStorage.removeItem("refreshToken");
           localStorage.removeItem("token");
-          localStorage.removeItem("user")
+          localStorage.removeItem("user");
           localStorage.removeItem("isAuthenticated");
           axios.defaults.headers.common["Authorization"] = "";
           toast.success("با موفقیت از حساب خود خارج شدید", {

@@ -135,7 +135,7 @@ const Characters = () => {
         {characters.map((char) => (
           <div className="char_box" key={char.id}>
             <Link to={`/characters/${char.id}`}>
-              <img src={char.cover} />
+              <img src={char.cover} alt="character-cover" />
             </Link>
 
             <div className="char_name">{char.name}</div>
