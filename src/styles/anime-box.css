@@ -1,16 +1,18 @@
 .anime_box {
-  width: auto;
+  width: fit-content;
   height: auto;
   margin: 0 10px;
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: #232328cb;
 }
 
 .anime_box img {
-  width: 100%;
-  object-fit: cover;
-  height: 300px;
+  width: 220px !important;
+  object-fit: cover !important;
+  height: 315px;
 }
 
 .anime_info {

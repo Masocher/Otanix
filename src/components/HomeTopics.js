@@ -28,12 +28,12 @@ const HomeTopics = ({ state, title, showBtn }) => {
       <div className="bottom_section">
         {state.map((anime) => (
           <div className="anime_box" key={anime.id}>
-            <img src={anime.cover} alt="anime-cover" />
+            <img src={anime.image} alt="anime-cover" />
 
             <div className="anime_info">
               <div className="titles">
-                <div className="e_title">{anime.title}</div>
-                <div className="p_title">{anime.ptitle}</div>
+                <div className="e_title">{anime.title_english}</div>
+                <div className="p_title">{anime.title}</div>
               </div>
 
               <div className="anime_footer">
@@ -47,12 +47,12 @@ const HomeTopics = ({ state, title, showBtn }) => {
                   <div>
                     <span>10</span>/
                   </div>
-                  {anime.rate}
+                  {anime.score}
                 </div>
               </div>
 
               <Link
-                to={`/animes/${anime.id}`}
+                to={`/anime/${anime.slug}`}
                 style={{ textDecoration: "none" }}
               >
                 <div className="show_anime">مشاهده جزئیات</div>

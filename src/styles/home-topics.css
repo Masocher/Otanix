@@ -7,7 +7,6 @@
 
 .home_topics .bottom_section {
   display: flex;
-  justify-content: space-between;
 }
 
 .home_topics .section_title_box {

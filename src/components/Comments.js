@@ -20,7 +20,7 @@ import {
 // tools
 import { useState } from "react";
 
-const Comments = ({ anime }) => {
+const Comments = () => {
   const state = [
     {
       id: 0,

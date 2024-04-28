@@ -497,7 +497,7 @@ const signUpReducer = (state = isAuthenticated, action) => {
               });
             }
           } else if (error.request) {
-            console.log("request error : " + error.request);
+            console.log(error.request);
           } else {
             console.log("error message : " + error.message);
           }
@@ -628,7 +628,6 @@ const logOutReducer = (state = isAuthenticated, action) => {
           localStorage.removeItem("token");
           localStorage.removeItem("user");
           localStorage.removeItem("isAuthenticated");
-          localStorage.removeItem("user");
           axios.defaults.headers.common["Authorization"] = "";
           toast.success("با موفقیت از حساب خود خارج شدید", {
             style: {

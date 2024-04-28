@@ -111,7 +111,7 @@ function App() {
         />
 
         <Route
-          path="/animes/:animeId"
+          path="/anime/:animeUrlSlug"
           element={
             <Suspense fallback={<Loading />}>
               <Anime />

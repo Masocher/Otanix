@@ -4,6 +4,7 @@ import img1 from "../images/animes/1.jpg";
 
 // tools
 import { useParams } from "react-router";
+import { useState, useEffect } from "react";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +13,7 @@ import {
   faBell,
   faClosedCaptioning,
   faUserPlus,
-  faLocationDot,
+  faSunPlantWilt,
   faCalendarDays,
   faRotate,
   faClock,
@@ -25,279 +26,211 @@ import AnimeCharactersSlider from "../components/AnimeCharactersSlider";
 import Comments from "../components/Comments";
 import HomeTopics from "../components/HomeTopics";
 
+// axios
+import axios from "axios";
+import Loading from "../components/Loading";
+
 const Anime = () => {
-  const state = [
-    {
-      id: 0,
-      title: "One Piece",
-      ptitle: "وان پیس",
-      rate: "۷.۱۸",
-      tags: [
-        { id: 0, title: "اکشن" },
-        { id: 1, title: "علمی تخیلی" },
-        { id: 2, title: "اکشن" },
-        { id: 3, title: "علمی تخیلی" },
-      ],
-      about:
-        "داستان درباره جهانی است که به دو گروه انسان‌ها و موجوداتی به نام کاتاوارا تقسیم شده‌اند. تاما که خود یک کاتاواراست بسیار عاشق انسان‌هاست و حتی اگر باید با هم‌نوعان خود بجنگد، آماده است تا آنها را از شر بدی نجات دهد. برادر تاما به نام جینکا اما انسان‌ها را دوست ندارد، نیھل که بیشتر خودش انسان است. این دو برادر به همراه شمشیرزنی بزدل به نام شینسوکه که می‌خواهد قدرتمند شود...",
-      cover: img1,
-      country: "ژاپن",
-      votes: "425",
-    },
-    {
-      id: 1,
-      title: "One Piece",
-      ptitle: "وان پیس",
-      rate: "۷.۱۸",
-      tags: [
-        { id: 0, title: "اکشن" },
-        { id: 1, title: "علمی تخیلی" },
-        { id: 2, title: "اکشن" },
-        { id: 3, title: "علمی تخیلی" },
-      ],
-      about:
-        "داستان درباره جهانی است که به دو گروه انسان‌ها و موجوداتی به نام کاتاوارا تقسیم شده‌اند. تاما که خود یک کاتاواراست بسیار عاشق انسان‌هاست و حتی اگر باید با هم‌نوعان خود بجنگد، آماده است تا آنها را از شر بدی نجات دهد. برادر تاما به نام جینکا اما انسان‌ها را دوست ندارد، نیھل که بیشتر خودش انسان است. این دو برادر به همراه شمشیرزنی بزدل به نام شینسوکه که می‌خواهد قدرتمند شود...",
-      cover: img1,
-      country: "ژاپن",
-      votes: "425",
-    },
-    {
-      id: 2,
-      title: "One Piece",
-      ptitle: "وان پیس",
-      rate: "۷.۱۸",
-      tags: [
-        { id: 0, title: "اکشن" },
-        { id: 1, title: "علمی تخیلی" },
-        { id: 2, title: "اکشن" },
-        { id: 3, title: "علمی تخیلی" },
-      ],
-      about:
-        "داستان درباره جهانی است که به دو گروه انسان‌ها و موجوداتی به نام کاتاوارا تقسیم شده‌اند. تاما که خود یک کاتاواراست بسیار عاشق انسان‌هاست و حتی اگر باید با هم‌نوعان خود بجنگد، آماده است تا آنها را از شر بدی نجات دهد. برادر تاما به نام جینکا اما انسان‌ها را دوست ندارد، نیھل که بیشتر خودش انسان است. این دو برادر به همراه شمشیرزنی بزدل به نام شینسوکه که می‌خواهد قدرتمند شود...",
-      cover: img1,
-      country: "ژاپن",
-      votes: "425",
-    },
-    {
-      id: 3,
-      title: "One Piece",
-      ptitle: "وان پیس",
-      rate: "۷.۱۸",
-      tags: [
-        { id: 0, title: "اکشن" },
-        { id: 1, title: "علمی تخیلی" },
-        { id: 2, title: "اکشن" },
-        { id: 3, title: "علمی تخیلی" },
-      ],
-      about:
-        "داستان درباره جهانی است که به دو گروه انسان‌ها و موجوداتی به نام کاتاوارا تقسیم شده‌اند. تاما که خود یک کاتاواراست بسیار عاشق انسان‌هاست و حتی اگر باید با هم‌نوعان خود بجنگد، آماده است تا آنها را از شر بدی نجات دهد. برادر تاما به نام جینکا اما انسان‌ها را دوست ندارد، نیھل که بیشتر خودش انسان است. این دو برادر به همراه شمشیرزنی بزدل به نام شینسوکه که می‌خواهد قدرتمند شود...",
-      cover: img1,
-      country: "ژاپن",
-      votes: "425",
-    },
-    {
-      id: 4,
-      title: "One Piece",
-      ptitle: "وان پیس",
-      rate: "۷.۱۸",
-      tags: [
-        { id: 0, title: "اکشن" },
-        { id: 1, title: "علمی تخیلی" },
-        { id: 2, title: "اکشن" },
-        { id: 3, title: "علمی تخیلی" },
-      ],
-      about:
-        "داستان درباره جهانی است که به دو گروه انسان‌ها و موجوداتی به نام کاتاوارا تقسیم شده‌اند. تاما که خود یک کاتاواراست بسیار عاشق انسان‌هاست و حتی اگر باید با هم‌نوعان خود بجنگد، آماده است تا آنها را از شر بدی نجات دهد. برادر تاما به نام جینکا اما انسان‌ها را دوست ندارد، نیھل که بیشتر خودش انسان است. این دو برادر به همراه شمشیرزنی بزدل به نام شینسوکه که می‌خواهد قدرتمند شود...",
-      cover: img1,
-      country: "ژاپن",
-      votes: "425",
-    },
-    {
-      id: 5,
-      title: "One Piece",
-      ptitle: "وان پیس",
-      rate: "۷.۱۸",
-      tags: [
-        { id: 0, title: "اکشن" },
-        { id: 1, title: "علمی تخیلی" },
-        { id: 2, title: "اکشن" },
-        { id: 3, title: "علمی تخیلی" },
-      ],
-      about:
-        "داستان درباره جهانی است که به دو گروه انسان‌ها و موجوداتی به نام کاتاوارا تقسیم شده‌اند. تاما که خود یک کاتاواراست بسیار عاشق انسان‌هاست و حتی اگر باید با هم‌نوعان خود بجنگد، آماده است تا آنها را از شر بدی نجات دهد. برادر تاما به نام جینکا اما انسان‌ها را دوست ندارد، نیھل که بیشتر خودش انسان است. این دو برادر به همراه شمشیرزنی بزدل به نام شینسوکه که می‌خواهد قدرتمند شود...",
-      cover: img1,
-      country: "ژاپن",
-      votes: "425",
-    },
-  ];
+  let { animeUrlSlug } = useParams();
 
-  const { animeId } = useParams();
+  console.log("url : " + animeUrlSlug);
 
-  const anime = state[animeId];
+  let [anime, setAnime] = useState({});
+  let [loading, setLoading] = useState(false);
 
-  return (
-    <div className="anime_container">
-      <img
-        className="anime_background_cover"
-        src={anime.cover}
-        alt="anime-background-cover"
-      />
+  useEffect(() => {
+    console.log("getting single anime");
+    axios
+      .get(`https://otanix-api.liara.run/api/anime/${animeUrlSlug}`)
+      .then((response) => {
+        setLoading(true);
+        setAnime(response.data);
+        setLoading(false);
+      })
+      .catch((error) => console.log(error));
+    console.log("ending the getting single anime");
+  }, []);
 
-      <div className="anime_single_box">
-        <div className="right_side">
-          <div className="right_side_r_sec">
-            <img className="anime_cover" src={anime.cover} alt="anime-cover" />
+  let [animes, setAnimes] = useState([]);
 
-            <div className="icons">
-              <div>
-                <FontAwesomeIcon icon={faBookmark} />
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faBell} />
-              </div>
-            </div>
-          </div>
+  useEffect(() => {
+    setLoading(true);
+    console.log("getting animes");
+    axios
+      .get("https://otanix-api.liara.run/api/anime/")
+      .then((response) => setAnimes(response.data))
+      .catch((error) => console.log(error));
+    console.log("ending the getting animes");
+    setLoading(false);
+  }, []);
 
-          <div className="right_side_information">
-            <div className="title_box">
-              <div>{anime.title}</div>
-              <div>{anime.ptitle}</div>
-            </div>
+  if (loading) {
+    return <Loading />;
+  } else {
+    return (
+      <div className="anime_container">
+        <img
+          className="anime_background_cover"
+          src={anime.image}
+          alt="anime-background-cover"
+        />
 
-            <div className="anime_tags">
-              <div className="tags_title_box">ژانر ها :</div>
-
-              <div className="anime_tag_boxes">
-                {anime.tags.map((tag) => (
-                  <div className="tag_box" key={tag.id}>
-                    {tag.title}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="attributes">
-              <div className="attribute">
-                <div className="attribute_icon">
-                  <FontAwesomeIcon icon={faClosedCaptioning} />
-                </div>
-                <div className="attribute_title">
-                  زیرنویس <span>دارد</span>
-                </div>
-              </div>
-
-              <div className="attribute">
-                <div className="attribute_icon">
-                  <FontAwesomeIcon icon={faUserPlus} />
-                </div>
-                <div className="attribute_title">
-                  رده سنی <span>بالای 14 سال</span>
-                </div>
-              </div>
-
-              <div className="attribute">
-                <div className="attribute_icon">
-                  <FontAwesomeIcon icon={faLocationDot} />
-                </div>
-                <div className="attribute_title">
-                  کشور <span>{anime.country}</span>
-                </div>
-              </div>
-
-              <div className="attribute">
-                <div className="attribute_icon">
-                  <FontAwesomeIcon icon={faCalendarDays} />
-                </div>
-                <div className="attribute_title">
-                  سال تولید <span>2022</span>
-                </div>
-              </div>
-
-              <div className="attribute">
-                <div className="attribute_icon">
-                  <FontAwesomeIcon icon={faRotate} />
-                </div>
-                <div className="attribute_title">
-                  وضعیت <span>اتمام پخش</span>
-                </div>
-              </div>
-
-              <div className="attribute">
-                <div className="attribute_icon">
-                  <FontAwesomeIcon icon={faClock} />
-                </div>
-                <div className="attribute_title">
-                  زمان هر قسمت <span>23 دقیقه</span>
-                </div>
-              </div>
-
-              <div className="attribute">
-                <div className="attribute_icon">
-                  <FontAwesomeIcon icon={faListOl} />
-                </div>
-                <div className="attribute_title">
-                  تعداد فصل <span>4 فصل</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="left_side">
-          <div className="left_side_title">
-            <div className="anime_score_votes">({anime.votes}) نفر</div>
-
-            <div className="anime_score_box">
-              <span>10 /</span>
-              <div>{anime.rate}</div>
-            </div>
-          </div>
-
-          <div className="anime_description">{anime.about}</div>
-
-          <div className="play_btn">پخش تریلـر</div>
-        </div>
-      </div>
-
-      <AnimeCharactersSlider />
-
-      <div className="last_episode_wrapper">
-        <div className="section_title_box">
-          <span>جدیدترین قسمت</span>
-        </div>
-
-        <div className="last_episode">
+        <div className="anime_single_box">
           <div className="right_side">
-            <img src={img1} alt="new-episode-cover" />
+            <div className="right_side_r_sec">
+              <img
+                className="anime_cover"
+                src={anime.image}
+                alt="anime-cover"
+              />
 
-            <div className="time_box">23:20</div>
+              <div className="icons">
+                <div>
+                  <FontAwesomeIcon icon={faBookmark} />
+                </div>
+                <div>
+                  <FontAwesomeIcon icon={faBell} />
+                </div>
+              </div>
+            </div>
 
-            <div className="play_icon">
-              <FontAwesomeIcon icon={faPlay} />
+            <div className="right_side_information">
+              <div className="title_box">
+                <div>{anime.title_english}</div>
+                <div>{anime.title}</div>
+              </div>
+
+              <div className="anime_tags">
+                <div className="tags_title_box">ژانر ها :</div>
+
+                <div className="anime_tag_boxes">
+                  {anime.genres
+                    ? anime.genres.map((genre) => (
+                        <div className="tag_box" key={genre.id}>
+                          {genre.persian_name}
+                        </div>
+                      ))
+                    : ""}
+                </div>
+              </div>
+
+              <div className="attributes">
+                <div className="attribute">
+                  <div className="attribute_icon">
+                    <FontAwesomeIcon icon={faClosedCaptioning} />
+                  </div>
+                  <div className="attribute_title">
+                    زیرنویس <span>دارد</span>
+                  </div>
+                </div>
+
+                <div className="attribute">
+                  <div className="attribute_icon">
+                    <FontAwesomeIcon icon={faUserPlus} />
+                  </div>
+                  <div className="attribute_title">
+                    رده سنی <span>{anime.rating}</span>
+                  </div>
+                </div>
+
+                <div className="attribute">
+                  <div className="attribute_icon">
+                    <FontAwesomeIcon icon={faSunPlantWilt} />
+                  </div>
+                  <div className="attribute_title">
+                    فصل <span>{anime.season}</span>
+                  </div>
+                </div>
+
+                <div className="attribute">
+                  <div className="attribute_icon">
+                    <FontAwesomeIcon icon={faCalendarDays} />
+                  </div>
+                  <div className="attribute_title">
+                    سال تولید <span>{anime.year}</span>
+                  </div>
+                </div>
+
+                <div className="attribute">
+                  <div className="attribute_icon">
+                    <FontAwesomeIcon icon={faRotate} />
+                  </div>
+                  <div className="attribute_title">
+                    وضعیت <span>{anime.status}</span>
+                  </div>
+                </div>
+
+                <div className="attribute">
+                  <div className="attribute_icon">
+                    <FontAwesomeIcon icon={faClock} />
+                  </div>
+                  <div className="attribute_title">
+                    زمان هر قسمت <span>{anime.duration}</span>
+                  </div>
+                </div>
+
+                <div className="attribute">
+                  <div className="attribute_icon">
+                    <FontAwesomeIcon icon={faListOl} />
+                  </div>
+                  <div className="attribute_title">
+                    تعداد فصل <span>4 فصل</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="description">
-            داستان درباره جهانی است که به دو گروه انسان‌ها و موجوداتی به نام
-            کاتاوارا تقسیم شده‌اند. تاما که خود یک کاتاواراست بسیار عاشق
-            انسان‌هاست و حتی اگر باید با هم‌نوعان خود بجنگد، آماده است تا آنها
-            را از شر بدی نجات دهد. برادر تاما به نام جینکا اما انسان‌ها را دوست
-            ندارد، نیھل که بیشتر خودش انسان است.
-          </div>
+          <div className="left_side">
+            <div className="left_side_title">
+              <div className="anime_score_votes">({anime.scored_by}) نفر</div>
 
-          <div className="play_new_ep_btn">
-            <div>
-              <FontAwesomeIcon icon={faPlay} />
+              <div className="anime_score_box">
+                <span>10 /</span>
+                <div>{anime.score}</div>
+              </div>
             </div>
-            تماشا کنید
+
+            <div className="anime_description">{anime.synopsis}</div>
+
+            <div className="play_btn">پخش تریلـر</div>
           </div>
         </div>
-      </div>
 
-      <HomeTopics state={state} title={"انیمه های مشابه"} showBtn={false} />
-      <Comments anime={anime} />
-    </div>
-  );
+        <AnimeCharactersSlider />
+
+        <div className="last_episode_wrapper">
+          <div className="section_title_box">
+            <span>جدیدترین قسمت</span>
+          </div>
+
+          <div className="last_episode">
+            <div className="right_side">
+              <img src={img1} alt="new-episode-cover" />
+
+              <div className="time_box">23:20</div>
+
+              <div className="play_icon">
+                <FontAwesomeIcon icon={faPlay} />
+              </div>
+            </div>
+
+            <div className="description">{anime.synopsis}</div>
+
+            <div className="play_new_ep_btn">
+              <div>
+                <FontAwesomeIcon icon={faPlay} />
+              </div>
+              تماشا کنید
+            </div>
+          </div>
+        </div>
+
+        <HomeTopics state={animes} title={"انیمه های مشابه"} showBtn={false} />
+        <Comments />
+      </div>
+    );
+  }
 };
 
 export default Anime;
